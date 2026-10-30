@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>The College of Culture | JSU College of Liberal Arts</title>
+  <meta name="description" content="Explore the 2023–2026 impact of Jackson State University’s College of Liberal Arts.">
+  <meta property="og:title" content="The College of Culture">
+  <meta property="og:description" content="JSU College of Liberal Arts Impact Report 2023–2026">
+  <meta property="og:image" content="og.png">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="jsu-mark">JSU</span><span><b>Jackson State University</b><small>College of Liberal Arts</small></span></a>
+    <nav><a href="#impact">Impact</a><a href="#investment">Investment</a><a href="#schools">Schools</a><a class="report-link" href="#impact">Explore report <span>↓</span></a></nav>
+  </header>
+  <section class="hero" id="top">
+    <div class="hero-copy"><p class="eyebrow">Fall 2023 — Spring 2026</p><h1>The College<br>of <em>Culture.</em></h1><p class="dek">A living portrait of scholarship, creativity, leadership and public purpose across Jackson State University’s College of Liberal Arts.</p><a href="#impact" class="primary-button">Explore the impact <span>↓</span></a></div>
+    <div class="hero-visual"><img src="report-cover.jpg" alt="Ayer Hall on the Jackson State University campus"><div class="hero-stat"><strong>$4.1M+</strong><span>documented investment<br>across featured initiatives</span></div><p class="vertical-type">IMPACT REPORT · 2023—2026</p></div>
+  </section>
+  <section class="marquee"><div>STUDENT SUCCESS <i>✦</i> ACADEMIC PROMINENCE <i>✦</i> RESEARCH EXCELLENCE <i>✦</i> CAMPUS CULTURE <i>✦</i> STAFF EXCELLENCE <i>✦</i></div></section>
+  <section class="priorities"><p class="eyebrow">Aligned with JSU’s strategic plan</p><div>
+    <article><span>01</span><p>Student Success</p></article><article><span>02</span><p>Academic Prominence</p></article><article><span>03</span><p>Research Excellence</p></article><article><span>04</span><p>Improvement of Campus Culture and Enhancement of JSU Brand</p></article><article><span>05</span><p>Staff Excellence</p></article>
+  </div></section>
+  <section class="impact-section" id="impact">
+    <div class="section-heading"><div><p class="eyebrow">Impact at a glance</p><h2>Numbers tell part<br>of the story.</h2></div><p>Behind every figure is a student finding a pathway, a faculty member advancing knowledge, or a partnership serving Mississippi and beyond.</p></div>
+    <div class="stat-grid">
+      <article class="stat-card card-1"><span class="card-tag">Research Excellence</span><strong>41,000+</strong><p>students reached through prevention and public-safety outreach</p><span class="arrow">↗</span></article>
+      <article class="stat-card card-2"><span class="card-tag">Academic Prominence</span><strong>250+</strong><p>participants welcomed to the College Language Association Convention</p><span class="arrow">↗</span></article>
+      <article class="stat-card card-3"><span class="card-tag">Student Success</span><strong>30</strong><p>students represented JSU at the national dramatic and speech arts conference</p><span class="arrow">↗</span></article>
+      <article class="stat-card card-4"><span class="card-tag">Campus Culture + Brand</span><strong>100+</strong><p>years of JSU history showcased through the Getty Images collaboration</p><span class="arrow">↗</span></article>
+      <article class="stat-card card-5"><span class="card-tag">Staff Excellence</span><strong>4</strong><p>consecutive Humanities Teachers of the Year honored across Art, Music and Theatre</p><span class="arrow">↗</span></article>
+    </div>
+  </section>
+  <section class="investment-section" id="investment">
+    <div class="section-heading light"><div><p class="eyebrow">Fueling what comes next</p><h2>Investment<br>with purpose.</h2></div><div class="total"><span>Featured funding</span><strong>$4.1M+</strong><small>Based on investments quantified in the report</small></div></div>
+    <div class="filter-row" role="group" aria-label="Filter investments"><button class="active" data-filter="All">All</button><button data-filter="Student Success">Student Success</button><button data-filter="Academic Prominence">Academic Prominence</button><button data-filter="Research Excellence">Research Excellence</button><button data-filter="Campus Culture + Brand">Campus Culture + Brand</button></div>
+    <div class="bars" id="bars"></div><p class="source-note">Featured figures are drawn directly from the 2023–2026 impact report and are not presented as a comprehensive audited total.</p>
+  </section>
+  <section class="feature-story"><div class="feature-image"><img src="sonic-boom.jpg" alt="Sonic Boom of the South featured in the impact report"></div><div class="feature-copy"><p class="eyebrow">Creativity on the global stage</p><h2>Culture that<br><em>moves.</em></h2><p>From Super Bowl LVIII to the Parade of Roses, the Sonic Boom of the South carries JSU’s identity into national arenas—grounding visibility in musical discipline, precision and tradition.</p><blockquote>“Every performance carries something larger than ourselves.”</blockquote></div></section>
+  <section class="schools-section" id="schools">
+    <div class="section-heading"><div><p class="eyebrow">One college, many pathways</p><h2>Explore the<br>three schools.</h2></div><p>Choose a school to see how distinct disciplines contribute to a shared mission of cultural leadership and public impact.</p></div>
+    <div class="school-browser"><div class="school-tabs" role="tablist"><button aria-selected="true" data-school="0"><span>01</span>Communications<b>→</b></button><button aria-selected="false" data-school="1"><span>02</span>Fine &amp; Performing Arts<b>→</b></button><button aria-selected="false" data-school="2"><span>03</span>Social &amp; Behavioral Sciences<b>→</b></button></div><div class="school-panel"><p id="school-desc"></p><strong id="school-stat"></strong><span id="school-note"></span><div class="school-orbit"><span>JSU</span></div></div></div>
+  </section>
+  <footer><div><span class="jsu-mark">JSU</span><p>College of Liberal Arts<br>Jackson State University</p></div><p>1400 John R. Lynch Street<br>Jackson, Mississippi 39217</p><a href="#top">Back to top ↑</a></footer>
+</main>
+<script>
+const investments=[
+{label:'Health equity research',value:1500000,group:'Research Excellence',color:'#69c8eb'},{label:'Racial trauma research',value:509000,group:'Research Excellence',color:'#69c8eb'},{label:'Prevention & driver education',value:493000,group:'Research Excellence',color:'#69c8eb'},{label:'Margaret Walker Center sustainability',value:450000,group:'Campus Culture + Brand',color:'#b7d99b'},{label:'Archive preservation & access',value:317039,group:'Campus Culture + Brand',color:'#b7d99b'},{label:'Pre-law pipeline',value:300000,group:'Student Success',color:'#de8fb1'},{label:'Historic space improvements',value:170000,group:'Campus Culture + Brand',color:'#b7d99b'},{label:'HBCU opera & musical theatre',value:145000,group:'Academic Prominence',color:'#c3a7e7'},{label:'Criminal justice endowed scholarship',value:100000,group:'Student Success',color:'#de8fb1'},{label:'Creative writing intensive',value:83206,group:'Academic Prominence',color:'#c3a7e7'},{label:'Patterson writing scholarships',value:75000,group:'Student Success',color:'#de8fb1'}];
+function money(v){return v>=1000000?'$'+(v/1000000).toFixed(1)+'M':'$'+Math.round(v/1000)+'K'}
+function renderBars(filter='All'){const items=filter==='All'?investments:investments.filter(i=>i.group===filter),max=Math.max(...items.map(i=>i.value));document.querySelector('#bars').innerHTML=items.map(i=>`<div class="bar-row"><div class="bar-label"><span>${i.label}</span><b>${money(i.value)}</b></div><div class="bar-track"><div class="bar-fill" style="width:${Math.max(i.value/max*100,4)}%;background:${i.color}"></div></div></div>`).join('')}
+document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderBars(b.dataset.filter)}));renderBars();
+const schools=[{desc:'Writing, language, media, storytelling and public voice',stat:'250+',note:'national convention participants'},{desc:'Art, music, theatre, design and performance',stat:'7',note:'HBCUs in Shared Voices'},{desc:'Policy, justice, psychology, history and public service',stat:'41K+',note:'students reached statewide'}];
+function showSchool(n){const s=schools[n];document.querySelector('#school-desc').textContent=s.desc;document.querySelector('#school-stat').textContent=s.stat;document.querySelector('#school-note').textContent=s.note;document.querySelectorAll('[data-school]').forEach((b,i)=>b.setAttribute('aria-selected',i===n))}document.querySelectorAll('[data-school]').forEach(b=>b.addEventListener('click',()=>showSchool(+b.dataset.school)));showSchool(0);
+</script>
+</body></html>
