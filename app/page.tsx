@@ -3,26 +3,28 @@
 import { useMemo, useState } from "react";
 
 const investments = [
-  { label: "Health equity research", value: 1500000, group: "Research", color: "#69c8eb" },
-  { label: "Racial trauma research", value: 509000, group: "Research", color: "#69c8eb" },
-  { label: "Prevention & driver education", value: 493000, group: "Community", color: "#f4c55c" },
-  { label: "Margaret Walker Center sustainability", value: 450000, group: "Culture", color: "#b7d99b" },
-  { label: "Archive preservation & access", value: 317039, group: "Culture", color: "#b7d99b" },
-  { label: "Pre-law pipeline", value: 300000, group: "Students", color: "#de8fb1" },
-  { label: "Historic space improvements", value: 170000, group: "Culture", color: "#b7d99b" },
-  { label: "HBCU opera & musical theatre", value: 145000, group: "Arts", color: "#c3a7e7" },
-  { label: "Criminal justice endowed scholarship", value: 100000, group: "Students", color: "#de8fb1" },
-  { label: "Creative writing intensive", value: 83206, group: "Arts", color: "#c3a7e7" },
-  { label: "Patterson writing scholarships", value: 75000, group: "Students", color: "#de8fb1" },
+  { label: "Health equity research", value: 1500000, group: "Research Excellence", color: "#69c8eb" },
+  { label: "Racial trauma research", value: 509000, group: "Research Excellence", color: "#69c8eb" },
+  { label: "Prevention & driver education", value: 493000, group: "Research Excellence", color: "#69c8eb" },
+  { label: "Margaret Walker Center sustainability", value: 450000, group: "Campus Culture + Brand", color: "#b7d99b" },
+  { label: "Archive preservation & access", value: 317039, group: "Campus Culture + Brand", color: "#b7d99b" },
+  { label: "Pre-law pipeline", value: 300000, group: "Student Success", color: "#de8fb1" },
+  { label: "Historic space improvements", value: 170000, group: "Campus Culture + Brand", color: "#b7d99b" },
+  { label: "HBCU opera & musical theatre", value: 145000, group: "Academic Prominence", color: "#c3a7e7" },
+  { label: "Criminal justice endowed scholarship", value: 100000, group: "Student Success", color: "#de8fb1" },
+  { label: "Creative writing intensive", value: 83206, group: "Academic Prominence", color: "#c3a7e7" },
+  { label: "Patterson writing scholarships", value: 75000, group: "Student Success", color: "#de8fb1" },
 ];
 
 const highlights = [
-  { value: "41,000+", label: "students reached through prevention and public-safety outreach", tag: "Community impact" },
-  { value: "250+", label: "participants welcomed to the College Language Association Convention", tag: "Academic prominence" },
-  { value: "30", label: "students represented JSU at the national dramatic and speech arts conference", tag: "Student success" },
-  { value: "29", label: "public policy internship placements from Summer 2023 through Spring 2025", tag: "Career pathways" },
-  { value: "3", label: "new and returning global language offerings: Mandarin, Arabic and Swahili", tag: "Global reach" },
+  { value: "41,000+", label: "students reached through prevention and public-safety outreach", tag: "Research Excellence" },
+  { value: "250+", label: "participants welcomed to the College Language Association Convention", tag: "Academic Prominence" },
+  { value: "30", label: "students represented JSU at the national dramatic and speech arts conference", tag: "Student Success" },
+  { value: "100+", label: "years of JSU history showcased through the Getty Images collaboration", tag: "Campus Culture + Brand" },
+  { value: "4", label: "consecutive Humanities Teachers of the Year honored across Art, Music and Theatre", tag: "Staff Excellence" },
 ];
+
+const priorities = ["Student Success", "Academic Prominence", "Research Excellence", "Improvement of Campus Culture and Enhancement of JSU Brand", "Staff Excellence"];
 
 const schools = [
   { name: "Communications", desc: "Writing, language, media, storytelling and public voice", stat: "250+", note: "national convention participants" },
@@ -68,6 +70,11 @@ export default function Home() {
 
       <section className="marquee" aria-label="Report themes"><div>STUDENT SUCCESS <i>✦</i> ACADEMIC PROMINENCE <i>✦</i> RESEARCH EXCELLENCE <i>✦</i> PUBLIC PURPOSE <i>✦</i></div></section>
 
+      <section className="priorities" aria-labelledby="priorities-title">
+        <p className="eyebrow" id="priorities-title">Aligned with JSU’s strategic plan</p>
+        <div>{priorities.map((priority, index) => <article key={priority}><span>0{index + 1}</span><p>{priority}</p></article>)}</div>
+      </section>
+
       <section className="impact-section" id="impact">
         <div className="section-heading"><div><p className="eyebrow">Impact at a glance</p><h2>Numbers tell part<br />of the story.</h2></div><p>Behind every figure is a student finding a pathway, a faculty member advancing knowledge, or a partnership serving Mississippi and beyond.</p></div>
         <div className="stat-grid">
@@ -78,7 +85,7 @@ export default function Home() {
       <section className="investment-section" id="investment">
         <div className="section-heading light"><div><p className="eyebrow">Fueling what comes next</p><h2>Investment<br />with purpose.</h2></div><div className="total"><span>Featured funding</span><strong>${(total / 1000000).toFixed(1)}M+</strong><small>Based on investments quantified in the report</small></div></div>
         <div className="filter-row" role="group" aria-label="Filter investments by theme">
-          {["All", "Research", "Community", "Culture", "Students", "Arts"].map((name) => <button key={name} className={filter === name ? "active" : ""} onClick={() => setFilter(name)}>{name}</button>)}
+          {["All", "Student Success", "Academic Prominence", "Research Excellence", "Campus Culture + Brand"].map((name) => <button key={name} className={filter === name ? "active" : ""} onClick={() => setFilter(name)}>{name}</button>)}
         </div>
         <div className="bars" aria-live="polite">
           {filtered.map((item) => <div className="bar-row" key={item.label}><div className="bar-label"><span>{item.label}</span><b>{money(item.value)}</b></div><div className="bar-track"><div className="bar-fill" style={{ width: `${Math.max((item.value / max) * 100, 4)}%`, background: item.color }} /></div></div>)}

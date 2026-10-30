@@ -36,6 +36,12 @@ nav a:hover { opacity:1; }
 .marquee div { width:max-content; animation:slide 22s linear infinite; }
 .marquee i { margin:0 35px; }
 @keyframes slide { to { transform:translateX(-25%); } }
+.priorities { padding:54px 7vw 0; background:var(--paper); }
+.priorities>div { display:grid; grid-template-columns:repeat(5,1fr); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.priorities article { padding:20px 18px 24px; border-right:1px solid var(--line); }
+.priorities article:last-child { border-right:0; }
+.priorities article span { color:#638095; font-size:9px; font-weight:800; }
+.priorities article p { margin:16px 0 0; font-family:Georgia,serif; font-size:16px; line-height:1.25; }
 .impact-section,.schools-section { padding:110px 7vw; }
 .section-heading { display:flex; justify-content:space-between; align-items:flex-end; gap:40px; margin-bottom:60px; }
 .section-heading h2 { font-size:clamp(54px,6vw,96px); margin:0; }
@@ -95,6 +101,8 @@ footer a { color:var(--blue); }
   .hero-copy { padding:80px 7vw; }
   .hero-visual { min-height:600px; }
   .section-heading { align-items:flex-start; flex-direction:column; }
+  .priorities>div { grid-template-columns:repeat(2,1fr); }
+  .priorities article { border-bottom:1px solid var(--line); }
   .stat-grid { grid-template-columns:1fr 1fr; grid-auto-rows:210px; }
   .stat-card { grid-column:auto; grid-row:auto; }
   .card-1 { grid-column:span 2; }
@@ -112,6 +120,9 @@ footer a { color:var(--blue); }
   .hero-stat { padding:20px; }
   .hero-stat strong { font-size:34px; }
   .impact-section,.schools-section,.investment-section { padding:80px 20px; }
+  .priorities { padding:44px 20px 0; }
+  .priorities>div { grid-template-columns:1fr; }
+  .priorities article { border-right:0; }
   .section-heading h2 { font-size:52px; }
   .stat-grid { grid-template-columns:1fr; grid-auto-rows:auto; }
   .stat-card,.card-1 { grid-column:auto; min-height:220px; }
