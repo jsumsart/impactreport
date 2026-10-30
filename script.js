@@ -2,7 +2,7 @@ const priorities = {
   "student-success": {
     label: "Student Success",
     title: "From preparation to professional momentum.",
-    summary: "Students are testing their voices, building networks and entering professional environments where classroom learning becomes confidence and direction.",
+    summary: "Students are testing their voices, building networks and entering professional environments that strengthen their confidence and direction.",
     metric: "29",
     metricLabel: "public policy internship placements",
     image: "doctoral-hooding.webp",
@@ -167,26 +167,6 @@ impactButtons.forEach((button, index) => {
     event.preventDefault();
     updateImpactView(impactButtons[next].dataset.impactView);
     impactButtons[next].focus();
-  });
-});
-
-const reportFilterButtons = [...document.querySelectorAll("[data-report-filter]")];
-const reportCards = [...document.querySelectorAll("[data-report-group]")];
-
-reportFilterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const filter = button.dataset.reportFilter;
-    let visible = 0;
-    reportFilterButtons.forEach((entry) => entry.setAttribute("aria-pressed", String(entry === button)));
-    reportCards.forEach((card) => {
-      const show = filter === "all" || card.dataset.reportGroup === filter;
-      card.hidden = !show;
-      if (show) visible += 1;
-    });
-    const status = filter === "all"
-      ? `Showing all ${visible} stories.`
-      : `Showing ${visible} ${button.childNodes[0].textContent.trim().toLowerCase()} ${visible === 1 ? "story" : "stories"}.`;
-    document.querySelector("#filter-status").textContent = status;
   });
 });
 
