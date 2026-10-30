@@ -259,17 +259,46 @@ window.addEventListener("hashchange", syncPriorityLayout);
 
 const menuToggle = document.querySelector(".menu-toggle");
 const navigation = document.querySelector("#primary-nav");
+const menuLabel = menuToggle.querySelector("span");
+
+function closeNavigation(returnFocus = false) {
+  menuToggle.setAttribute("aria-expanded", "false");
+  menuLabel.textContent = "Menu";
+  navigation.classList.remove("is-open");
+  document.body.classList.remove("menu-open");
+  if (returnFocus) menuToggle.focus();
+}
+
 menuToggle.addEventListener("click", () => {
   const open = menuToggle.getAttribute("aria-expanded") !== "true";
   menuToggle.setAttribute("aria-expanded", String(open));
+  menuLabel.textContent = open ? "Close" : "Menu";
   navigation.classList.toggle("is-open", open);
   document.body.classList.toggle("menu-open", open);
 });
 navigation.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
-  menuToggle.setAttribute("aria-expanded", "false");
-  navigation.classList.remove("is-open");
-  document.body.classList.remove("menu-open");
+  closeNavigation();
 }));
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && navigation.classList.contains("is-open")) closeNavigation(true);
+});
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 1050 && navigation.classList.contains("is-open")) closeNavigation();
+});
+
+const progressBar = document.querySelector(".scroll-progress span");
+let progressFrame;
+function updateScrollProgress() {
+  const distance = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = distance > 0 ? Math.min(1, window.scrollY / distance) : 0;
+  progressBar.style.width = `${progress * 100}%`;
+  progressFrame = null;
+}
+window.addEventListener("scroll", () => {
+  if (!progressFrame) progressFrame = requestAnimationFrame(updateScrollProgress);
+}, { passive: true });
+window.addEventListener("resize", updateScrollProgress);
+updateScrollProgress();
 
 const revealObserver = "IntersectionObserver" in window ? new IntersectionObserver((entries) => {
   entries.forEach((entry) => {

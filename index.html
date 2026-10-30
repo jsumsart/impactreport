@@ -19,7 +19,7 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#story">Skip to the story</a>
+  <a class="skip-link" href="#dashboard">Skip to report content</a>
 
   <header class="site-header" id="top">
     <div class="header-brand-group">
@@ -30,12 +30,13 @@
     </div>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span>Menu</span><i aria-hidden="true"></i></button>
     <nav id="primary-nav" aria-label="Primary navigation">
-      <a href="#story">Our Story</a>
-      <a href="#report-explorer">Explore Report</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#report-explorer">Stories</a>
       <a href="#priorities">Strategic Priorities</a>
       <a href="#schools">Schools</a>
       <a class="nav-report" href="impact-report-2023-2026.pdf">View Full Report <span aria-hidden="true">↗</span></a>
     </nav>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
   </header>
 
   <main>
@@ -46,7 +47,7 @@
         <p class="hero-dates">Fall 2023–Spring 2026</p>
         <p class="hero-dek">Where creativity becomes public presence, scholarship becomes community engagement, and learning becomes preparation for lives of purpose.</p>
         <div class="hero-actions">
-          <a class="button button-light" href="#story">Explore the stories <span aria-hidden="true">↓</span></a>
+          <a class="button button-light" href="#dashboard">Explore the data <span aria-hidden="true">↓</span></a>
           <a class="text-link" href="impact-report-2023-2026.pdf">View the full report <span aria-hidden="true">↗</span></a>
         </div>
       </div>
@@ -73,6 +74,7 @@
         <article><strong>3</strong><span>academic years from Fall 2023 through Spring 2026</span></article>
       </div>
       <p class="dashboard-note" id="dashboard-note">College structure is transcribed from the report’s overview of schools, departments, centers and affiliated units.</p>
+      <a class="dashboard-source" href="impact-report-2023-2026.pdf">Source: College of Liberal Arts Impact Report, Fall 2023–Spring 2026 <span aria-hidden="true">↗</span></a>
       <div class="dashboard-charts" aria-label="Impact report charts">
         <article class="chart-panel reveal">
           <header><div><p class="section-label">Documented support</p><h3>Grants &amp; investments</h3></div><p>Selected individual awards shown in their own context.</p></header>
@@ -89,15 +91,15 @@
         </article>
         <article class="chart-panel chart-panel-dark reveal">
           <header><div><p class="section-label">Student opportunity</p><h3>Pathways in action</h3></div><p>Documented student cohorts and placements.</p></header>
-          <div class="bar-chart" role="img" aria-label="Student opportunities: 32 NFL Experienceship selections; 30 theatre and speech conference participants; 29 public policy internships; 10 creative writing scholarship recipients; 5 creative residency participants; 3 national vocal audition qualifiers.">
-            <div class="bar-row"><span>NFL Experienceship</span><i><b style="--bar:100%"></b></i><strong>32</strong></div>
+          <div class="bar-chart" role="img" aria-label="Student opportunities: 30 Jackson State theatre and speech conference participants; 29 public policy internships; 10 creative writing scholarship recipients; 5 creative residency participants; 3 national vocal audition qualifiers; and 1 Jackson State student selected for the NFL Experienceship from a national cohort of 32.">
             <div class="bar-row"><span>Theatre &amp; speech conference</span><i><b style="--bar:93.8%"></b></i><strong>30</strong></div>
             <div class="bar-row"><span>Public policy internships</span><i><b style="--bar:90.6%"></b></i><strong>29</strong></div>
             <div class="bar-row"><span>Writing scholarships</span><i><b style="--bar:31.3%"></b></i><strong>10</strong></div>
             <div class="bar-row"><span>Creative residency</span><i><b style="--bar:15.6%"></b></i><strong>5</strong></div>
             <div class="bar-row"><span>National vocal auditions</span><i><b style="--bar:9.4%"></b></i><strong>3</strong></div>
+            <div class="bar-row"><span>NFL Experienceship</span><i><b style="--bar:3.4%"></b></i><strong>1*</strong></div>
           </div>
-          <p class="chart-note">Each bar represents a distinct opportunity described in the report; the cohorts should not be combined.</p>
+          <p class="chart-note">*Whitley Smith was one of 32 students selected nationally. Each bar counts documented JSU participants in a distinct opportunity; the cohorts should not be combined.</p>
         </article>
       </div>
     </section>
@@ -121,7 +123,7 @@
 
       <article class="chapter chapter-wide reveal">
         <figure><img src="student-lynch-statue.webp" alt="A Jackson State student speaking beside the John R. Lynch statue"></figure>
-        <div class="chapter-copy"><span class="chapter-number">01</span><p class="section-label">Learning becomes opportunity</p><h3>Students step into the rooms where their futures take shape.</h3><p>From newsrooms and stadiums to policy offices and national conferences, College of Liberal Arts students are translating study into professional confidence.</p><div class="chapter-proof"><strong>32</strong><span>students selected nationally for the 2024 NFL Experienceship—Whitley Smith among them, from more than 100 applicants.</span></div><ul><li>29 Public Policy and Administration internship placements</li><li>30 theatre and speech students at a national conference</li></ul></div>
+        <div class="chapter-copy"><span class="chapter-number">01</span><p class="section-label">Learning becomes opportunity</p><h3>Students step into the rooms where their futures take shape.</h3><p>From newsrooms and stadiums to policy offices and national conferences, College of Liberal Arts students are translating study into professional confidence.</p><div class="chapter-proof"><strong>1 of 32</strong><span>students selected nationally for the 2024 NFL Experienceship was JSU’s Whitley Smith, from more than 100 applicants.</span></div><ul><li>29 Public Policy and Administration internship placements</li><li>30 theatre and speech students at a national conference</li></ul></div>
       </article>
 
       <article class="chapter chapter-reverse reveal">
@@ -150,7 +152,7 @@
       </div>
       <p class="filter-status" id="filter-status" aria-live="polite">Showing all 16 report stories.</p>
       <div class="report-grid">
-        <article class="report-card" data-report-group="communications"><p class="card-kicker">Journalism &amp; Media Studies · Student Success</p><strong>32</strong><h3>From the classroom to industry</h3><p>Students entered national media, sports and entertainment spaces while building professional confidence.</p><details><summary>View highlights</summary><ul><li>Whitley Smith joined 32 students selected from more than 100 NFL Experienceship applicants.</li><li>Michael A. White Jr. earned a $10,000 BeyGOOD Foundation Scholarship.</li><li>Malik Alexander mentored at The School of The New York Times, while THEE Industry Access Series brought Lionsgate leadership to campus.</li></ul></details></article>
+        <article class="report-card" data-report-group="communications"><p class="card-kicker">Journalism &amp; Media Studies · Student Success</p><strong>1 of 32</strong><h3>From the classroom to industry</h3><p>Students entered national media, sports and entertainment spaces while building professional confidence.</p><details><summary>View highlights</summary><ul><li>Whitley Smith was one of 32 students selected nationally from more than 100 NFL Experienceship applicants.</li><li>Michael A. White Jr. earned a $10,000 BeyGOOD Foundation Scholarship.</li><li>Malik Alexander mentored at The School of The New York Times, while THEE Industry Access Series brought Lionsgate leadership to campus.</li></ul></details></article>
         <article class="report-card" data-report-group="communications"><p class="card-kicker">English &amp; Modern Languages · Student Success</p><strong>1877</strong><h3>Writers building literary community</h3><p>Student-led publishing, national presentations and graduate pathways created a visible culture of writing.</p><details><summary>View highlights</summary><ul><li>Graduate students launched the Jackson State Writers Alliance and Thee 1877 Literary Magazine.</li><li>Student essays appeared in the Callaloo Phillis Wheatley Poetry Festival issue.</li><li>Students presented at CLA, Sigma Tau Delta, the Gwendolyn Brooks conference and the Mississippi Philological Association.</li></ul></details></article>
         <article class="report-card" data-report-group="communications"><p class="card-kicker">Public Humanities · Academic Prominence</p><strong>250+</strong><h3>Literary culture becomes public infrastructure</h3><p>Conventions, residencies, festivals, scholarships and public programming positioned JSU as a gathering place for Black intellectual life.</p><details><summary>View highlights</summary><ul><li>JSU hosted the 84th College Language Association Convention.</li><li>The Phillis Wheatley Poetry Festival marked its 50th anniversary and inspired Thee Blueprint curriculum guide.</li><li>Ten writers received $7,500 Patterson scholarships, while a $83,206 RISE grant supported a five-student creative residency.</li></ul></details></article>
         <article class="report-card" data-report-group="communications"><p class="card-kicker">Modern Languages · Academic Prominence</p><strong>3</strong><h3>New pathways in global communication</h3><p>Expanded language offerings connect students with translation, diaspora studies and international engagement.</p><details><summary>View highlights</summary><ul><li>Mandarin language and culture courses returned to the curriculum.</li><li>Arabic courses arrived through a Fulbright instructor from Kuwait.</li><li>Swahili courses launched through a Fulbright instructor from Kenya.</li></ul></details></article>
