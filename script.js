@@ -5,9 +5,9 @@ const priorities = {
     summary: "Students are testing their voices, building networks and entering professional environments where classroom learning becomes confidence and direction.",
     metric: "29",
     metricLabel: "public policy internship placements",
-    image: "prelaw-pathways.png",
-    alt: "JSU pre-law students visiting a professional law office",
-    caption: "Pre-law professional pathways · College impact report",
+    image: "doctoral-hooding.webp",
+    alt: "A graduate being hooded during commencement",
+    caption: "Student achievement at commencement · Jackson State University",
     highlights: [
       "Whitley Smith was one of 32 students selected from more than 100 applicants for the 2024 NFL Experienceship.",
       "Thirty theatre and speech students represented JSU nationally, earning more than five awards and two national officer positions.",
@@ -50,9 +50,9 @@ const priorities = {
     summary: "Archives, historic spaces, exhibitions and national partnerships make JSU’s cultural legacy visible on campus and far beyond it.",
     metric: "100+",
     metricLabel: "years of JSU history presented with Getty Images",
-    image: "campus-improvement.png",
-    alt: "JSU and community partners opening an improved historic campus space",
-    caption: "Campus and community improvement · College impact report",
+    image: "dollye-robinson-building.webp",
+    alt: "The Dollye M. E. Robinson Building on Jackson State University’s campus",
+    caption: "Dollye M. E. Robinson Building · Jackson State University",
     highlights: [
       "A Getty Images collaboration transformed more than a century of Jackson State history into a public exhibition.",
       "Margaret Walker Center materials appeared in the Smithsonian’s At the Vanguard exhibition.",
@@ -65,9 +65,9 @@ const priorities = {
     summary: "Faculty and staff are earning national recognition, building programs and shaping professional standards across disciplines.",
     metric: "4 years",
     metricLabel: "of consecutive Humanities Teachers of the Year",
-    image: "byron-orey.png",
-    alt: "Professor Byron D’Andra Orey",
-    caption: "Byron D’Andra Orey · Southern Political Science Association president",
+    image: "faculty-commencement.webp",
+    alt: "A College of Liberal Arts faculty member at commencement",
+    caption: "Faculty excellence at commencement · Jackson State University",
     highlights: [
       "Art, Music and Theatre faculty earned Humanities Teacher of the Year honors from 2023 through 2026.",
       "Rico D. Chapman and Kofi Barima received Fulbright awards that expanded global scholarly connections.",
@@ -79,39 +79,57 @@ const priorities = {
 const impactViews = {
   snapshot: {
     stats: [
-      ["$4.1M+", "selected support documented across featured awards and investments"],
-      ["11", "academic departments represented in the impact report"],
-      ["41,000+", "students reached through prevention and public-safety outreach"],
-      ["29", "public policy internship placements from Summer 2023–Spring 2025"]
+      ["3", "schools united by one public mission"],
+      ["11", "academic departments represented in the report"],
+      ["8", "centers and affiliated special units"],
+      ["3", "academic years from Fall 2023 through Spring 2026"]
     ],
-    note: "The support figure combines selected awards and investments named in the report. It is not presented as an audited fundraising total."
+    note: "College structure is transcribed from the report’s overview of schools, departments, centers and affiliated units."
+  },
+  students: {
+    stats: [
+      ["32", "students chosen nationally for the 2024 NFL Experienceship"],
+      ["29", "public policy internship placements from Summer 2023 through Spring 2025"],
+      ["30", "theatre and speech students who represented JSU at a national conference"],
+      ["10", "creative writing students awarded James Patterson Foundation scholarships"]
+    ],
+    note: "Each figure represents a distinct student pathway or cohort documented in the report."
+  },
+  creativity: {
+    stats: [
+      ["250+", "participants at the 84th College Language Association Convention"],
+      ["3", "JSU vocal students who qualified for the National NATS Student Auditions"],
+      ["7", "HBCUs participating in the Denyce Graves Foundation Shared Voices program"],
+      ["100+", "years of JSU history presented through the Getty Images collaboration"]
+    ],
+    note: "These measures reflect separate literary, musical, visual and cultural initiatives documented in the report."
+  },
+  research: {
+    stats: [
+      ["41,000+", "students reached through prevention, education and public-safety outreach"],
+      ["$1.5M", "health-equity research and community engagement project"],
+      ["$509K", "National Science Foundation support for racial-trauma research"],
+      ["$493K+", "secured in 2025 for prevention and driver-education initiatives"]
+    ],
+    note: "Research and outreach figures describe different projects, periods and purposes and should be read independently."
   },
   funding: {
     stats: [
-      ["$4.1M+", "selected external support and investments documented in featured stories"],
-      ["$1.5M", "health-equity research and community engagement project"],
-      ["$509K", "National Science Foundation support for racial-trauma research"],
-      ["$493K+", "secured in 2025 for prevention, education and community outreach"]
+      ["$450K", "Mellon Foundation support for the Margaret Walker Center"],
+      ["$317K", "Institute of Museum and Library Services award for archives and access"],
+      ["$300K", "AccessLex support for the Bob Owens Pre-Law Center Pipeline Program"],
+      ["$170K", "triple Home Depot Retool Your School grant package"]
     ],
-    note: "Awards may span different grant periods and purposes. The figures are shown individually in the report and are not an audited fundraising total."
-  },
-  structure: {
-    stats: [
-      ["3", "schools spanning communications, fine and performing arts, and social and behavioral sciences"],
-      ["11", "academic departments featured across the College"],
-      ["8", "centers and affiliated special units named in the report"],
-      ["3", "academic years of impact from Fall 2023 through Spring 2026"]
-    ],
-    note: "College structure is transcribed from the report’s overview of departments, centers and affiliated special units."
+    note: "Awards span different grant periods, sources and purposes. They are presented individually rather than as a fundraising total."
   },
   recognition: {
     stats: [
-      ["250+", "participants at the 84th College Language Association Convention"],
-      ["100+", "years of JSU history presented through the Getty Images collaboration"],
       ["4 years", "of consecutive Humanities Teacher of the Year honorees"],
-      ["3", "vocal students who qualified for the National NATS Student Auditions"]
+      ["5+", "awards earned at the 86th National Association of Dramatic and Speech Arts Conference"],
+      ["2", "national officer positions earned by JSU theatre and speech students"],
+      ["1st", "HBCU student to win Mississippi’s senior MTNA strings division"]
     ],
-    note: "These figures describe distinct programs and recognitions; they are not intended to be combined into a single total."
+    note: "Recognition figures represent distinct faculty and student achievements documented across the report period."
   }
 };
 
