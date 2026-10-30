@@ -121,7 +121,7 @@ button{font:inherit}
 .college-scope .section-label{color:var(--blue)}
 .college-scope p:last-child{margin:0;color:#d2e0eb;font-family:var(--sans);font-size:14px;line-height:1.9}
 
-.priority-section{padding:110px 6.5vw 120px;background:linear-gradient(180deg,var(--deep) 0%,#062442 100%);color:#fff}
+.priority-section{padding:110px 6.5vw 120px;background:linear-gradient(180deg,var(--deep) 0%,#062442 100%);color:#fff;border-top:6px solid var(--blue)}
 .priority-heading{max-width:1400px;margin:0 auto 58px;display:grid;grid-template-columns:1fr .65fr;gap:55px;align-items:end}
 .priority-heading .section-label{grid-column:1/-1;color:var(--blue);margin-bottom:-12px}
 .priority-heading>p:last-child{max-width:590px;margin:0;color:#c6d6e1;font-size:19px;line-height:1.65}

@@ -19,7 +19,7 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#dashboard">Skip to report content</a>
+  <a class="skip-link" href="#priorities">Skip to report content</a>
 
   <header class="site-header" id="top">
     <div class="header-brand-group">
@@ -30,8 +30,8 @@
     </div>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span>Menu</span><i aria-hidden="true"></i></button>
     <nav id="primary-nav" aria-label="Primary navigation">
-      <a href="#dashboard">Dashboard</a>
       <a href="#priorities">Strategic Priorities</a>
+      <a href="#dashboard">Dashboard</a>
       <a href="#report-explorer">Stories</a>
       <a href="#schools">Schools</a>
       <a class="nav-report" href="impact-report-2023-2026.pdf">View Full Report <span aria-hidden="true">↗</span></a>
@@ -47,11 +47,39 @@
         <p class="hero-dates">Fall 2023–Spring 2026</p>
         <p class="hero-dek">Where creativity becomes public presence, scholarship becomes community engagement, and learning becomes preparation for lives of purpose.</p>
         <div class="hero-actions">
-          <a class="button button-light" href="#dashboard">Explore the data <span aria-hidden="true">↓</span></a>
+          <a class="button button-light" href="#priorities">Explore our priorities <span aria-hidden="true">↓</span></a>
           <a class="text-link" href="impact-report-2023-2026.pdf">View the full report <span aria-hidden="true">↗</span></a>
         </div>
       </div>
       <div class="hero-principles" aria-label="Report themes"><span>Scholarship.</span><span>Creativity.</span><span>Leadership.</span><span>Public Purpose.</span></div>
+    </section>
+
+    <section class="priority-section" id="priorities" aria-labelledby="priorities-title">
+      <header class="priority-heading reveal">
+        <p class="section-label">Advancing Jackson State’s strategic mission</p>
+        <h2 id="priorities-title">How the College advances JSU’s priorities.</h2>
+        <p>See how the College of Liberal Arts advances university priorities through student achievement, academic distinction, research, institutional culture and staff-led service.</p>
+      </header>
+      <div class="priority-shell">
+        <div class="priority-list" role="tablist" aria-label="Strategic priorities">
+          <button id="priority-student-success" role="tab" aria-selected="true" aria-controls="priority-panel" data-priority="student-success"><span>01</span><b>Student Success</b><i aria-hidden="true">→</i></button>
+          <button id="priority-academic-prominence" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="academic-prominence"><span>02</span><b>Academic Prominence</b><i aria-hidden="true">→</i></button>
+          <button id="priority-research-excellence" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="research-excellence"><span>03</span><b>Research Excellence</b><i aria-hidden="true">→</i></button>
+          <button id="priority-campus-culture" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="campus-culture"><span>04</span><b>Improvement of Campus Culture and Enhancement of JSU Brand</b><i aria-hidden="true">→</i></button>
+          <button id="priority-staff-excellence" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="staff-excellence"><span>05</span><b>Staff Excellence</b><i aria-hidden="true">→</i></button>
+        </div>
+        <article class="priority-panel" id="priority-panel" role="tabpanel" aria-labelledby="priority-student-success" tabindex="0" aria-live="polite">
+          <figure><img id="priority-image" src="doctoral-hooding.webp" alt="A graduate being hooded during commencement"><figcaption id="priority-caption">Student achievement at commencement · Jackson State University</figcaption></figure>
+          <div class="priority-content">
+            <p class="section-label" id="priority-label">Student Success</p>
+            <h3 id="priority-title">From preparation to professional momentum.</h3>
+            <p id="priority-summary">Students are testing their voices, building networks and entering professional environments that strengthen their confidence and direction.</p>
+            <div class="priority-metric"><strong id="priority-metric">29</strong><span id="priority-metric-label">public policy internship placements</span></div>
+            <ul id="priority-highlights"></ul>
+            <a class="priority-source" href="impact-report-2023-2026.pdf">Source: College of Liberal Arts Impact Report, Fall 2023–Spring 2026 <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
     </section>
 
     <section class="impact-dashboard" id="dashboard" aria-labelledby="dashboard-title">
@@ -100,34 +128,6 @@
             <div class="bar-row"><span>NFL Experienceship</span><i><b style="--bar:3.4%"></b></i><strong>1*</strong></div>
           </div>
           <p class="chart-note">*Whitley Smith was one of 32 students selected nationally. Each bar represents a separate opportunity and shows the number of participating JSU students.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="priority-section" id="priorities" aria-labelledby="priorities-title">
-      <header class="priority-heading reveal">
-        <p class="section-label">Advancing Jackson State’s strategic mission</p>
-        <h2 id="priorities-title">How the College advances JSU’s priorities.</h2>
-        <p>See how the College of Liberal Arts advances university priorities through student achievement, academic distinction, research, institutional culture and staff-led service.</p>
-      </header>
-      <div class="priority-shell">
-        <div class="priority-list" role="tablist" aria-label="Strategic priorities">
-          <button id="priority-student-success" role="tab" aria-selected="true" aria-controls="priority-panel" data-priority="student-success"><span>01</span><b>Student Success</b><i aria-hidden="true">→</i></button>
-          <button id="priority-academic-prominence" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="academic-prominence"><span>02</span><b>Academic Prominence</b><i aria-hidden="true">→</i></button>
-          <button id="priority-research-excellence" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="research-excellence"><span>03</span><b>Research Excellence</b><i aria-hidden="true">→</i></button>
-          <button id="priority-campus-culture" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="campus-culture"><span>04</span><b>Improvement of Campus Culture and Enhancement of JSU Brand</b><i aria-hidden="true">→</i></button>
-          <button id="priority-staff-excellence" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="staff-excellence"><span>05</span><b>Staff Excellence</b><i aria-hidden="true">→</i></button>
-        </div>
-        <article class="priority-panel" id="priority-panel" role="tabpanel" aria-labelledby="priority-student-success" tabindex="0" aria-live="polite">
-          <figure><img id="priority-image" src="doctoral-hooding.webp" alt="A graduate being hooded during commencement"><figcaption id="priority-caption">Student achievement at commencement · Jackson State University</figcaption></figure>
-          <div class="priority-content">
-            <p class="section-label" id="priority-label">Student Success</p>
-            <h3 id="priority-title">From preparation to professional momentum.</h3>
-            <p id="priority-summary">Students are testing their voices, building networks and entering professional environments that strengthen their confidence and direction.</p>
-            <div class="priority-metric"><strong id="priority-metric">29</strong><span id="priority-metric-label">public policy internship placements</span></div>
-            <ul id="priority-highlights"></ul>
-            <a class="priority-source" href="impact-report-2023-2026.pdf">Source: College of Liberal Arts Impact Report, Fall 2023–Spring 2026 <span aria-hidden="true">↗</span></a>
-          </div>
         </article>
       </div>
     </section>
