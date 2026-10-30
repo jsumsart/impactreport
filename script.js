@@ -61,17 +61,17 @@ const priorities = {
   },
   "staff-excellence": {
     label: "Staff Excellence",
-    title: "Leadership that extends the College’s reach.",
-    summary: "Faculty and staff are earning national recognition, building programs and shaping professional standards across disciplines.",
-    metric: "4 years",
-    metricLabel: "of consecutive Humanities Teachers of the Year",
-    image: "faculty-commencement.webp",
-    alt: "A College of Liberal Arts faculty member at commencement",
-    caption: "Faculty excellence at commencement · Jackson State University",
+    title: "The people and centers that make public impact possible.",
+    summary: "Staff-led centers turn expertise, grants and partnerships into prevention, professional access, archival stewardship, public programs and sustained community service.",
+    metric: "41,000+",
+    metricLabel: "students reached through center-led prevention outreach",
+    image: "community-public-service.png",
+    alt: "Interdisciplinary Alcohol and Drug Studies Center staff receiving a national public service award",
+    caption: "Center staff · Public Service Award for alcohol prevention and safe driving",
     highlights: [
-      "Art, Music and Theatre faculty earned Humanities Teacher of the Year honors from 2023 through 2026.",
-      "Rico D. Chapman and Kofi Barima received Fulbright awards that expanded global scholarly connections.",
-      "Gloria Billingsley became a 2026 National Academy of Public Administration Fellow and led national accreditation work."
+      "The Interdisciplinary Alcohol and Drug Studies Center secured more than $493,000 in 2025, while Director Nita Hilton received JSU’s Top Grant Award.",
+      "Margaret Walker Center staff advanced archive preservation and access through $450,000 in Mellon support and a $317,039 IMLS award.",
+      "Staff across the Margaret Walker, COFO, Bob Owens Pre-Law and Africana Digital Humanities centers expanded public programs, professional pathways and cultural access."
     ]
   }
 };
@@ -167,6 +167,24 @@ impactButtons.forEach((button, index) => {
     event.preventDefault();
     updateImpactView(impactButtons[next].dataset.impactView);
     impactButtons[next].focus();
+  });
+});
+
+const reportFilterButtons = [...document.querySelectorAll("[data-report-filter]")];
+const reportCards = [...document.querySelectorAll("[data-report-group]")];
+
+reportFilterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.reportFilter;
+    let visible = 0;
+    reportFilterButtons.forEach((entry) => entry.setAttribute("aria-pressed", String(entry === button)));
+    reportCards.forEach((card) => {
+      const show = filter === "all" || card.dataset.reportGroup === filter;
+      card.hidden = !show;
+      if (show) visible += 1;
+    });
+    const label = filter === "all" ? "all" : button.childNodes[0].textContent.trim();
+    document.querySelector("#filter-status").textContent = `Showing ${visible} ${label.toLowerCase()} report ${visible === 1 ? "story" : "stories"}.`;
   });
 });
 
