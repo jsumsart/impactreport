@@ -31,8 +31,8 @@
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span>Menu</span><i aria-hidden="true"></i></button>
     <nav id="primary-nav" aria-label="Primary navigation">
       <a href="#dashboard">Dashboard</a>
-      <a href="#report-explorer">Stories</a>
       <a href="#priorities">Strategic Priorities</a>
+      <a href="#report-explorer">Stories</a>
       <a href="#schools">Schools</a>
       <a class="nav-report" href="impact-report-2023-2026.pdf">View Full Report <span aria-hidden="true">↗</span></a>
     </nav>
@@ -57,7 +57,7 @@
     <section class="impact-dashboard" id="dashboard" aria-labelledby="dashboard-title">
       <header class="dashboard-heading reveal">
         <div><p class="section-label">Impact at a glance</p><h2 id="dashboard-title">The report<br>in numbers.</h2></div>
-        <p>Explore 24 documented measures across six lenses—from student pathways and creative achievement to research, investment and public reach.</p>
+        <p>Explore 24 measures of College impact—from student pathways and creative achievement to research, investment and public reach.</p>
       </header>
       <div class="dashboard-controls" role="tablist" aria-label="Impact statistics">
         <button id="impact-tab-snapshot" role="tab" aria-selected="true" aria-controls="impact-stats" data-impact-view="snapshot">College Footprint</button>
@@ -73,11 +73,11 @@
         <article><strong>8</strong><span>centers and affiliated special units</span></article>
         <article><strong>3</strong><span>academic years from Fall 2023 through Spring 2026</span></article>
       </div>
-      <p class="dashboard-note" id="dashboard-note">College structure is transcribed from the report’s overview of schools, departments, centers and affiliated units.</p>
+      <p class="dashboard-note" id="dashboard-note">This overview reflects the College’s three schools, academic departments, centers and affiliated units.</p>
       <a class="dashboard-source" href="impact-report-2023-2026.pdf">Source: College of Liberal Arts Impact Report, Fall 2023–Spring 2026 <span aria-hidden="true">↗</span></a>
       <div class="dashboard-charts" aria-label="Impact report charts">
         <article class="chart-panel reveal">
-          <header><div><p class="section-label">Documented support</p><h3>Grants &amp; investments</h3></div><p>Selected individual awards shown in their own context.</p></header>
+          <header><div><p class="section-label">Investing in impact</p><h3>Major grants &amp; investments</h3></div><p>Support for research, student opportunity, cultural preservation and public service.</p></header>
           <div class="bar-chart" role="img" aria-label="Selected grants and investments: health equity 1.5 million dollars; racial trauma research 509 thousand dollars; prevention outreach more than 493 thousand dollars; Margaret Walker Center 450 thousand dollars; archives and access 317 thousand dollars; pre-law pipeline 300 thousand dollars; campus improvements 170 thousand dollars.">
             <div class="bar-row"><span>Health equity</span><i><b style="--bar:100%"></b></i><strong>$1.5M</strong></div>
             <div class="bar-row"><span>Racial trauma research</span><i><b style="--bar:33.9%"></b></i><strong>$509K</strong></div>
@@ -87,10 +87,10 @@
             <div class="bar-row"><span>Pre-law pipeline</span><i><b style="--bar:20%"></b></i><strong>$300K</strong></div>
             <div class="bar-row"><span>Campus improvements</span><i><b style="--bar:11.3%"></b></i><strong>$170K</strong></div>
           </div>
-          <p class="chart-note">Awards span different periods, sources and purposes and are not presented as one fundraising total.</p>
+          <p class="chart-note">Because these awards support different initiatives and time periods, each is shown separately.</p>
         </article>
         <article class="chart-panel chart-panel-dark reveal">
-          <header><div><p class="section-label">Student opportunity</p><h3>Pathways in action</h3></div><p>Documented student cohorts and placements.</p></header>
+          <header><div><p class="section-label">Student opportunity</p><h3>Pathways in action</h3></div><p>Students expanding their experience through internships, conferences, scholarships and national programs.</p></header>
           <div class="bar-chart" role="img" aria-label="Student opportunities: 30 Jackson State theatre and speech conference participants; 29 public policy internships; 10 creative writing scholarship recipients; 5 creative residency participants; 3 national vocal audition qualifiers; and 1 Jackson State student selected for the NFL Experienceship from a national cohort of 32.">
             <div class="bar-row"><span>Theatre &amp; speech conference</span><i><b style="--bar:93.8%"></b></i><strong>30</strong></div>
             <div class="bar-row"><span>Public policy internships</span><i><b style="--bar:90.6%"></b></i><strong>29</strong></div>
@@ -99,7 +99,34 @@
             <div class="bar-row"><span>National vocal auditions</span><i><b style="--bar:9.4%"></b></i><strong>3</strong></div>
             <div class="bar-row"><span>NFL Experienceship</span><i><b style="--bar:3.4%"></b></i><strong>1*</strong></div>
           </div>
-          <p class="chart-note">*Whitley Smith was one of 32 students selected nationally. Each bar counts documented JSU participants in a distinct opportunity; the cohorts should not be combined.</p>
+          <p class="chart-note">*Whitley Smith was one of 32 students selected nationally. Each bar represents a separate opportunity and shows the number of participating JSU students.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="priority-section" id="priorities" aria-labelledby="priorities-title">
+      <header class="priority-heading reveal">
+        <p class="section-label">Advancing Jackson State’s strategic mission</p>
+        <h2 id="priorities-title">Five priorities.<br>One shared purpose.</h2>
+        <p>See how the College of Liberal Arts advances university priorities through student achievement, academic distinction, research, institutional culture and staff-led service.</p>
+      </header>
+      <div class="priority-shell">
+        <div class="priority-list" role="tablist" aria-label="Strategic priorities">
+          <button id="priority-student-success" role="tab" aria-selected="true" aria-controls="priority-panel" data-priority="student-success"><span>01</span><b>Student Success</b><i aria-hidden="true">→</i></button>
+          <button id="priority-academic-prominence" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="academic-prominence"><span>02</span><b>Academic Prominence</b><i aria-hidden="true">→</i></button>
+          <button id="priority-research-excellence" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="research-excellence"><span>03</span><b>Research Excellence</b><i aria-hidden="true">→</i></button>
+          <button id="priority-campus-culture" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="campus-culture"><span>04</span><b>Improvement of Campus Culture and Enhancement of JSU Brand</b><i aria-hidden="true">→</i></button>
+          <button id="priority-staff-excellence" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="staff-excellence"><span>05</span><b>Staff Excellence</b><i aria-hidden="true">→</i></button>
+        </div>
+        <article class="priority-panel" id="priority-panel" role="tabpanel" aria-labelledby="priority-student-success" tabindex="0" aria-live="polite">
+          <figure><img id="priority-image" src="doctoral-hooding.webp" alt="A graduate being hooded during commencement"><figcaption id="priority-caption">Student achievement at commencement · Jackson State University</figcaption></figure>
+          <div class="priority-content">
+            <p class="section-label" id="priority-label">Student Success</p>
+            <h3 id="priority-title">From preparation to professional momentum.</h3>
+            <p id="priority-summary">Students are testing their voices, building networks and entering professional environments where classroom learning becomes confidence and direction.</p>
+            <div class="priority-metric"><strong id="priority-metric">29</strong><span id="priority-metric-label">public policy internship placements</span></div>
+            <ul id="priority-highlights"></ul>
+          </div>
         </article>
       </div>
     </section>
@@ -141,7 +168,7 @@
       <header class="section-intro reveal">
         <p class="section-label">Inside the impact report</p>
         <h2 id="report-explorer-title">Explore the breadth<br>of the work.</h2>
-        <p>The College’s impact lives across departments, centers, stages, archives, professional pathways and community partnerships. Filter the stories, then open any card for report-backed highlights.</p>
+        <p>The College’s impact lives across departments, centers, stages, archives, professional pathways and community partnerships. Choose an area, then open any story to discover more.</p>
       </header>
       <div class="report-filters" aria-label="Filter report stories">
         <button type="button" aria-pressed="true" data-report-filter="all">All stories <span>16</span></button>
@@ -150,7 +177,7 @@
         <button type="button" aria-pressed="false" data-report-filter="social-sciences">Social &amp; Behavioral Sciences <span>4</span></button>
         <button type="button" aria-pressed="false" data-report-filter="centers">Centers &amp; Infrastructure <span>4</span></button>
       </div>
-      <p class="filter-status" id="filter-status" aria-live="polite">Showing all 16 report stories.</p>
+      <p class="filter-status" id="filter-status" aria-live="polite">Showing all 16 stories.</p>
       <div class="report-grid">
         <article class="report-card" data-report-group="communications"><p class="card-kicker">Journalism &amp; Media Studies · Student Success</p><strong>1 of 32</strong><h3>From the classroom to industry</h3><p>Students entered national media, sports and entertainment spaces while building professional confidence.</p><details><summary>View highlights</summary><ul><li>Whitley Smith was one of 32 students selected nationally from more than 100 NFL Experienceship applicants.</li><li>Michael A. White Jr. earned a $10,000 BeyGOOD Foundation Scholarship.</li><li>Malik Alexander mentored at The School of The New York Times, while THEE Industry Access Series brought Lionsgate leadership to campus.</li></ul></details></article>
         <article class="report-card" data-report-group="communications"><p class="card-kicker">English &amp; Modern Languages · Student Success</p><strong>1877</strong><h3>Writers building literary community</h3><p>Student-led publishing, national presentations and graduate pathways created a visible culture of writing.</p><details><summary>View highlights</summary><ul><li>Graduate students launched the Jackson State Writers Alliance and Thee 1877 Literary Magazine.</li><li>Student essays appeared in the Callaloo Phillis Wheatley Poetry Festival issue.</li><li>Students presented at CLA, Sigma Tau Delta, the Gwendolyn Brooks conference and the Mississippi Philological Association.</li></ul></details></article>
@@ -178,38 +205,11 @@
       </div>
     </section>
 
-    <section class="priority-section" id="priorities" aria-labelledby="priorities-title">
-      <header class="priority-heading reveal">
-        <p class="section-label">Aligned with JSU’s strategic plan</p>
-        <h2 id="priorities-title">Impact through<br>five priorities.</h2>
-        <p>Select a priority to explore the people, outcomes and investments carrying the College forward.</p>
-      </header>
-      <div class="priority-shell">
-        <div class="priority-list" role="tablist" aria-label="Strategic priorities">
-          <button id="priority-student-success" role="tab" aria-selected="true" aria-controls="priority-panel" data-priority="student-success"><span>01</span><b>Student Success</b><i aria-hidden="true">→</i></button>
-          <button id="priority-academic-prominence" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="academic-prominence"><span>02</span><b>Academic Prominence</b><i aria-hidden="true">→</i></button>
-          <button id="priority-research-excellence" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="research-excellence"><span>03</span><b>Research Excellence</b><i aria-hidden="true">→</i></button>
-          <button id="priority-campus-culture" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="campus-culture"><span>04</span><b>Improvement of Campus Culture and Enhancement of JSU Brand</b><i aria-hidden="true">→</i></button>
-          <button id="priority-staff-excellence" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="staff-excellence"><span>05</span><b>Staff Excellence</b><i aria-hidden="true">→</i></button>
-        </div>
-        <article class="priority-panel" id="priority-panel" role="tabpanel" aria-labelledby="priority-student-success" tabindex="0" aria-live="polite">
-          <figure><img id="priority-image" src="doctoral-hooding.webp" alt="A graduate being hooded during commencement"><figcaption id="priority-caption">Student achievement at commencement · Jackson State University</figcaption></figure>
-          <div class="priority-content">
-            <p class="section-label" id="priority-label">Student Success</p>
-            <h3 id="priority-title">From preparation to professional momentum.</h3>
-            <p id="priority-summary">Students are testing their voices, building networks and entering professional environments where classroom learning becomes confidence and direction.</p>
-            <div class="priority-metric"><strong id="priority-metric">29</strong><span id="priority-metric-label">public policy internship placements</span></div>
-            <ul id="priority-highlights"></ul>
-          </div>
-        </article>
-      </div>
-    </section>
-
     <section class="investments" aria-labelledby="investments-title">
       <header class="section-intro reveal">
         <p class="section-label">Selected investments</p>
         <h2 id="investments-title">Support with<br>lasting purpose.</h2>
-        <p>These individual awards expand research, student pathways, cultural preservation and community engagement. Each is presented in its own context.</p>
+        <p>These awards expand research, student pathways, cultural preservation and community engagement—creating benefits that extend well beyond a single project.</p>
       </header>
       <div class="investment-list">
         <article class="reveal"><span>Health equity research</span><strong>$1.5M</strong><p>Community-engaged research supported by the Robert Wood Johnson Foundation.</p></article>

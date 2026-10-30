@@ -20,9 +20,9 @@ const priorities = {
     summary: "Convenings, performances and public programs position Jackson State as a destination for Black intellectual and creative life.",
     metric: "250+",
     metricLabel: "College Language Association participants",
-    image: "student-arts-conference.png",
-    alt: "Jackson State theatre and speech students gathered at a national conference",
-    caption: "Theatre and speech arts students · College impact report",
+    image: "sonic-boom-report.png",
+    alt: "The Sonic Boom of the South performing before a large audience",
+    caption: "The Sonic Boom of the South · Jackson State University",
     highlights: [
       "JSU hosted the 84th College Language Association Convention for scholars, writers, students and educators.",
       "The Sonic Boom performed at Super Bowl LVIII, the Rose Parade and the National Folk Festival.",
@@ -37,7 +37,7 @@ const priorities = {
     metricLabel: "health-equity research project",
     image: "archives-research.png",
     alt: "A researcher reviewing archival materials at the Margaret Walker Center",
-    caption: "Archives, memory and public scholarship · College impact report",
+    caption: "Archives, memory and public scholarship · Margaret Walker Center",
     highlights: [
       "A Robert Wood Johnson Foundation-supported project advances health-equity research and community engagement.",
       "A $509,000 National Science Foundation grant supports research on racial trauma and political behavior.",
@@ -84,16 +84,16 @@ const impactViews = {
       ["8", "centers and affiliated special units"],
       ["3", "academic years from Fall 2023 through Spring 2026"]
     ],
-    note: "College structure is transcribed from the report’s overview of schools, departments, centers and affiliated units."
+    note: "This overview reflects the College’s three schools, academic departments, centers and affiliated units."
   },
   students: {
     stats: [
-      ["32", "students chosen nationally for the 2024 NFL Experienceship"],
+      ["1 of 32", "national NFL Experienceship selections was JSU student Whitley Smith"],
       ["29", "public policy internship placements from Summer 2023 through Spring 2025"],
       ["30", "theatre and speech students who represented JSU at a national conference"],
       ["10", "creative writing students awarded James Patterson Foundation scholarships"]
     ],
-    note: "Each figure represents a distinct student pathway or cohort documented in the report."
+    note: "Each figure highlights a distinct way JSU students expanded their academic and professional experience."
   },
   creativity: {
     stats: [
@@ -102,7 +102,7 @@ const impactViews = {
       ["7", "HBCUs participating in the Denyce Graves Foundation Shared Voices program"],
       ["100+", "years of JSU history presented through the Getty Images collaboration"]
     ],
-    note: "These measures reflect separate literary, musical, visual and cultural initiatives documented in the report."
+    note: "Together, these measures show the reach of JSU’s literary, musical, visual and cultural programs."
   },
   research: {
     stats: [
@@ -111,7 +111,7 @@ const impactViews = {
       ["$509K", "National Science Foundation support for racial-trauma research"],
       ["$493K+", "secured in 2025 for prevention and driver-education initiatives"]
     ],
-    note: "Research and outreach figures describe different projects, periods and purposes and should be read independently."
+    note: "These initiatives bring research, education and public service together to strengthen communities."
   },
   funding: {
     stats: [
@@ -120,7 +120,7 @@ const impactViews = {
       ["$300K", "AccessLex support for the Bob Owens Pre-Law Center Pipeline Program"],
       ["$170K", "triple Home Depot Retool Your School grant package"]
     ],
-    note: "Awards span different grant periods, sources and purposes. They are presented individually rather than as a fundraising total."
+    note: "Each award supports a distinct initiative and time period, so the investments are presented separately."
   },
   recognition: {
     stats: [
@@ -129,7 +129,7 @@ const impactViews = {
       ["2", "national officer positions earned by JSU theatre and speech students"],
       ["1st", "HBCU student to win Mississippi’s senior MTNA strings division"]
     ],
-    note: "Recognition figures represent distinct faculty and student achievements documented across the report period."
+    note: "These honors recognize the achievements of JSU students and faculty across the three-year reporting period."
   }
 };
 
@@ -183,8 +183,10 @@ reportFilterButtons.forEach((button) => {
       card.hidden = !show;
       if (show) visible += 1;
     });
-    const label = filter === "all" ? "all" : button.childNodes[0].textContent.trim();
-    document.querySelector("#filter-status").textContent = `Showing ${visible} ${label.toLowerCase()} report ${visible === 1 ? "story" : "stories"}.`;
+    const status = filter === "all"
+      ? `Showing all ${visible} stories.`
+      : `Showing ${visible} ${button.childNodes[0].textContent.trim().toLowerCase()} ${visible === 1 ? "story" : "stories"}.`;
+    document.querySelector("#filter-status").textContent = status;
   });
 });
 
