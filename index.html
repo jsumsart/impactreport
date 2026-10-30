@@ -3,94 +3,164 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>The College of Culture | JSU College of Liberal Arts</title>
-  <meta name="description" content="Explore the 2023–2026 impact of Jackson State University’s College of Liberal Arts.">
-  <meta property="og:title" content="The College of Culture">
-  <meta property="og:description" content="JSU College of Liberal Arts Impact Report 2023–2026">
+  <title>A College in Motion | JSU College of Liberal Arts</title>
+  <meta name="description" content="Explore the people, scholarship, creativity and public impact of Jackson State University’s College of Liberal Arts, Fall 2023–Spring 2026.">
+  <meta property="og:title" content="A College in Motion">
+  <meta property="og:description" content="Jackson State University College of Liberal Arts Impact Report, Fall 2023–Spring 2026.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jsumsart.github.io/impactreport/">
-  <meta property="og:image" content="https://jsumsart.github.io/impactreport/report-cover.jpg">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:card" content="summary">
   <link rel="canonical" href="https://jsumsart.github.io/impactreport/">
   <link rel="icon" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<a class="skip-link" href="#priorities">Skip to strategic priorities</a>
-<main>
-  <header class="topbar">
-    <a class="brand" href="#top" aria-label="Jackson State University College of Liberal Arts"><img src="jsu-cola-logo-white.png" alt="Jackson State University College of Liberal Arts"></a>
-    <nav><a href="#priorities">Priorities</a><a href="#investment">Investment</a><a href="#schools">Schools</a><a class="report-link" href="#priorities">Explore report <span>↓</span></a></nav>
+  <a class="skip-link" href="#story">Skip to the story</a>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Jackson State University College of Liberal Arts home">
+      <img src="jsu-cola-logo-white.png" alt="Jackson State University College of Liberal Arts">
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span>Menu</span><i aria-hidden="true"></i></button>
+    <nav id="primary-nav" aria-label="Primary navigation">
+      <a href="#story">Our Story</a>
+      <a href="#priorities">Strategic Priorities</a>
+      <a href="#schools">Schools</a>
+      <a class="nav-report" href="impact-report-2023-2026.pdf">View Full Report <span aria-hidden="true">↗</span></a>
+    </nav>
   </header>
-  <section class="hero" id="top">
-    <div class="hero-copy"><p class="eyebrow">Fall 2023 — Spring 2026</p><h1>The College<br>of <em>Culture.</em></h1><p class="dek">A living portrait of scholarship, creativity, leadership and public purpose across Jackson State University’s College of Liberal Arts.</p><a href="#priorities" class="primary-button">Explore the impact <span>↓</span></a></div>
-    <div class="hero-visual"><img src="report-cover.jpg" alt="Ayer Hall on the Jackson State University campus" fetchpriority="high"><div class="hero-stat"><strong>$4.1M+</strong><span>featured funding<br>identified in the report</span></div><p class="vertical-type">IMPACT REPORT · 2023—2026</p></div>
-  </section>
-  <section class="marquee"><div>STUDENT SUCCESS <i>✦</i> ACADEMIC PROMINENCE <i>✦</i> RESEARCH EXCELLENCE <i>✦</i> CAMPUS CULTURE <i>✦</i> STAFF EXCELLENCE <i>✦</i></div></section>
-  <section class="priorities" id="priorities">
-    <div class="priorities-intro"><div><p class="eyebrow">Aligned with JSU’s strategic plan</p><h2>Five priorities.<br><em>One shared impact.</em></h2></div><p>Select a priority to follow the people, investments and achievements moving the College forward.</p></div>
-    <div class="priority-tabs" role="tablist" aria-label="JSU strategic priorities">
-      <button role="tab" id="priority-tab-0" aria-controls="priority-panel" aria-selected="true" tabindex="0" data-priority="0"><span>01</span><b>Student Success</b></button>
-      <button role="tab" id="priority-tab-1" aria-controls="priority-panel" aria-selected="false" tabindex="-1" data-priority="1"><span>02</span><b>Academic Prominence</b></button>
-      <button role="tab" id="priority-tab-2" aria-controls="priority-panel" aria-selected="false" tabindex="-1" data-priority="2"><span>03</span><b>Research Excellence</b></button>
-      <button role="tab" id="priority-tab-3" aria-controls="priority-panel" aria-selected="false" tabindex="-1" data-priority="3"><span>04</span><b>Campus Culture + JSU Brand</b></button>
-      <button role="tab" id="priority-tab-4" aria-controls="priority-panel" aria-selected="false" tabindex="-1" data-priority="4"><span>05</span><b>Staff Excellence</b></button>
-    </div>
-    <div class="priority-story" id="priority-panel" role="tabpanel" aria-labelledby="priority-tab-0" tabindex="0">
-      <figure><img id="priority-image" src="communications-student.jpg" alt="Whitley Smith seated in a JSU stadium suite"><figcaption id="priority-credit">Whitley Smith · College impact report</figcaption></figure>
-      <div class="priority-story-copy">
-        <div class="priority-progress"><span id="priority-count">01 / 05</span><i aria-hidden="true"></i></div>
-        <p class="eyebrow" id="priority-kicker">Student Success</p>
-        <h3 id="priority-title">From opportunity to professional momentum.</h3>
-        <p class="priority-lede" id="priority-lede"></p>
-        <div class="priority-stat"><strong id="priority-stat">29</strong><span id="priority-stat-label">public policy internship placements</span></div>
-        <ul id="priority-highlights"></ul>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="overline">College of Liberal Arts Impact Report <span>Fall 2023–Spring 2026</span></p>
+        <h1 id="hero-title">A College<br><em>in Motion.</em></h1>
+        <p class="hero-dek">Where creativity becomes public presence, scholarship becomes community engagement, and learning becomes preparation for lives of purpose.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#story">Explore the stories <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="impact-report-2023-2026.pdf">View the full report <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="impact-section" id="impact">
-    <div class="section-heading"><div><p class="eyebrow">Impact at a glance</p><h2>Numbers tell part<br>of the story.</h2></div><p>Behind every figure is a student finding a pathway, a faculty member advancing knowledge, or a partnership serving Mississippi and beyond.</p></div>
-    <div class="stat-grid">
-      <article class="stat-card card-1"><span class="card-tag">Research Excellence</span><strong>41,000+</strong><p>students reached through prevention and public-safety outreach</p><span class="arrow">↗</span></article>
-      <article class="stat-card card-2"><span class="card-tag">Academic Prominence</span><strong>250+</strong><p>participants welcomed to the College Language Association Convention</p><span class="arrow">↗</span></article>
-      <article class="stat-card card-3"><span class="card-tag">Student Success</span><strong>30</strong><p>students represented JSU at the national dramatic and speech arts conference</p><span class="arrow">↗</span></article>
-      <article class="stat-card card-4"><span class="card-tag">Campus Culture + Brand</span><strong>100+</strong><p>years of JSU history showcased through the Getty Images collaboration</p><span class="arrow">↗</span></article>
-      <article class="stat-card card-5"><span class="card-tag">Staff Excellence</span><strong>People</strong><p>staff and affiliated units recognized for service and sustained commitment to the College’s public mission</p><span class="arrow">↗</span></article>
-    </div>
-  </section>
-  <section class="investment-section" id="investment">
-    <div class="section-heading light"><div><p class="eyebrow">Fueling what comes next</p><h2>Investment<br>with purpose.</h2></div><div class="total"><span>Funding identified in featured stories</span><strong>$4.1M+</strong><small>Eleven separately reported investments</small></div></div>
-    <div class="filter-row" role="group" aria-label="Filter investments"><button class="active" data-filter="All" aria-pressed="true">All</button><button data-filter="Student Success" aria-pressed="false">Student Success</button><button data-filter="Academic Prominence" aria-pressed="false">Academic Prominence</button><button data-filter="Research Excellence" aria-pressed="false">Research Excellence</button><button data-filter="Campus Culture + Brand" aria-pressed="false">Campus Culture + Brand</button></div>
-    <div class="bars" id="bars" aria-live="polite"></div><p class="source-note">These figures are transcribed from featured stories in the 2023–2026 impact report. They are not a comprehensive audited total and may span different award periods.</p>
-  </section>
-  <section class="feature-story"><div class="feature-image"><img src="sonic-boom.jpg" alt="Members of the Sonic Boom of the South in JSU blue uniforms" loading="lazy"></div><div class="feature-copy"><p class="eyebrow">Creativity on the global stage</p><h2>Culture that<br><em>moves.</em></h2><p>From Super Bowl LVIII to the Parade of Roses, the Sonic Boom of the South carries JSU’s identity into national arenas—grounding visibility in musical discipline, precision and tradition.</p><p class="feature-callout">The Sonic Boom carries Jackson State’s identity into national arenas while grounding that visibility in musical discipline, precision, and tradition.</p></div></section>
-  <section class="schools-section" id="schools">
-    <div class="section-heading"><div><p class="eyebrow">One college, many pathways</p><h2>Explore the<br>three schools.</h2></div><p>Choose a school to see how distinct disciplines contribute to a shared mission of cultural leadership and public impact.</p></div>
-    <div class="school-browser"><div class="school-tabs" role="tablist" aria-label="Schools in the College of Liberal Arts"><button role="tab" id="school-tab-0" aria-controls="school-panel" aria-selected="true" tabindex="0" data-school="0"><span>01</span>Communications<b aria-hidden="true">→</b></button><button role="tab" id="school-tab-1" aria-controls="school-panel" aria-selected="false" tabindex="-1" data-school="1"><span>02</span>Fine &amp; Performing Arts<b aria-hidden="true">→</b></button><button role="tab" id="school-tab-2" aria-controls="school-panel" aria-selected="false" tabindex="-1" data-school="2"><span>03</span>Social &amp; Behavioral Sciences<b aria-hidden="true">→</b></button></div><div class="school-panel" id="school-panel" role="tabpanel" aria-labelledby="school-tab-0" tabindex="0"><div class="school-panel-copy"><p id="school-desc"></p><strong id="school-stat"></strong><span id="school-note"></span></div><figure><img id="school-image" src="communications-student.jpg" alt="Whitley Smith seated in a JSU stadium suite"><figcaption id="school-credit"></figcaption></figure></div></div>
-  </section>
-  <section class="brand-signoff">
-    <img src="jsu-cola-logo-navy.png" alt="Jackson State University College of Liberal Arts">
-    <div><p class="eyebrow">Where scholarship meets creativity</p><p>Explore the departments, programs and people shaping the College’s next chapter.</p><a href="https://www.jsums.edu/liberalarts/" target="_blank" rel="noopener">Visit the College of Liberal Arts <span aria-hidden="true">↗</span></a></div>
-  </section>
-  <footer><div><img class="footer-logo" src="jsu-cola-logo-white.png" alt="Jackson State University College of Liberal Arts"></div><p>1400 John R. Lynch Street<br>Jackson, Mississippi 39217</p><p class="image-sources">Photography from the impact report and the <a href="https://www.jsums.edu/liberalarts/" target="_blank" rel="noopener">official JSU College of Liberal Arts site</a>.</p><a href="#top">Back to top ↑</a></footer>
-</main>
-<script>
-const investments=[
-{label:'Health equity research',value:1500000,group:'Research Excellence',color:'#69c8eb'},{label:'Racial trauma research',value:509000,group:'Research Excellence',color:'#69c8eb'},{label:'Prevention & driver education',value:493000,group:'Research Excellence',color:'#69c8eb'},{label:'Margaret Walker Center sustainability',value:450000,group:'Campus Culture + Brand',color:'#b7d99b'},{label:'Archive preservation & access',value:317039,group:'Campus Culture + Brand',color:'#b7d99b'},{label:'Pre-law pipeline',value:300000,group:'Student Success',color:'#de8fb1'},{label:'Historic space improvements',value:170000,group:'Campus Culture + Brand',color:'#b7d99b'},{label:'HBCU opera & musical theatre',value:145000,group:'Academic Prominence',color:'#c3a7e7'},{label:'Criminal justice endowed scholarship',value:100000,group:'Student Success',color:'#de8fb1'},{label:'Creative writing intensive',value:83206,group:'Academic Prominence',color:'#c3a7e7'},{label:'Patterson writing scholarships',value:75000,group:'Student Success',color:'#de8fb1'}];
-function money(v){return v>=1000000?'$'+(v/1000000).toFixed(1)+'M':'$'+Math.round(v/1000)+'K'}
-function renderBars(filter='All'){const items=filter==='All'?investments:investments.filter(i=>i.group===filter),max=Math.max(...items.map(i=>i.value));document.querySelector('#bars').innerHTML=`<p class="filter-summary">Showing ${items.length} ${items.length===1?'investment':'investments'}</p>`+items.map(i=>`<div class="bar-row"><div class="bar-label"><span>${i.label}</span><b>${money(i.value)}</b></div><div class="bar-track" aria-hidden="true"><div class="bar-fill" style="width:${Math.max(i.value/max*100,4)}%;background:${i.color}"></div></div></div>`).join('')}
-document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>{x.classList.remove('active');x.setAttribute('aria-pressed','false')});b.classList.add('active');b.setAttribute('aria-pressed','true');renderBars(b.dataset.filter)}));renderBars();
-const priorities=[
-{kicker:'Student Success',title:'From opportunity to professional momentum.',lede:'Students are moving beyond the classroom into internships, national conferences, professional media environments and graduate pathways.',stat:'29',statLabel:'public policy internship placements',highlights:['30 theatre and speech students earned more than five national awards and two national officer positions.','Whitley Smith was one of 32 students selected from more than 100 applicants for the NFL Experienceship.','Creative writers presented at national conferences, published in major outlets and entered competitive graduate programs.'],image:'communications-student.jpg',alt:'Whitley Smith seated in a JSU stadium suite',credit:'Whitley Smith · College impact report',color:'#de8fb1'},
-{kicker:'Academic Prominence',title:'A national stage for scholarship and creativity.',lede:'Convenings, performances and public programs position Jackson State as a destination for Black intellectual and creative life.',stat:'250+',statLabel:'College Language Association convention participants',highlights:['The College hosted the 84th College Language Association Convention for scholars, writers and educators.','The Sonic Boom performed at Super Bowl LVIII, the Parade of Roses and the National Folk Festival.','Three vocal students qualified for the National NATS Student Auditions after regional honors.'],image:'sonic-boom.jpg',alt:'Members of the Sonic Boom of the South in JSU blue uniforms',credit:'Sonic Boom of the South · College impact report',color:'#c3a7e7'},
-{kicker:'Research Excellence',title:'Research translated into healthier communities.',lede:'Faculty expertise, external investment and sustained outreach are addressing racial trauma, health disparities and public safety across Mississippi.',stat:'$1.5M',statLabel:'health-equity research project',highlights:['A Robert Wood Johnson Foundation-supported project advances health-equity research and community engagement.','A $509,000 NSF grant supports research on racial trauma and political behavior.','Prevention and driver-education outreach reached more than 41,000 students and secured more than $493,000 in 2025.'],image:'research-leader.jpg',alt:'Dawn Bishop McLin, health-equity research project director',credit:'Dawn Bishop McLin · College impact report',color:'#69c8eb'},
-{kicker:'Campus Culture + JSU Brand',title:'Preserving memory while building public presence.',lede:'Archives, historic spaces, exhibitions and national partnerships make JSU’s cultural legacy visible on campus and far beyond it.',stat:'$170K',statLabel:'for historic campus and community spaces',highlights:['A Getty Images collaboration showcased more than 100 years of Jackson State history.','Margaret Walker Center materials appeared in the Smithsonian’s At the Vanguard exhibition.','Three Home Depot grants supported campus improvement, an innovation lounge and COFO beautification.'],image:'report-cover.jpg',alt:'Ayer Hall on the Jackson State University campus',credit:'Ayer Hall · College impact report',color:'#b7d99b'},
-{kicker:'Staff Excellence',title:'Leadership that expands the College’s reach.',lede:'Faculty and staff are earning national recognition, building programs and shaping professional standards across disciplines.',stat:'4 years',statLabel:'of consecutive Humanities Teachers of the Year',highlights:['Art, Music and Theatre faculty earned Humanities Teacher of the Year honors from 2023 through 2026.','Rico D. Chapman and Kofi Barima received Fulbright awards that expanded global scholarly connections.','Gloria Billingsley became a 2026 National Academy of Public Administration Fellow and led national accreditation work.'],image:'official-cla-01.jpg',alt:'Photography instruction projected in a JSU classroom',credit:'Official JSU College of Liberal Arts photography',color:'#f4c55c'}
-];
-function showPriority(n,focus=false){const p=priorities[n],tabs=[...document.querySelectorAll('[data-priority]')],panel=document.querySelector('#priority-panel'),image=document.querySelector('#priority-image');document.querySelector('#priority-count').textContent=`0${n+1} / 05`;document.querySelector('#priority-kicker').textContent=p.kicker;document.querySelector('#priority-title').textContent=p.title;document.querySelector('#priority-lede').textContent=p.lede;document.querySelector('#priority-stat').textContent=p.stat;document.querySelector('#priority-stat-label').textContent=p.statLabel;document.querySelector('#priority-highlights').innerHTML=p.highlights.map(x=>`<li>${x}</li>`).join('');image.src=p.image;image.alt=p.alt;document.querySelector('#priority-credit').textContent=p.credit;panel.style.setProperty('--priority-color',p.color);panel.style.setProperty('--priority-progress',`${(n+1)*20}%`);panel.setAttribute('aria-labelledby',`priority-tab-${n}`);tabs.forEach((b,i)=>{b.setAttribute('aria-selected',i===n);b.tabIndex=i===n?0:-1;b.style.setProperty('--priority-color',priorities[i].color)});if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)panel.animate([{opacity:.55,transform:'translateY(8px)'},{opacity:1,transform:'translateY(0)'}],{duration:280,easing:'ease-out'});if(focus)tabs[n].focus()}
-const priorityTabs=[...document.querySelectorAll('[data-priority]')];priorityTabs.forEach(b=>{b.addEventListener('click',()=>showPriority(+b.dataset.priority));b.addEventListener('keydown',e=>{const n=+b.dataset.priority;if(e.key==='ArrowRight'||e.key==='ArrowDown'){e.preventDefault();showPriority((n+1)%priorityTabs.length,true)}if(e.key==='ArrowLeft'||e.key==='ArrowUp'){e.preventDefault();showPriority((n-1+priorityTabs.length)%priorityTabs.length,true)}if(e.key==='Home'){e.preventDefault();showPriority(0,true)}if(e.key==='End'){e.preventDefault();showPriority(priorityTabs.length-1,true)}})});showPriority(0);
-const schools=[{desc:'Writing, language, media, storytelling and public voice',stat:'250+',note:'national convention participants',image:'communications-student.jpg',alt:'Whitley Smith seated in a JSU stadium suite',credit:'Whitley Smith · College impact report'},{desc:'Art, music, theatre, design and performance',stat:'7',note:'HBCUs in Shared Voices',image:'official-cla-01.jpg',alt:'Photography instruction projected in a JSU classroom',credit:'Official JSU College of Liberal Arts photography'},{desc:'Policy, justice, psychology, history and public service',stat:'41K+',note:'students reached statewide',image:'research-leader.jpg',alt:'Dawn Bishop McLin, health-equity research project director',credit:'Dawn Bishop McLin · College impact report'}];
-function showSchool(n,focus=false){const s=schools[n],tabs=[...document.querySelectorAll('[data-school]')],panel=document.querySelector('#school-panel'),image=document.querySelector('#school-image');document.querySelector('#school-desc').textContent=s.desc;document.querySelector('#school-stat').textContent=s.stat;document.querySelector('#school-note').textContent=s.note;image.src=s.image;image.alt=s.alt;document.querySelector('#school-credit').textContent=s.credit;tabs.forEach((b,i)=>{b.setAttribute('aria-selected',i===n);b.tabIndex=i===n?0:-1});panel.setAttribute('aria-labelledby',`school-tab-${n}`);if(focus)tabs[n].focus()}
-const tabs=[...document.querySelectorAll('[data-school]')];tabs.forEach(b=>{b.addEventListener('click',()=>showSchool(+b.dataset.school));b.addEventListener('keydown',e=>{const n=+b.dataset.school;if(e.key==='ArrowDown'||e.key==='ArrowRight'){e.preventDefault();showSchool((n+1)%tabs.length,true)}if(e.key==='ArrowUp'||e.key==='ArrowLeft'){e.preventDefault();showSchool((n-1+tabs.length)%tabs.length,true)}if(e.key==='Home'){e.preventDefault();showSchool(0,true)}if(e.key==='End'){e.preventDefault();showSchool(tabs.length-1,true)}})});showSchool(0);
-</script>
-</body></html>
+      <div class="hero-images" aria-label="Students, performers and researchers of the College of Liberal Arts">
+        <figure class="hero-image hero-image-main"><img src="student-whitley-smith.png" alt="Journalism and Media Studies student Whitley Smith seated in a JSU stadium suite"></figure>
+        <figure class="hero-image hero-image-top"><img src="sonic-boom-report.png" alt="The Sonic Boom of the South performing before a crowd"></figure>
+        <figure class="hero-image hero-image-bottom"><img src="research-leader.jpg" alt="Professor Dawn Bishop McLin, a leader in health-equity research"></figure>
+      </div>
+      <div class="hero-principles" aria-label="Report themes"><span>Scholarship.</span><span>Creativity.</span><span>Leadership.</span><span>Public Purpose.</span></div>
+    </section>
+
+    <section class="dean-section" id="story" aria-labelledby="dean-title">
+      <div class="dean-portrait reveal"><img src="dean-rico-chapman.jpg" alt="Rico D. Chapman, Dean of the College of Liberal Arts"><span>Rico D. Chapman<br>Dean, College of Liberal Arts</span></div>
+      <div class="dean-copy reveal">
+        <p class="section-label">From the Dean</p>
+        <h2 id="dean-title">Momentum, purpose<br>and possibility.</h2>
+        <blockquote>“This issue celebrates a College in motion: a College where creativity becomes public presence, scholarship becomes community engagement, and learning becomes preparation for lives of purpose.”</blockquote>
+        <p>Across three academic years, students entered national opportunities, faculty advanced research and creative practice, and the College extended its expertise into communities across Mississippi and beyond.</p>
+      </div>
+    </section>
+
+    <section class="chapters" aria-labelledby="chapters-title">
+      <header class="section-intro reveal">
+        <p class="section-label">The story of our impact</p>
+        <h2 id="chapters-title">Liberal arts learning<br>made visible.</h2>
+        <p>Achievement is more than a list of honors. It is what happens when knowledge, creativity and service move from the classroom into public life.</p>
+      </header>
+
+      <article class="chapter chapter-wide reveal">
+        <figure><img src="student-whitley-smith.png" alt="Whitley Smith in a professional sports media setting"></figure>
+        <div class="chapter-copy"><span class="chapter-number">01</span><p class="section-label">Learning becomes opportunity</p><h3>Students step into the rooms where their futures take shape.</h3><p>From newsrooms and stadiums to policy offices and national conferences, College of Liberal Arts students are translating study into professional confidence.</p><div class="chapter-proof"><strong>32</strong><span>students selected nationally for the 2024 NFL Experienceship—Whitley Smith among them, from more than 100 applicants.</span></div><ul><li>29 Public Policy and Administration internship placements</li><li>30 theatre and speech students at a national conference</li></ul></div>
+      </article>
+
+      <article class="chapter chapter-reverse reveal">
+        <figure><img src="sonic-boom-report.png" alt="The Sonic Boom of the South performing"></figure>
+        <div class="chapter-copy"><span class="chapter-number">02</span><p class="section-label">Creativity becomes public presence</p><h3>JSU culture moves across stages, cities and generations.</h3><p>Artists, musicians, writers and performers carry the College’s creative identity into national arenas while building a public record of Black cultural expression.</p><div class="chapter-proof"><strong>250+</strong><span>scholars, writers, students and educators convened at JSU for the College Language Association.</span></div><ul><li>Sonic Boom appearances included Super Bowl LVIII and the Rose Parade</li><li>Student and faculty work reached galleries, festivals and national auditions</li></ul></div>
+      </article>
+
+      <article class="chapter chapter-wide reveal">
+        <figure><img src="community-public-service.png" alt="JSU representatives receiving a national public service award"></figure>
+        <div class="chapter-copy"><span class="chapter-number">03</span><p class="section-label">Scholarship becomes community impact</p><h3>Research serves people, policy and the public good.</h3><p>Faculty-led work connects health equity, racial trauma, public safety, archives and policy to the lives of communities throughout Mississippi and beyond.</p><div class="chapter-proof"><strong>41,000+</strong><span>students reached through prevention, driver education and community programming.</span></div><ul><li>$1.5 million supports health-equity research and engagement</li><li>$509,000 NSF award advances research on racial trauma</li></ul></div>
+      </article>
+    </section>
+
+    <section class="priority-section" id="priorities" aria-labelledby="priorities-title">
+      <header class="priority-heading reveal">
+        <p class="section-label">Aligned with JSU’s strategic plan</p>
+        <h2 id="priorities-title">Impact through<br>five priorities.</h2>
+        <p>Select a priority to explore the people, outcomes and investments carrying the College forward.</p>
+      </header>
+      <div class="priority-shell">
+        <div class="priority-list" role="tablist" aria-label="Strategic priorities">
+          <button id="priority-student-success" role="tab" aria-selected="true" aria-controls="priority-panel" data-priority="student-success"><span>01</span><b>Student Success</b><i aria-hidden="true">→</i></button>
+          <button id="priority-academic-prominence" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="academic-prominence"><span>02</span><b>Academic Prominence</b><i aria-hidden="true">→</i></button>
+          <button id="priority-research-excellence" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="research-excellence"><span>03</span><b>Research Excellence</b><i aria-hidden="true">→</i></button>
+          <button id="priority-campus-culture" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="campus-culture"><span>04</span><b>Improvement of Campus Culture and Enhancement of JSU Brand</b><i aria-hidden="true">→</i></button>
+          <button id="priority-staff-excellence" role="tab" aria-selected="false" aria-controls="priority-panel" tabindex="-1" data-priority="staff-excellence"><span>05</span><b>Staff Excellence</b><i aria-hidden="true">→</i></button>
+        </div>
+        <article class="priority-panel" id="priority-panel" role="tabpanel" aria-labelledby="priority-student-success" tabindex="0" aria-live="polite">
+          <figure><img id="priority-image" src="student-whitley-smith.png" alt="Whitley Smith seated in a JSU stadium suite"><figcaption id="priority-caption">Whitley Smith · Journalism and Media Studies</figcaption></figure>
+          <div class="priority-content">
+            <p class="section-label" id="priority-label">Student Success</p>
+            <h3 id="priority-title">From preparation to professional momentum.</h3>
+            <p id="priority-summary">Students are testing their voices, building networks and entering professional environments where classroom learning becomes confidence and direction.</p>
+            <div class="priority-metric"><strong id="priority-metric">29</strong><span id="priority-metric-label">public policy internship placements</span></div>
+            <ul id="priority-highlights"></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="investments" aria-labelledby="investments-title">
+      <header class="section-intro reveal">
+        <p class="section-label">Selected investments</p>
+        <h2 id="investments-title">Support with<br>lasting purpose.</h2>
+        <p>These individual awards expand research, student pathways, cultural preservation and community engagement. Each is presented in its own context.</p>
+      </header>
+      <div class="investment-list">
+        <article class="reveal"><span>Health equity research</span><strong>$1.5M</strong><p>Community-engaged research supported by the Robert Wood Johnson Foundation.</p></article>
+        <article class="reveal"><span>Racial trauma research</span><strong>$509K</strong><p>National Science Foundation support for research on racial trauma and political behavior.</p></article>
+        <article class="reveal"><span>Margaret Walker Center</span><strong>$450K</strong><p>Mellon Foundation support for long-term sustainability, capacity and public humanities.</p></article>
+        <article class="reveal"><span>Archives and access</span><strong>$317K</strong><p>Institute of Museum and Library Services support for preservation, relocation and digital access.</p></article>
+      </div>
+    </section>
+
+    <section class="schools" id="schools" aria-labelledby="schools-title">
+      <header class="section-intro reveal">
+        <p class="section-label">One college, three schools</p>
+        <h2 id="schools-title">Distinct disciplines.<br>A shared public mission.</h2>
+      </header>
+      <div class="school-grid">
+        <article class="school-card reveal">
+          <figure><img src="student-whitley-smith.png" alt="A Journalism and Media Studies student"></figure>
+          <div><span>01</span><h3>School of Communications</h3><p>Language, media, writing, storytelling, rhetoric and public voice move through newsrooms, studios, stages and community conversations.</p><a href="#priority-student-success" data-open-priority="student-success">Explore student pathways <span aria-hidden="true">→</span></a></div>
+        </article>
+        <article class="school-card reveal">
+          <figure><img src="creative-arts-performance.png" alt="A conductor leading a vocal performance at Jackson State"></figure>
+          <div><span>02</span><h3>School of Fine &amp; Performing Arts</h3><p>Art, music and theatre transform creative study into performances, exhibitions, public service and national representation.</p><a href="#priority-academic-prominence" data-open-priority="academic-prominence">Explore creative prominence <span aria-hidden="true">→</span></a></div>
+        </article>
+        <article class="school-card reveal">
+          <figure><img src="smithsonian-vanguard.png" alt="JSU representatives at the Smithsonian At the Vanguard exhibition"></figure>
+          <div><span>03</span><h3>School of Social &amp; Behavioral Sciences</h3><p>Policy, justice, psychology, history and public service connect research to communities, institutions and cultural memory.</p><a href="#priority-research-excellence" data-open-priority="research-excellence">Explore public impact <span aria-hidden="true">→</span></a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="future" aria-labelledby="future-title">
+      <div class="future-image"><img src="official-cla-01.jpg" alt="Students learning photography in a College of Liberal Arts classroom"></div>
+      <div class="future-copy reveal">
+        <p class="section-label">Building what comes next</p>
+        <h2 id="future-title">Pathways designed<br>for purpose.</h2>
+        <p>New degrees, professional centers, internships, public programs and community partnerships are creating durable pathways from academic study to graduate education, creative practice, civic leadership and service.</p>
+        <div class="future-actions"><a class="button button-blue" href="impact-report-2023-2026.pdf">Read the impact report <span aria-hidden="true">↗</span></a><a class="text-link" href="https://www.jsums.edu/liberalarts/" target="_blank" rel="noopener">Visit the College <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="jsu-cola-logo-white.png" alt="Jackson State University College of Liberal Arts">
+    <p>1400 John R. Lynch Street<br>Jackson, Mississippi 39217</p>
+    <p>Impact Report<br>Fall 2023–Spring 2026</p>
+    <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>
