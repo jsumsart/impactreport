@@ -1,77 +1,77 @@
 const priorities = {
   "student-success": {
     label: "Student Success",
-    title: "From preparation to professional momentum.",
-    summary: "Students are testing their voices, building networks and entering professional environments that strengthen their confidence and direction.",
-    metric: "29",
-    metricLabel: "public policy internship placements",
-    image: "doctoral-hooding.webp",
-    alt: "A graduate being hooded during commencement",
-    caption: "Student achievement at commencement · Jackson State University",
+    title: "Talent becomes opportunity.",
+    summary: "Scholarships, fellowships, performance pathways and national representation help students translate preparation into momentum.",
+    metric: "$75K",
+    metricLabel: "awarded to 10 creative-writing students",
+    image: "students-campus.webp",
+    alt: "Jackson State students gathered on campus",
+    caption: "Student learning and opportunity · Jackson State University",
     highlights: [
-      "Whitley Smith was one of 32 students selected from more than 100 applicants for the 2024 NFL Experienceship.",
-      "Thirty theatre and speech students represented JSU nationally, earning more than five awards and two national officer positions.",
-      "Students entered graduate programs, published in national outlets and presented creative and scholarly work at conferences."
+      "Ten creative-writing students received James Patterson Foundation scholarships totaling $75,000.",
+      "Three vocal students qualified for the National NATS Student Auditions.",
+      "Thirty theatre students represented JSU nationally, earning more than five awards and two national officer positions."
     ]
   },
   "academic-prominence": {
     label: "Academic Prominence",
-    title: "A national stage for scholarship and creativity.",
-    summary: "Convenings, performances and public programs position Jackson State as a destination for Black intellectual and creative life.",
-    metric: "250+",
-    metricLabel: "College Language Association participants",
-    image: "sonic-boom-report.png",
-    alt: "The Sonic Boom of the South performing before a large audience",
-    caption: "The Sonic Boom of the South · Jackson State University",
+    title: "Leadership recognized nationally.",
+    summary: "Faculty distinction, senior academic leadership and national honors strengthen JSU’s standing across the liberal arts.",
+    metric: "5",
+    metricLabel: "major faculty honors and leadership appointments highlighted",
+    image: "faculty-commencement.webp",
+    alt: "Jackson State faculty members at commencement",
+    caption: "Faculty leadership and distinction · Jackson State University",
     highlights: [
-      "JSU hosted the 84th College Language Association Convention for scholars, writers, students and educators.",
-      "The Sonic Boom performed at Super Bowl LVIII, the Rose Parade and the National Folk Festival.",
-      "Three vocal students advanced to the National NATS Student Auditions after earning regional honors."
+      "Gloria J. Billingsley was named a Fellow of the National Academy of Public Administration.",
+      "Preselfannie E. Whitfield McDaniels was appointed Provost and Vice President for Academic Affairs.",
+      "Yolanda Williams, Lisa Beckley-Roberts and Phyllis Lewis-Hale received distinguished humanities and music honors."
     ]
   },
   "research-excellence": {
     label: "Research Excellence",
-    title: "Research translated into healthier communities.",
-    summary: "Faculty expertise, external investment and sustained outreach are addressing racial trauma, health disparities and public safety across Mississippi.",
-    metric: "$1.5M",
-    metricLabel: "health-equity research project",
-    image: "archives-research.png",
-    alt: "A researcher reviewing archival materials at the Margaret Walker Center",
-    caption: "Archives, memory and public scholarship · Margaret Walker Center",
+    title: "Collections become research infrastructure.",
+    summary: "Digital humanities, faculty scholarship and student research are making cultural materials discoverable and useful to new audiences.",
+    metric: "210",
+    metricLabel: "African artworks digitized and catalogued",
+    image: "byron-orey.png",
+    alt: "A Jackson State faculty scholar presenting research",
+    caption: "Faculty research and scholarship · Jackson State University",
     highlights: [
-      "A Robert Wood Johnson Foundation-supported project advances health-equity research and community engagement.",
-      "A $509,000 National Science Foundation grant supports research on racial trauma and political behavior.",
-      "Prevention and driver-education outreach reached more than 41,000 students and secured more than $493,000 in 2025."
+      "Africana Digital Humanities research fellows advanced faculty and student projects.",
+      "Faculty publications extended scholarship across literature, history, music, sociology and public policy.",
+      "New archival databases connect community history with research, teaching and public access."
     ]
   },
   "campus-culture": {
     label: "Improvement of Campus Culture and Enhancement of JSU Brand",
-    title: "Preserving memory while expanding public presence.",
-    summary: "Archives, historic spaces, exhibitions and national partnerships make JSU’s cultural legacy visible on campus and far beyond it.",
-    metric: "100+",
-    metricLabel: "years of JSU history presented with Getty Images",
-    image: "dollye-robinson-building.webp",
-    alt: "The Dollye M. E. Robinson Building on Jackson State University’s campus",
-    caption: "Dollye M. E. Robinson Building · Jackson State University",
+    title: "Culture made visible and accessible.",
+    summary: "Collections, performances, festivals and national partnerships extend JSU’s cultural presence from campus to classrooms and museums.",
+    metric: "30",
+    metricLabel: "African artworks added through the DeCell family donation",
+    image: "sonic-boom-report.png",
+    alt: "The Sonic Boom of the South performing for a national audience",
+    caption: "Creative visibility and the JSU brand · Jackson State University",
     highlights: [
-      "A Getty Images collaboration transformed more than a century of Jackson State history into a public exhibition.",
-      "Margaret Walker Center materials appeared in the Smithsonian’s At the Vanguard exhibition.",
-      "Three Home Depot grants supported campus improvement, an innovation lounge and COFO beautification."
+      "Margaret Walker Center materials reached national audiences through the Smithsonian.",
+      "Jubilee and the HBCU summer opera festival expanded JSU’s creative visibility.",
+      "AfricanAmericanArtHistory.com and new K–12 resources translated scholarship for public audiences."
     ]
   },
   "staff-excellence": {
     label: "Staff Excellence",
-    title: "The people and centers that make public impact possible.",
-    summary: "Staff-led centers turn expertise, grants and partnerships into prevention, professional access, archival stewardship, public programs and sustained community service.",
-    metric: "41,000+",
-    metricLabel: "students reached through center-led prevention outreach",
+    title: "Staff-led systems sustain public impact.",
+    summary: "Centers, archives and digital infrastructure turn collections and partnerships into durable public resources.",
+    metric: "2",
+    metricLabel: "public-facing digital resources expanded in 2026",
     image: "community-public-service.png",
     alt: "Interdisciplinary Alcohol and Drug Studies Center staff receiving a national public service award",
     caption: "Center staff · Public Service Award for alcohol prevention and safe driving",
     highlights: [
-      "The Interdisciplinary Alcohol and Drug Studies Center secured more than $493,000 in 2025, while Director Nita Hilton received JSU’s Top Grant Award.",
-      "Margaret Walker Center staff advanced archive preservation and access through $450,000 in Mellon support and a $317,039 IMLS award.",
-      "Staff across the Margaret Walker, COFO, Bob Owens Pre-Law and Africana Digital Humanities centers expanded public programs, professional pathways and cultural access."
+      "Africana Digital Humanities staff supported digitization and cataloguing of 210 African artworks.",
+      "The Smith Robertson Museum archival database strengthened access to community history.",
+      "Center staff expanded digital scholarship, cultural stewardship, professional pathways and public-service infrastructure."
     ]
   }
 };
@@ -207,7 +207,7 @@ function updatePriority(key, options = {}) {
   if (window.matchMedia("(max-width: 720px)").matches) button.insertAdjacentElement("afterend", priorityPanel);
   else priorityShell.append(priorityPanel);
 
-  if (options.updateHash) history.replaceState(null, "", `#priority-${key}`);
+  if (options.updateHash) history.replaceState(null, "", `${location.pathname}${location.search}#priority-${key}`);
   if (options.focusPanel) priorityPanel.focus({ preventScroll: true });
 }
 
@@ -295,5 +295,117 @@ document.querySelectorAll(".reveal").forEach((element) => {
   if (revealObserver) revealObserver.observe(element);
   else element.classList.add("is-visible");
 });
+
+const presentationSteps = [...document.querySelectorAll("[data-present-step]")];
+const presenterControls = document.querySelector(".presenter-controls");
+const presenterCounter = document.querySelector("[data-present-counter]");
+const presenterLabel = document.querySelector("[data-present-label]");
+const presenterStatus = document.querySelector("#presenter-status");
+const presenterPrevious = document.querySelector("[data-present-prev]");
+const presenterNext = document.querySelector("[data-present-next]");
+const presenterExit = document.querySelector("[data-present-exit]");
+const presentationTrigger = document.querySelector("#start-presentation");
+let presentationIndex = 0;
+let presentationActive = false;
+
+function presentationUrl(enabled, hash = location.hash) {
+  const url = new URL(location.href);
+  if (enabled) url.searchParams.set("present", "1");
+  else url.searchParams.delete("present");
+  url.hash = hash;
+  return `${url.pathname}${url.search}${url.hash}`;
+}
+
+function updatePresentationControls(announce = false) {
+  const step = presentationSteps[presentationIndex];
+  if (!step) return;
+  const title = step.dataset.presentTitle || "Presentation chapter";
+  presenterCounter.textContent = `${presentationIndex + 1} / ${presentationSteps.length}`;
+  presenterLabel.textContent = title;
+  presenterPrevious.disabled = presentationIndex === 0;
+  presenterNext.disabled = presentationIndex === presentationSteps.length - 1;
+  if (announce) presenterStatus.textContent = `Chapter ${presentationIndex + 1} of ${presentationSteps.length}: ${title}`;
+}
+
+function goToPresentationStep(index, announce = true) {
+  presentationIndex = Math.max(0, Math.min(index, presentationSteps.length - 1));
+  const step = presentationSteps[presentationIndex];
+  step.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+  history.replaceState(null, "", presentationUrl(true, `#${step.id}`));
+  updatePresentationControls(announce);
+}
+
+async function activatePresentation(requestFullscreen = false) {
+  presentationActive = true;
+  document.body.classList.add("present-mode");
+  presenterControls.hidden = false;
+  const hashIndex = presentationSteps.findIndex((step) => `#${step.id}` === location.hash);
+  presentationIndex = hashIndex >= 0 ? hashIndex : 0;
+  history.replaceState(null, "", presentationUrl(true, location.hash || "#opening"));
+  updatePresentationControls(true);
+  if (requestFullscreen && document.documentElement.requestFullscreen) {
+    try { await document.documentElement.requestFullscreen(); } catch (_) { /* Fullscreen is an optional enhancement. */ }
+  }
+}
+
+async function exitPresentation() {
+  presentationActive = false;
+  document.body.classList.remove("present-mode");
+  presenterControls.hidden = true;
+  history.replaceState(null, "", presentationUrl(false));
+  presenterStatus.textContent = "Presentation mode ended.";
+  if (document.fullscreenElement && document.exitFullscreen) {
+    try { await document.exitFullscreen(); } catch (_) { /* The page remains usable without fullscreen. */ }
+  }
+  presentationTrigger.focus({ preventScroll: true });
+}
+
+presentationTrigger.addEventListener("click", (event) => {
+  event.preventDefault();
+  activatePresentation(true);
+});
+presenterPrevious.addEventListener("click", () => goToPresentationStep(presentationIndex - 1));
+presenterNext.addEventListener("click", () => goToPresentationStep(presentationIndex + 1));
+presenterExit.addEventListener("click", exitPresentation);
+
+document.addEventListener("keydown", (event) => {
+  if (!presentationActive) return;
+  const interactive = event.target.closest("button, a, input, select, textarea, [role='tab']");
+  if (event.key === "Escape") {
+    event.preventDefault();
+    exitPresentation();
+    return;
+  }
+  if (interactive) return;
+  if (["ArrowRight", "PageDown"].includes(event.key)) {
+    event.preventDefault();
+    goToPresentationStep(presentationIndex + 1);
+  } else if (["ArrowLeft", "PageUp"].includes(event.key)) {
+    event.preventDefault();
+    goToPresentationStep(presentationIndex - 1);
+  } else if (event.key === "Home") {
+    event.preventDefault();
+    goToPresentationStep(0);
+  } else if (event.key === "End") {
+    event.preventDefault();
+    goToPresentationStep(presentationSteps.length - 1);
+  }
+});
+
+if ("IntersectionObserver" in window) {
+  const presentationObserver = new IntersectionObserver((entries) => {
+    if (!presentationActive) return;
+    const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (!visible) return;
+    const index = presentationSteps.indexOf(visible.target);
+    if (index >= 0 && index !== presentationIndex) {
+      presentationIndex = index;
+      updatePresentationControls(false);
+    }
+  }, { threshold: [0.35, 0.6] });
+  presentationSteps.forEach((step) => presentationObserver.observe(step));
+}
+
+if (new URLSearchParams(location.search).get("present") === "1") activatePresentation(false);
 
 syncPriorityLayout();

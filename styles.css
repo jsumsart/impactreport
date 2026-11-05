@@ -1,7 +1,7 @@
 :root{--navy:#06284d;--deep:#031b34;--blue:#70cbed;--paper:#f4f0e7;--white:#fff;--ink:#10263a;--muted:#5b6b78;--line:rgba(16,38,58,.2);--sans:"Poppins",Arial,sans-serif;--serif:Georgia,"Times New Roman",serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:96px}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.65}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65}
 body.menu-open{overflow:hidden}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
@@ -43,6 +43,59 @@ button{font:inherit}
 .hero-actions{display:flex;align-items:center;gap:28px;margin-top:38px}
 .hero-principles{grid-column:1/-1;min-height:70px;padding:19px 6.5vw;display:grid;grid-template-columns:repeat(4,1fr);align-items:center;border-top:1px solid rgba(255,255,255,.28);background:rgba(3,27,52,.66);backdrop-filter:blur(10px);font-family:var(--sans);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;position:relative;z-index:2}
 .hero-principles span+span{border-left:1px solid rgba(255,255,255,.22);padding-left:2vw}
+
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.year-overview{padding:110px 6.5vw 105px;background:#fff}
+.year-heading{max-width:1400px;margin:0 auto 56px;display:grid;grid-template-columns:1fr .7fr;gap:18px 70px;align-items:end}
+.year-heading .section-label{grid-column:1/-1;color:#456a84}
+.year-heading h2{margin:0;font-size:clamp(52px,6vw,90px);line-height:.95;letter-spacing:-.05em;text-transform:uppercase}
+.year-heading>p:last-child{max-width:620px;margin:0;color:var(--muted);font-size:19px;line-height:1.65}
+.year-metrics{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.year-metrics article{min-height:205px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.year-metrics article:nth-child(1),.year-metrics article:nth-child(5){background:#edf7fb}
+.year-metrics strong{color:var(--navy);font-size:clamp(46px,5.1vw,78px);line-height:.9;letter-spacing:-.055em}
+.year-metrics span{max-width:310px;font-size:15px;font-weight:600;line-height:1.5;text-transform:uppercase;letter-spacing:.035em}
+.year-note{max-width:1400px;margin:22px auto 0;color:#526979;font-size:14px;line-height:1.6}
+
+.year-chapter{min-height:780px;display:grid;grid-template-columns:48% 52%;background:var(--paper);color:var(--ink)}
+.year-chapter.chapter-reverse{grid-template-columns:52% 48%;background:#fff}
+.chapter-reverse .chapter-image{grid-column:2;grid-row:1}.chapter-reverse .chapter-copy{grid-column:1;grid-row:1}
+.chapter-public{background:var(--navy);color:#fff}
+.chapter-image{margin:0;min-width:0;overflow:hidden;background:var(--deep)}
+.chapter-image img{width:100%;height:100%;min-height:780px;object-fit:cover}
+.chapter-people .chapter-image img{object-position:center top}
+.chapter-copy{padding:90px 6vw;display:flex;flex-direction:column;justify-content:center}
+.chapter-copy .section-label{color:#3b7594}
+.chapter-public .section-label{color:var(--blue)}
+.chapter-copy h2{max-width:780px;margin:0;font-size:clamp(45px,4.6vw,76px);font-weight:700;line-height:.98;letter-spacing:-.045em}
+.chapter-lead{max-width:780px;margin:28px 0 0;color:var(--muted);font-size:20px;line-height:1.65}
+.chapter-public .chapter-lead{color:#d2e0eb}
+.chapter-figures{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:36px 0 0;padding:27px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.chapter-figures span{font-size:13px;font-weight:600;line-height:1.5;text-transform:uppercase;letter-spacing:.035em}
+.chapter-figures strong{display:block;margin-bottom:9px;color:var(--navy);font-size:38px;line-height:.9;letter-spacing:-.04em}
+.chapter-public .chapter-figures{border-color:rgba(255,255,255,.23)}.chapter-public .chapter-figures strong{color:var(--blue)}
+.chapter-highlights{margin:30px 0 0;padding:0;list-style:none;display:grid;gap:14px}
+.chapter-highlights li{position:relative;padding-left:24px;color:#334d60;font-size:18px;line-height:1.55}
+.chapter-highlights li:before{content:"";position:absolute;left:0;top:.72em;width:9px;height:2px;background:#247fa7}
+.chapter-public .chapter-highlights li{color:#eef5f8}.chapter-public .chapter-highlights li:before{background:var(--blue)}
+.related-note{margin-top:5px;padding-top:16px!important;border-top:1px solid rgba(255,255,255,.2)}
+
+.three-year-transition{min-height:78vh;padding:120px 8vw;display:flex;align-items:center;background:linear-gradient(90deg,rgba(3,27,52,.98),rgba(3,27,52,.76)),url("dollye-robinson-building.webp") center/cover;color:#fff}
+.transition-copy{max-width:930px}
+.transition-copy .section-label{color:var(--blue)}
+.transition-copy h2{margin:0;font-size:clamp(58px,7.5vw,112px);line-height:.9;letter-spacing:-.055em;text-transform:uppercase}
+.transition-copy p:not(.section-label){max-width:760px;margin:35px 0;color:#d2e0eb;font-size:21px;line-height:1.65}
+
+.presenter-controls{position:fixed;left:50%;bottom:24px;z-index:80;transform:translateX(-50%);min-width:min(620px,calc(100vw - 32px));padding:9px;display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:8px;background:rgba(3,27,52,.96);color:#fff;border:1px solid rgba(255,255,255,.25);box-shadow:0 14px 45px rgba(0,0,0,.3);backdrop-filter:blur(16px)}
+.presenter-controls[hidden]{display:none}
+.presenter-controls button{min-height:46px;padding:10px 15px;border:1px solid rgba(255,255,255,.28);background:transparent;color:#fff;font-size:13px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;cursor:pointer}
+.presenter-controls button:hover{background:#fff;color:var(--deep)}
+.presenter-controls button:disabled{opacity:.4;cursor:not-allowed}
+.presenter-controls p{margin:0;text-align:center;line-height:1.25}.presenter-controls strong,.presenter-controls p span{display:block}.presenter-controls strong{font-size:12px;color:var(--blue);letter-spacing:.08em}.presenter-controls p span{font-size:13px;font-weight:600}
+.presenter-controls .presenter-exit{background:var(--blue);color:var(--deep);border-color:var(--blue)}
+body.present-mode{padding-bottom:76px}
+body.present-mode .site-header{transform:translateY(-100%)}
+body.present-mode [data-present-step]{scroll-margin-top:0}
 
 .impact-dashboard{padding:105px 6.5vw 95px;background:#fff}
 .dashboard-heading{max-width:1400px;margin:0 auto 50px;display:grid;grid-template-columns:1fr .55fr;gap:50px;align-items:end}
@@ -146,7 +199,7 @@ button{font:inherit}
 .priority-metric strong{font-family:var(--sans);font-size:55px;line-height:.85;letter-spacing:-.04em;color:var(--blue)}
 .priority-metric span{max-width:280px;font-family:var(--sans);font-size:14px;line-height:1.5;letter-spacing:.04em;text-transform:uppercase}
 .priority-content ul{margin:28px 0 0;padding:0;list-style:none;display:grid;gap:14px}
-.priority-content li{position:relative;padding-left:25px;color:#eef5f8;font-size:16px;line-height:1.55}
+.priority-content li{position:relative;padding-left:25px;color:#eef5f8;font-size:18px;line-height:1.55}
 .priority-content li:before{content:"";position:absolute;left:0;top:.65em;width:9px;height:2px;background:var(--blue)}
 .priority-source{margin-top:28px;color:#b9d7e7;font-family:var(--sans);font-size:13px;line-height:1.5;text-decoration:underline;text-underline-offset:4px}
 
@@ -183,6 +236,8 @@ footer img{width:280px}footer p{margin:0;color:#a8bdcc}footer a{color:var(--blue
   .dashboard-charts{grid-template-columns:1fr}.stories-grid{grid-template-columns:1fr 1fr}.impact-story,.story-lead,.story-tall{grid-column:auto}.story-wide{grid-column:1/-1}.college-scope{grid-template-columns:1fr;gap:38px}
   .school-grid{grid-template-columns:1fr 1fr}.school-card:last-child{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}.school-card:last-child figure{height:100%;aspect-ratio:auto}
   .future{grid-template-columns:1fr}.future-image{height:580px}
+  .year-heading{grid-template-columns:1fr}.year-metrics{grid-template-columns:repeat(2,1fr)}
+  .year-chapter,.year-chapter.chapter-reverse{grid-template-columns:1fr;min-height:0}.chapter-reverse .chapter-image,.chapter-reverse .chapter-copy{grid-column:1}.chapter-reverse .chapter-image{grid-row:1}.chapter-reverse .chapter-copy{grid-row:2}.chapter-image img{min-height:0;height:560px}.chapter-copy{padding:70px 7vw}.chapter-figures{grid-template-columns:repeat(3,1fr)}
 }
 
 @media(max-width:720px){
@@ -197,6 +252,7 @@ footer img{width:280px}footer p{margin:0;color:#a8bdcc}footer a{color:var(--blue
   .school-grid{grid-template-columns:1fr}.school-card:last-child{grid-column:auto;display:flex}.school-card:last-child figure{height:auto;aspect-ratio:4/3}.school-card h3{font-size:27px}
   .future-image{height:390px}.future-copy{padding:70px 22px}.future-actions{align-items:flex-start;flex-direction:column;gap:18px}
   footer{padding:46px 22px;grid-template-columns:1fr;gap:25px;align-items:start}footer img{width:235px}.footer-links{align-items:flex-start}
+  .year-overview{padding:76px 20px}.year-heading{display:block;margin-bottom:38px}.year-heading h2{font-size:47px}.year-heading>p:last-child{margin-top:23px;font-size:17px}.year-metrics{grid-template-columns:1fr}.year-metrics article{min-height:155px;padding:25px 22px}.year-metrics strong{font-size:54px}.chapter-image img{height:420px}.chapter-copy{padding:64px 22px}.chapter-copy h2{font-size:43px}.chapter-lead{font-size:18px}.chapter-figures{grid-template-columns:1fr 1fr}.chapter-highlights li{font-size:17px}.three-year-transition{min-height:700px;padding:90px 22px}.transition-copy h2{font-size:59px}.transition-copy p:not(.section-label){font-size:18px}.presenter-controls{bottom:10px;grid-template-columns:auto 1fr auto;padding:7px}.presenter-controls button{padding:9px 11px}.presenter-controls button span{display:none}.presenter-controls .presenter-exit{grid-column:1/-1;min-height:38px}.presenter-controls p span{font-size:12px}
 }
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
