@@ -475,4 +475,74 @@ body.present-mode .chart-panel header>p,body.present-mode .bar-row>span,body.pre
   body{font-size:18px}.hero-dates,.hero-principles{font-size:14px}.mission-copy>p:not(.section-label),.scene-lead{font-size:19px}.priority-content>p,body.present-mode .priority-heading>p:last-child,body.present-mode .priority-content>p,body.present-mode .priority-content li{font-size:18px}.dashboard-controls button,.bar-row>span,.bar-row strong{font-size:14px}.chapter-portrait figcaption strong,.chapter-portrait figcaption span{font-size:14px}.chapter-highlights li,body.present-mode .chapter-highlights li{font-size:18px}
 }
 
+/* Presenter mode uses the entire viewport; controls float above a protected safe area. */
+body.present-mode{padding-bottom:0}
+body.present-mode [data-present-step]{min-height:100svh;scroll-margin-top:0}
+
+@media(min-width:721px){
+  body.present-mode .hero,
+  body.present-mode .year-overview,
+  body.present-mode .mission-chapter,
+  body.present-mode .year-chapter,
+  body.present-mode .accomplishment-scene,
+  body.present-mode .three-year-transition,
+  body.present-mode .priority-section,
+  body.present-mode .impact-dashboard{
+    height:100svh;
+    min-height:100svh;
+  }
+
+  body.present-mode .mission-chapter{
+    padding-top:clamp(44px,7vh,84px);
+    padding-bottom:104px;
+  }
+
+  body.present-mode .accomplishment-scene{
+    padding:clamp(34px,5vh,62px) 4vw 104px;
+  }
+
+  body.present-mode .scene-photo,
+  body.present-mode .scene-photo-right{
+    height:100svh;
+    min-height:100svh;
+    padding:0;
+  }
+
+  body.present-mode .scene-photo .scene-visual,
+  body.present-mode .scene-photo-right .scene-visual{
+    height:100svh;
+    min-height:100svh;
+  }
+
+  body.present-mode .scene-photo .scene-body,
+  body.present-mode .scene-photo-right .scene-body{
+    height:100svh;
+    padding:clamp(36px,5vh,64px) 3.5vw 108px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    overflow-y:auto;
+  }
+
+  body.present-mode .publication-showcase,
+  body.present-mode .creative-scene,
+  body.present-mode .production-scene,
+  body.present-mode .initiative-scene,
+  body.present-mode .priority-section,
+  body.present-mode .impact-dashboard,
+  body.present-mode .three-year-transition{
+    padding-bottom:104px;
+  }
+}
+
+@media(max-width:720px){
+  body.present-mode [data-present-step]{height:auto;min-height:100svh}
+  body.present-mode .mission-chapter,
+  body.present-mode .accomplishment-scene,
+  body.present-mode .priority-section,
+  body.present-mode .impact-dashboard{
+    min-height:100svh;
+  }
+}
+
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
