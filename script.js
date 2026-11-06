@@ -2,76 +2,76 @@ const priorities = {
   "student-success": {
     label: "Student Success",
     title: "Talent becomes opportunity.",
-    summary: "Scholarships, fellowships, performance pathways and national representation help students translate preparation into momentum.",
-    metric: "$75K",
-    metricLabel: "awarded to 10 creative-writing students",
+    summary: "Across three academic years, internships, scholarships, national conferences and professional experiences helped students turn preparation into momentum.",
+    metric: "29",
+    metricLabel: "public-policy internships from Summer 2023 through Spring 2025",
     image: "students-campus.webp",
     alt: "Jackson State students gathered on campus",
     caption: "Student learning and opportunity · Jackson State University",
     highlights: [
-      "Ten creative-writing students received James Patterson Foundation scholarships totaling $75,000.",
-      "Three vocal students qualified for the National NATS Student Auditions.",
-      "Thirty theatre students represented JSU nationally, earning more than five awards and two national officer positions."
+      "Whitley Smith was one of 32 students selected nationally for the 2024 NFL Experienceship.",
+      "Thirty theatre and speech students represented JSU at a national conference, earning awards and national officer positions.",
+      "Ten creative-writing students received James Patterson Foundation scholarships totaling $75,000."
     ]
   },
   "academic-prominence": {
     label: "Academic Prominence",
-    title: "Leadership recognized nationally.",
-    summary: "Faculty distinction, senior academic leadership and national honors strengthen JSU’s standing across the liberal arts.",
-    metric: "5",
-    metricLabel: "major faculty honors and leadership appointments highlighted",
+    title: "Scholarship reached national stages.",
+    summary: "Convenings, performances, publications and public programs strengthened Jackson State’s standing as a destination for Black intellectual and creative life.",
+    metric: "250+",
+    metricLabel: "participants at the 84th College Language Association Convention",
     image: "doctoral-hooding.webp",
     alt: "Jackson State faculty participating in a doctoral hooding ceremony",
     caption: "Faculty leadership and distinction · Jackson State University",
     highlights: [
-      "Gloria J. Billingsley was named a Fellow of the National Academy of Public Administration.",
-      "Preselfannie E. Whitfield McDaniels was appointed Provost and Vice President for Academic Affairs.",
-      "Yolanda Williams, Lisa Beckley-Roberts and Phyllis Lewis-Hale received distinguished humanities and music honors."
+      "The Sonic Boom performed at Super Bowl LVIII, the Rose Parade and the National Folk Festival.",
+      "Three vocal students advanced to the National NATS Student Auditions.",
+      "The College hosted national scholars, writers, performers and educators through major conventions and festivals."
     ]
   },
   "research-excellence": {
     label: "Research Excellence",
     title: "Research spans disciplines and audiences.",
-    summary: "Faculty publication, funded inquiry and digital humanities connect rigorous scholarship with questions that matter to Mississippi and the wider world.",
-    metric: "14",
-    metricLabel: "faculty scholarly and literary works featured for 2026",
+    summary: "Funded inquiry connected health equity, racial trauma, public safety and community engagement with urgent questions in Mississippi and beyond.",
+    metric: "$1.5M",
+    metricLabel: "health-equity research and community engagement project",
     image: "byron-orey.png",
     alt: "A Jackson State faculty scholar presenting research",
     caption: "Faculty research and scholarship · Jackson State University",
     highlights: [
-      "Faculty scholarship addressed environmental justice, artificial intelligence, digital health, Black history and public administration.",
-      "Eight departments contributed scholarly works, while Music and Speech and Theatre advanced creative practice.",
-      "Africana Digital Humanities fellowships and archival databases expanded the College’s research infrastructure."
+      "A $509,000 National Science Foundation award supports research on racial trauma and political behavior.",
+      "Prevention, education and public-safety outreach reached more than 41,000 students.",
+      "Faculty scholarship addressed environmental justice, artificial intelligence, digital health, Black history and public administration."
     ]
   },
   "campus-culture": {
     label: "Improvement of Campus Culture and Enhancement of JSU Brand",
-    title: "Culture made visible and accessible.",
-    summary: "Collections, performances, festivals and national partnerships extend JSU’s cultural presence from campus to classrooms and museums.",
-    metric: "30",
-    metricLabel: "African artworks added through the DeCell family donation",
+    title: "JSU’s story reached wider audiences.",
+    summary: "Archives, performances, historic spaces and national partnerships extended Jackson State’s cultural presence from campus to museums and public audiences.",
+    metric: "100+",
+    metricLabel: "years of JSU history presented through the Getty Images collaboration",
     image: "sonic-boom-report.png",
     alt: "The Sonic Boom of the South performing for a national audience",
     caption: "Creative visibility and the JSU brand · Jackson State University",
     highlights: [
       "Margaret Walker Center materials reached national audiences through the Smithsonian.",
-      "Jubilee and the HBCU summer opera festival expanded JSU’s creative visibility.",
-      "AfricanAmericanArtHistory.com and new K–12 resources translated scholarship for public audiences."
+      "The College invested in archives, historic spaces and digital access to cultural resources.",
+      "National performances and cultural programs expanded the visibility of Jackson State’s creative work."
     ]
   },
   "staff-excellence": {
     label: "Staff Excellence",
     title: "Staff-led systems sustain public impact.",
-    summary: "Centers, archives and digital infrastructure turn collections and partnerships into durable public resources.",
-    metric: "2",
-    metricLabel: "public-facing digital resources expanded in 2026",
+    summary: "Staff-led centers converted grants, partnerships, archives and outreach programs into sustained public service.",
+    metric: "41,000+",
+    metricLabel: "students reached through prevention and driver-education outreach",
     image: "community-public-service.png",
     alt: "Interdisciplinary Alcohol and Drug Studies Center staff receiving a national public service award",
     caption: "Center staff · Public Service Award for alcohol prevention and safe driving",
     highlights: [
-      "Africana Digital Humanities staff supported digitization and cataloguing of 210 African artworks.",
-      "The Smith Robertson Museum archival database strengthened access to community history.",
-      "Center staff expanded digital scholarship, cultural stewardship, professional pathways and public-service infrastructure."
+      "The Interdisciplinary Alcohol and Drug Studies Center secured more than $493,000 in 2025.",
+      "The Margaret Walker Center received $450,000 from Mellon and $317,039 from IMLS for capacity, preservation and access.",
+      "Staff across College centers expanded cultural stewardship, professional pathways and community-facing infrastructure."
     ]
   }
 };
