@@ -75,6 +75,19 @@ button{font:inherit}
 .showcase-rows ul{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:9px}.showcase-rows li{position:relative;padding-left:15px;color:#e5eef4;font-size:14px;line-height:1.42}.showcase-rows li:before{content:"";position:absolute;left:0;top:.72em;width:7px;height:2px;background:var(--blue)}
 .showcase-scope{width:100%;max-width:1420px;margin:18px auto 0;color:#c5d8e4;font-size:14px;letter-spacing:.035em;text-transform:uppercase}.showcase-scope strong{color:#fff}
 
+.mission-chapter{min-height:88vh;padding:110px 7vw 90px;display:grid;grid-template-columns:minmax(210px,.42fr) 1.58fr;align-items:center;gap:6vw;position:relative;overflow:hidden;color:#fff}
+.mission-chapter:before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(3,27,52,.98) 0%,rgba(3,27,52,.87) 58%,rgba(3,27,52,.42) 100%)}
+.mission-research{background:url("official-cla-01.jpg") center/cover}
+.mission-teaching{background:url("students-campus.webp") center/cover}
+.mission-service{background:url("campus-improvement.png") center/cover}
+.mission-number{position:relative;z-index:1;color:transparent;-webkit-text-stroke:2px rgba(112,203,237,.72);font-size:clamp(150px,20vw,320px);font-weight:800;line-height:.72;letter-spacing:-.1em}
+.mission-copy{position:relative;z-index:1;max-width:980px}.mission-copy .section-label{color:var(--blue)}
+.mission-copy h2{margin:0;font-size:clamp(58px,6.6vw,104px);line-height:.86;letter-spacing:-.065em;text-transform:uppercase}
+.mission-copy>p:not(.section-label){max-width:830px;margin:28px 0 0;color:#e0ebf2;font-size:21px;line-height:1.55}
+.mission-metrics{display:grid;grid-template-columns:repeat(3,1fr);margin-top:32px;border-top:1px solid rgba(255,255,255,.3);border-bottom:1px solid rgba(255,255,255,.3)}
+.mission-metrics span{min-height:112px;padding:19px 20px;border-right:1px solid rgba(255,255,255,.25);font-size:13px;font-weight:700;line-height:1.4;letter-spacing:.035em;text-transform:uppercase}.mission-metrics span:first-child{padding-left:0}.mission-metrics span:last-child{border-right:0}
+.mission-metrics strong{display:block;margin-bottom:9px;color:var(--blue);font-size:38px;line-height:.9;letter-spacing:-.04em;text-transform:none}
+
 .year-chapter{min-height:100vh;display:grid;grid-template-columns:48% 52%;background:var(--paper);color:var(--ink)}
 .year-chapter.chapter-reverse{grid-template-columns:52% 48%;background:#fff}
 .chapter-reverse .chapter-visual{grid-column:2;grid-row:1}.chapter-reverse .chapter-copy{grid-column:1;grid-row:1}
@@ -156,7 +169,7 @@ button{font:inherit}
 .production-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-top:24px}.production-grid article{padding:25px 28px;border:1px solid rgba(255,255,255,.24);background:rgba(255,255,255,.055)}.production-grid h3{margin:0;font-size:24px;line-height:1.15}.production-grid p,.production-grid li{font-size:15px;line-height:1.5;color:#e0ebf2}.production-grid ul{margin:14px 0;padding-left:20px}.production-grid small{color:#bcd0de}
 
 .initiative-scene{background:var(--paper)}
-.initiative-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:35px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.initiative-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:35px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
 .initiative-grid article{min-height:260px;padding:28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}.initiative-grid span{color:#247fa7;font-size:13px;font-weight:700;letter-spacing:.08em}.initiative-grid h3{margin:38px 0 12px;font-size:25px;line-height:1.1}.initiative-grid p{margin:0;color:#40596c;font-size:17px;line-height:1.55}.scene-caveat{margin:20px 0 0}
 
 .three-year-transition{min-height:78vh;padding:120px 8vw;display:flex;align-items:center;background:linear-gradient(90deg,rgba(3,27,52,.98),rgba(3,27,52,.76)),url("dollye-robinson-building.webp") center/cover;color:#fff}
@@ -176,7 +189,7 @@ body.present-mode{padding-bottom:76px}
 body.present-mode .site-header{transform:translateY(-100%)}
 body.present-mode main>section:not([data-present-step]),body.present-mode footer{display:none}
 body.present-mode [data-present-step]{scroll-margin-top:0}
-body.present-mode .hero,body.present-mode .year-overview,body.present-mode .college-showcase,body.present-mode .year-chapter,body.present-mode .accomplishment-scene,body.present-mode .three-year-transition{min-height:calc(100svh - 76px)}
+body.present-mode .hero,body.present-mode .year-overview,body.present-mode .college-showcase,body.present-mode .mission-chapter,body.present-mode .year-chapter,body.present-mode .accomplishment-scene,body.present-mode .three-year-transition{min-height:calc(100svh - 76px)}
 body.present-mode .year-overview{padding:34px 4vw 92px}
 body.present-mode .year-heading{margin-bottom:24px;grid-template-columns:1fr .58fr;gap:30px}
 body.present-mode .year-heading h2{font-size:clamp(42px,4.6vw,68px)}
@@ -193,6 +206,11 @@ body.present-mode .showcase-rows h3{font-size:19px}
 body.present-mode .showcase-rows ul{margin-top:10px;gap:6px}
 body.present-mode .showcase-rows li{font-size:14px;line-height:1.35}
 body.present-mode .showcase-scope{margin-top:12px;font-size:13px}
+body.present-mode .mission-chapter{height:calc(100svh - 76px);min-height:620px;padding:40px 5vw 90px;grid-template-columns:minmax(170px,.35fr) 1.65fr;gap:4vw}
+body.present-mode .mission-number{font-size:clamp(150px,18vw,270px)}
+body.present-mode .mission-copy h2{font-size:clamp(52px,6vw,88px)}
+body.present-mode .mission-copy>p:not(.section-label){margin-top:20px;font-size:19px;line-height:1.48}
+body.present-mode .mission-metrics{margin-top:22px}.mission-metrics span{min-height:92px;padding:14px 16px}.mission-metrics strong{font-size:32px}
 body.present-mode .year-chapter{height:calc(100svh - 76px);min-height:620px;grid-template-columns:40% 60%;overflow:hidden}
 body.present-mode .year-chapter.chapter-reverse{grid-template-columns:60% 40%}
 body.present-mode .year-chapter .chapter-visual{min-height:100%;height:100%}
@@ -438,8 +456,9 @@ footer img{width:280px}footer p{margin:0;color:#a8bdcc}footer a{color:var(--blue
 
 @media(max-width:720px){
   .college-showcase{min-height:0;padding:82px 22px}.showcase-heading{display:block}.showcase-heading h2{font-size:43px}.showcase-heading>p:last-child{margin-top:22px}.showcase-rows{grid-template-columns:1fr}.showcase-rows article,.showcase-rows article:first-child,.showcase-rows article:nth-child(3),.showcase-rows article:last-child{padding:24px 0;border-right:0;border-bottom:1px solid rgba(255,255,255,.22)}.showcase-rows article:last-child{border-bottom:0}.showcase-rows h3{font-size:24px}.showcase-rows li{font-size:16px}
+  .mission-chapter{min-height:700px;padding:90px 22px;display:flex;align-items:flex-end}.mission-number{position:absolute;right:28px;top:100px;font-size:170px;opacity:.58}.mission-copy h2{font-size:55px}.mission-copy>p:not(.section-label){font-size:18px}.mission-metrics{grid-template-columns:1fr}.mission-metrics span,.mission-metrics span:first-child{min-height:0;padding:14px 0;border-right:0;border-bottom:1px solid rgba(255,255,255,.22)}.mission-metrics span:last-child{border-bottom:0}.mission-metrics strong{font-size:31px}
   .accomplishment-scene{min-height:0;padding:72px 20px}.scene-body h2{font-size:42px}.scene-lead{font-size:18px}.scene-figures{grid-template-columns:1fr 1fr}.scene-figures span{padding-left:0;min-height:82px}.scene-photo,.scene-photo-right{display:grid}.scene-photo .scene-visual,.scene-photo-right .scene-visual{height:390px;min-height:390px}.scene-photo .scene-body,.scene-photo-right .scene-body{padding:58px 22px}.publication-grid,.publication-grid-four{grid-template-columns:1fr}.publication-grid article,.publication-grid article:nth-child(4),.publication-grid article:nth-child(5),.publication-grid-four article,.publication-grid-four article:nth-child(4){grid-column:1}.scene-number{display:none}.numbered-accomplishments,.production-grid,.initiative-grid{grid-template-columns:1fr}.initiative-grid article:last-child{grid-column:1}.production-grid article{padding:22px 20px}
-  body.present-mode .college-showcase{height:auto;min-height:calc(100svh - 76px);padding:68px 22px 120px;overflow:visible}body.present-mode .showcase-heading{display:block}body.present-mode .showcase-heading>p:last-child{margin-top:20px}body.present-mode .showcase-rows{grid-template-columns:1fr}body.present-mode .showcase-rows article{padding:22px 0}body.present-mode .showcase-rows li{font-size:16px}body.present-mode .accomplishment-scene{height:auto;min-height:calc(100svh - 76px);padding:58px 20px 120px;overflow:visible}body.present-mode .scene-photo,body.present-mode .scene-photo-right{grid-template-columns:1fr;padding:0 0 110px}body.present-mode .scene-photo .scene-visual,body.present-mode .scene-photo-right .scene-visual{grid-column:1;grid-row:1;height:360px;min-height:360px}body.present-mode .scene-photo .scene-body,body.present-mode .scene-photo-right .scene-body{grid-column:1;grid-row:2;height:auto;padding:48px 22px 20px;overflow:visible}body.present-mode .publication-scene .scene-body,body.present-mode .creative-scene .scene-body,body.present-mode .production-scene .scene-body,body.present-mode .initiative-scene .scene-body{height:auto;overflow:visible}body.present-mode .publication-grid{grid-template-columns:1fr}body.present-mode .publication-grid article{padding:16px}body.present-mode .publication-grid p{font-size:14px}body.present-mode .creative-columns{grid-template-columns:1fr}body.present-mode .initiative-grid{grid-template-columns:1fr}
+  body.present-mode .college-showcase{height:auto;min-height:calc(100svh - 76px);padding:68px 22px 120px;overflow:visible}body.present-mode .showcase-heading{display:block}body.present-mode .showcase-heading>p:last-child{margin-top:20px}body.present-mode .showcase-rows{grid-template-columns:1fr}body.present-mode .showcase-rows article{padding:22px 0}body.present-mode .showcase-rows li{font-size:16px}body.present-mode .mission-chapter{height:auto;min-height:calc(100svh - 76px);padding:90px 22px 130px;display:flex}body.present-mode .mission-number{font-size:165px}body.present-mode .mission-copy h2{font-size:52px}body.present-mode .mission-metrics{grid-template-columns:1fr}body.present-mode .accomplishment-scene{height:auto;min-height:calc(100svh - 76px);padding:58px 20px 120px;overflow:visible}body.present-mode .scene-photo,body.present-mode .scene-photo-right{grid-template-columns:1fr;padding:0 0 110px}body.present-mode .scene-photo .scene-visual,body.present-mode .scene-photo-right .scene-visual{grid-column:1;grid-row:1;height:360px;min-height:360px}body.present-mode .scene-photo .scene-body,body.present-mode .scene-photo-right .scene-body{grid-column:1;grid-row:2;height:auto;padding:48px 22px 20px;overflow:visible}body.present-mode .publication-scene .scene-body,body.present-mode .creative-scene .scene-body,body.present-mode .production-scene .scene-body,body.present-mode .initiative-scene .scene-body{height:auto;overflow:visible}body.present-mode .publication-grid{grid-template-columns:1fr}body.present-mode .publication-grid article{padding:16px}body.present-mode .publication-grid p{font-size:14px}body.present-mode .creative-columns{grid-template-columns:1fr}body.present-mode .initiative-grid{grid-template-columns:1fr}
 }
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
