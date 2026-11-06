@@ -1,9 +1,3 @@
-// Keep the quantitative overview immediately after the hero while preserving
-// the dashboard as one reusable section in the source document.
-const heroSection = document.querySelector("#opening");
-const dashboardSection = document.querySelector("#dashboard");
-if (heroSection && dashboardSection) heroSection.insertAdjacentElement("afterend", dashboardSection);
-
 const priorities = {
   "student-success": {
     label: "Student Success",

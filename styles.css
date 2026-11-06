@@ -87,7 +87,9 @@ button{font:inherit}
 .chapter-figures span{font-size:13px;font-weight:600;line-height:1.5;text-transform:uppercase;letter-spacing:.035em}
 .chapter-figures strong{display:block;margin-bottom:8px;color:var(--navy);font-size:34px;line-height:.9;letter-spacing:-.04em}
 .chapter-public .chapter-figures{border-color:rgba(255,255,255,.23)}.chapter-public .chapter-figures strong{color:var(--blue)}
-.chapter-highlights{margin:23px 0 0;padding:0;list-style:none;display:grid;gap:11px}
+.speaking-label{margin:22px 0 0;color:#456a84;font-size:13px;font-weight:700;letter-spacing:.11em;text-transform:uppercase}
+.chapter-public .speaking-label{color:var(--blue)}
+.chapter-highlights{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:11px}
 .chapter-highlights li{position:relative;padding-left:22px;color:#334d60;font-size:17px;line-height:1.48}
 .chapter-highlights li:before{content:"";position:absolute;left:0;top:.72em;width:9px;height:2px;background:#247fa7}
 .chapter-public .chapter-highlights li{color:#eef5f8}.chapter-public .chapter-highlights li:before{background:var(--blue)}
@@ -117,14 +119,17 @@ body.present-mode .year-heading h2{font-size:clamp(42px,4.6vw,68px)}
 body.present-mode .year-heading>p:last-child{font-size:18px;line-height:1.5}
 body.present-mode .highlight-domain{min-height:180px;padding:20px 24px}
 body.present-mode .year-note{margin-top:12px;font-size:13px}
-body.present-mode .year-chapter{height:calc(100svh - 76px);min-height:620px;grid-template-columns:44% 56%;overflow:hidden}
-body.present-mode .year-chapter.chapter-reverse{grid-template-columns:56% 44%}
+body.present-mode .year-chapter{height:calc(100svh - 76px);min-height:620px;grid-template-columns:40% 60%;overflow:hidden}
+body.present-mode .year-chapter.chapter-reverse{grid-template-columns:60% 40%}
 body.present-mode .year-chapter .chapter-visual{min-height:100%;height:100%}
-body.present-mode .chapter-copy{padding:30px 4vw}
-body.present-mode .chapter-copy h2{font-size:clamp(38px,3.8vw,56px)}
+body.present-mode .chapter-copy{padding:24px 3vw}
+body.present-mode .chapter-copy h2{font-size:clamp(36px,3.5vw,50px)}
 body.present-mode .chapter-lead{margin-top:14px;font-size:18px;line-height:1.48}
-body.present-mode .chapter-figures{display:none}
-body.present-mode .chapter-highlights{margin-top:18px;gap:9px}
+body.present-mode .chapter-figures{display:grid;gap:12px;margin-top:14px;padding:12px 0}
+body.present-mode .chapter-figures strong{font-size:28px}
+body.present-mode .chapter-figures span{font-size:13px;line-height:1.35}
+body.present-mode .speaking-label{margin-top:12px;font-size:13px}
+body.present-mode .chapter-highlights{margin-top:8px;gap:8px}
 body.present-mode .chapter-highlights li{font-size:18px;line-height:1.42}
 body.present-mode .priority-section{min-height:calc(100svh - 76px);padding:28px 4vw 92px}
 body.present-mode .priority-heading{margin-bottom:22px;grid-template-columns:1fr .75fr;gap:28px}
