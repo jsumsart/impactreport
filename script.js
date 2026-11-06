@@ -1,3 +1,9 @@
+// Keep the quantitative overview immediately after the hero while preserving
+// the dashboard as one reusable section in the source document.
+const heroSection = document.querySelector("#opening");
+const dashboardSection = document.querySelector("#dashboard");
+if (heroSection && dashboardSection) heroSection.insertAdjacentElement("afterend", dashboardSection);
+
 const priorities = {
   "student-success": {
     label: "Student Success",
@@ -20,8 +26,8 @@ const priorities = {
     summary: "Faculty distinction, senior academic leadership and national honors strengthen JSU’s standing across the liberal arts.",
     metric: "5",
     metricLabel: "major faculty honors and leadership appointments highlighted",
-    image: "faculty-commencement.webp",
-    alt: "Jackson State faculty members at commencement",
+    image: "doctoral-hooding.webp",
+    alt: "Jackson State faculty participating in a doctoral hooding ceremony",
     caption: "Faculty leadership and distinction · Jackson State University",
     highlights: [
       "Gloria J. Billingsley was named a Fellow of the National Academy of Public Administration.",
@@ -31,17 +37,17 @@ const priorities = {
   },
   "research-excellence": {
     label: "Research Excellence",
-    title: "Collections become research infrastructure.",
-    summary: "Digital humanities, faculty scholarship and student research are making cultural materials discoverable and useful to new audiences.",
-    metric: "210",
-    metricLabel: "African artworks digitized and catalogued",
+    title: "Research spans disciplines and audiences.",
+    summary: "Faculty publication, funded inquiry and digital humanities connect rigorous scholarship with questions that matter to Mississippi and the wider world.",
+    metric: "14*",
+    metricLabel: "scholarly and literary works associated with 2026 records or imprints",
     image: "byron-orey.png",
     alt: "A Jackson State faculty scholar presenting research",
     caption: "Faculty research and scholarship · Jackson State University",
     highlights: [
-      "Africana Digital Humanities research fellows advanced faculty and student projects.",
-      "Faculty publications extended scholarship across literature, history, music, sociology and public policy.",
-      "New archival databases connect community history with research, teaching and public access."
+      "Documented scholarship addressed environmental justice, artificial intelligence, digital health, Black history and public administration.",
+      "Eight departments contributed scholarly works, while Music and Speech and Theatre documented creative accomplishments.",
+      "Africana Digital Humanities fellowships and archival databases expanded the College’s research infrastructure."
     ]
   },
   "campus-culture": {
