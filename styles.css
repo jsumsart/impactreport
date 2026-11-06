@@ -344,34 +344,6 @@ body.present-mode .chart-note{margin-top:8px;padding-top:8px;font-size:14px;line
 .section-intro .section-label{grid-column:1/-1;margin-bottom:-16px}
 .section-intro>p:last-child{max-width:510px;margin:0;color:var(--muted);font-size:18px}
 
-.editorial-stories{padding:120px 6.5vw;background:var(--paper)}
-.stories-heading{max-width:1400px;margin:0 auto 70px;padding-top:28px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr .65fr;gap:20px 55px;align-items:end}
-.stories-heading .section-label{grid-column:1/-1;margin-bottom:4px;color:#456a84}
-.stories-heading h2{margin:0;font-family:var(--sans);font-size:clamp(44px,5vw,74px);font-weight:700;line-height:1.02;letter-spacing:-.04em}
-.stories-heading>p:last-child{max-width:560px;margin:0;color:var(--muted);font-size:19px;line-height:1.65}
-.stories-grid{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px}
-.impact-story{grid-column:span 6;min-width:0;background:#fff;border-top:4px solid var(--navy);display:flex;flex-direction:column}
-.story-lead{grid-column:span 8}.story-tall{grid-column:span 4}.story-wide{grid-column:span 12;display:grid;grid-template-columns:1.08fr .92fr}
-.impact-story figure{margin:0;position:relative;overflow:hidden;background:var(--navy);aspect-ratio:16/10}
-.story-tall figure{aspect-ratio:4/3}.story-wide figure{height:100%;aspect-ratio:auto}
-.impact-story figure img{width:100%;height:100%;object-fit:cover}
-.impact-story figcaption{position:absolute;left:0;bottom:0;padding:10px 13px;background:rgba(3,27,52,.9);color:#fff;font-family:var(--sans);font-size:13px;line-height:1.45;letter-spacing:.03em}
-.story-copy{padding:34px 34px 38px;display:flex;flex:1;flex-direction:column}
-.story-area{margin:0 0 16px;color:#456a84;font-family:var(--sans);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
-.impact-story h3{margin:0 0 17px;font-family:var(--sans);font-size:clamp(28px,2.5vw,39px);line-height:1.08;letter-spacing:-.03em}
-.story-lead h3,.story-wide h3{font-size:clamp(32px,3vw,46px)}
-.impact-story .story-copy>p:not(.story-area){margin:0;color:var(--muted);font-size:17px;line-height:1.65}
-.story-measure{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:end;margin:28px 0 0;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.story-measure strong{color:var(--navy);font-family:var(--sans);font-size:clamp(38px,4vw,57px);line-height:.9;letter-spacing:-.045em}
-.story-measure span{font-family:var(--sans);font-size:14px;font-weight:600;line-height:1.5;color:#405b70}
-.story-measure small{display:block;margin-top:7px;color:#6a7d8b;font-size:13px;font-weight:500;letter-spacing:.02em}
-.impact-story ul{margin:24px 0 0;padding:0;list-style:none;display:grid;gap:12px}
-.impact-story li{position:relative;padding-left:20px;color:#334d60;font-size:15px;line-height:1.55}
-.impact-story li:before{content:"";position:absolute;left:0;top:.7em;width:8px;height:2px;background:#247fa7}
-.college-scope{max-width:1400px;margin:55px auto 0;padding:42px;display:grid;grid-template-columns:1.1fr .9fr;gap:70px;background:var(--deep);color:#fff}
-.college-scope .section-label{color:var(--blue)}
-.college-scope p:last-child{margin:0;color:#d2e0eb;font-family:var(--sans);font-size:14px;line-height:1.9}
-
 .priority-section{padding:74px 6.5vw 84px;background:linear-gradient(180deg,var(--deep) 0%,#062442 100%);color:#fff;border-top:6px solid var(--blue)}
 .priority-heading{max-width:1400px;margin:0 auto 34px;display:grid;grid-template-columns:1fr .65fr;gap:55px;align-items:end}
 .priority-heading .section-label{grid-column:1/-1;color:var(--blue);margin-bottom:-12px}
@@ -442,8 +414,6 @@ footer img{width:280px}footer p{margin:0;color:#a8bdcc}footer a{color:var(--blue
 .initiative-grid span{font-size:14px}.initiative-grid p{font-size:18px;line-height:1.6}
 .dashboard-controls button{font-size:14px}.dashboard-stats span,.dashboard-note,.dashboard-source{font-size:15px}
 .bar-row>span,.chart-note{font-size:14px}.chart-panel header>p{font-size:17px}
-.impact-story figcaption,.story-area{font-size:14px}.story-measure span{font-size:15px}.story-measure small{font-size:14px}.impact-story li{font-size:17px;line-height:1.62}
-.college-scope p:last-child{font-size:16px;line-height:1.75}
 .priority-list button span{font-size:14px}.priority-list button b{font-size:17px}.priority-panel figcaption{font-size:14px}
 .priority-metric span{font-size:15px}.priority-source{font-size:14px}
 .school-card p{font-size:18px;line-height:1.65}.school-card a{font-size:15px}
@@ -463,7 +433,7 @@ body.present-mode .chart-panel header>p,body.present-mode .bar-row>span,body.pre
   .dashboard-heading{grid-template-columns:1fr .7fr}.dashboard-stats{grid-template-columns:1fr 1fr}.dashboard-stats article:nth-child(2){border-right:0}.dashboard-stats article:nth-child(-n+2){border-bottom:1px solid var(--line)}
   .dean-section{padding:100px 7vw;gap:7vw}
   .priority-shell{display:block}.priority-list{display:grid;grid-template-columns:repeat(5,minmax(190px,1fr));overflow-x:auto;scroll-snap-type:x proximity}.priority-list button{min-height:105px;grid-template-columns:1fr auto;grid-template-rows:auto 1fr;align-items:start;scroll-snap-align:start}.priority-list button span{grid-column:1;grid-row:1}.priority-list button b{grid-column:1/-1;grid-row:2}.priority-list button i{grid-column:2;grid-row:1}.priority-panel{margin-top:18px;grid-template-columns:1fr}.priority-panel figure img{min-height:440px;height:440px}.priority-content{padding:52px}
-  .dashboard-charts{grid-template-columns:1fr}.stories-grid{grid-template-columns:1fr 1fr}.impact-story,.story-lead,.story-tall{grid-column:auto}.story-wide{grid-column:1/-1}.college-scope{grid-template-columns:1fr;gap:38px}
+  .dashboard-charts{grid-template-columns:1fr}
   .school-grid{grid-template-columns:1fr 1fr}.school-card:last-child{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}.school-card:last-child figure{height:100%;aspect-ratio:auto}
   .future{grid-template-columns:1fr}.future-image{height:580px}
   .year-heading{grid-template-columns:1fr}.year-metrics{grid-template-columns:repeat(2,1fr)}
@@ -477,8 +447,7 @@ body.present-mode .chart-panel header>p,body.present-mode .bar-row>span,body.pre
   .hero{min-height:760px;background-position:60% center}.hero:before{background:linear-gradient(90deg,rgba(3,27,52,.97) 0%,rgba(3,27,52,.88) 58%,rgba(3,27,52,.5) 100%)}.hero-copy{width:100%;padding:138px 22px 58px}.hero h1{font-size:48px}.hero-dates{font-size:13px}.hero-dek{font-size:18px}.hero-actions{align-items:flex-start;flex-direction:column;gap:18px}.hero-principles{padding:18px 22px;grid-template-columns:1fr 1fr;gap:12px;font-size:13px}.hero-principles span+span{border-left:0;padding-left:0}.hero-principles span:nth-child(even){border-left:1px solid rgba(255,255,255,.22);padding-left:12px}
   .impact-dashboard{padding:76px 20px 70px}.dashboard-heading{display:block;margin-bottom:36px}.dashboard-heading h2{font-size:45px}.dashboard-heading>p{margin-top:24px}.dashboard-controls{flex-wrap:nowrap;overflow-x:auto;padding-bottom:17px;scroll-snap-type:x mandatory}.dashboard-controls button{flex:0 0 auto;scroll-snap-align:start}.dashboard-stats{grid-template-columns:1fr}.dashboard-stats article{min-height:170px;padding:25px 8px;border-right:0!important;border-bottom:1px solid var(--line)}.dashboard-stats article:last-child{border-bottom:0}.dashboard-stats strong{font-size:52px}.dashboard-note{margin-top:16px}.dashboard-charts{margin-top:45px}.chart-panel{padding:28px 20px}.chart-panel header{display:block}.chart-panel header>p{margin-top:14px}.bar-row{grid-template-columns:minmax(95px,1fr) minmax(80px,1.4fr) 58px;gap:9px}.bar-row>span{font-size:13px}.bar-row strong{font-size:14px}
   .dean-section{padding:80px 22px;grid-template-columns:1fr;gap:48px}.dean-portrait{max-width:310px}.dean-copy h2,.section-intro h2,.priority-heading h2,.future h2{font-size:45px}.dean-copy blockquote{font-size:20px;padding-left:19px}
-  .editorial-stories,.priority-section,.schools{padding:82px 20px}.section-intro,.priority-heading,.stories-heading{display:block;margin-bottom:45px}.section-intro .section-label,.priority-heading .section-label,.stories-heading .section-label{margin-bottom:18px}.section-intro>p:last-child,.priority-heading>p:last-child,.stories-heading>p:last-child{margin-top:24px}.stories-heading h2{font-size:42px}
-  .stories-grid{grid-template-columns:1fr}.impact-story,.story-lead,.story-tall,.story-wide{grid-column:auto;display:flex}.story-wide figure,.impact-story figure{height:auto;aspect-ratio:4/3}.story-copy{padding:30px 24px 34px}.impact-story h3,.story-lead h3,.story-wide h3{font-size:30px}.story-measure{grid-template-columns:1fr;align-items:start}.college-scope{padding:30px 24px}
+  .priority-section,.schools{padding:82px 20px}.section-intro,.priority-heading{display:block;margin-bottom:45px}.section-intro .section-label,.priority-heading .section-label{margin-bottom:18px}.section-intro>p:last-child,.priority-heading>p:last-child{margin-top:24px}
   .priority-shell{display:block}.priority-list{display:block;overflow:visible;border-bottom:0}.priority-list button{min-height:88px;padding:17px 14px;grid-template-columns:38px 1fr 22px;grid-template-rows:1fr;gap:10px;align-items:center;border-bottom:1px solid rgba(255,255,255,.18)}.priority-list button span{grid-column:1;grid-row:1}.priority-list button b{grid-column:2;grid-row:1;font-size:16px}.priority-list button i{grid-column:3;grid-row:1}.priority-panel{margin:0;border-top:0;border-bottom:1px solid rgba(255,255,255,.22);box-shadow:none}.priority-panel figure img{height:330px;min-height:330px}.priority-content{padding:40px 24px}.priority-content h3{font-size:35px}.priority-content>p{font-size:17px}.priority-metric{align-items:start;flex-direction:column}.priority-metric strong{font-size:48px}
   .school-grid{grid-template-columns:1fr}.school-card:last-child{grid-column:auto;display:flex}.school-card:last-child figure{height:auto;aspect-ratio:4/3}.school-card h3{font-size:27px}
   .future-image{height:390px}.future-copy{padding:70px 22px}.future-actions{align-items:flex-start;flex-direction:column;gap:18px}
