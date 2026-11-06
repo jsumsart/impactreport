@@ -337,12 +337,18 @@ function goToPresentationStep(index, announce = true) {
 
 async function activatePresentation(requestFullscreen = false) {
   presentationActive = true;
+  document.documentElement.classList.add("present-mode");
   document.body.classList.add("present-mode");
   presenterControls.hidden = false;
   const hashIndex = presentationSteps.findIndex((step) => `#${step.id}` === location.hash);
   presentationIndex = hashIndex >= 0 ? hashIndex : 0;
   history.replaceState(null, "", presentationUrl(true, location.hash || "#opening"));
   updatePresentationControls(true);
+  const initialStep = presentationSteps[presentationIndex];
+  const alignCurrentStep = () => initialStep?.scrollIntoView({ behavior: "auto", block: "start" });
+  requestAnimationFrame(alignCurrentStep);
+  if (document.readyState !== "complete") window.addEventListener("load", alignCurrentStep, { once: true });
+  document.fonts?.ready.then(alignCurrentStep);
   if (requestFullscreen && document.documentElement.requestFullscreen) {
     try { await document.documentElement.requestFullscreen(); } catch (_) { /* Fullscreen is an optional enhancement. */ }
   }
@@ -350,6 +356,7 @@ async function activatePresentation(requestFullscreen = false) {
 
 async function exitPresentation() {
   presentationActive = false;
+  document.documentElement.classList.remove("present-mode");
   document.body.classList.remove("present-mode");
   presenterControls.hidden = true;
   history.replaceState(null, "", presentationUrl(false));
