@@ -33,14 +33,14 @@ const priorities = {
     label: "Research Excellence",
     title: "Research spans disciplines and audiences.",
     summary: "Faculty publication, funded inquiry and digital humanities connect rigorous scholarship with questions that matter to Mississippi and the wider world.",
-    metric: "14*",
-    metricLabel: "scholarly and literary works associated with 2026 records or imprints",
+    metric: "14",
+    metricLabel: "faculty scholarly and literary works featured for 2026",
     image: "byron-orey.png",
     alt: "A Jackson State faculty scholar presenting research",
     caption: "Faculty research and scholarship · Jackson State University",
     highlights: [
-      "Documented scholarship addressed environmental justice, artificial intelligence, digital health, Black history and public administration.",
-      "Eight departments contributed scholarly works, while Music and Speech and Theatre documented creative accomplishments.",
+      "Faculty scholarship addressed environmental justice, artificial intelligence, digital health, Black history and public administration.",
+      "Eight departments contributed scholarly works, while Music and Speech and Theatre advanced creative practice.",
       "Africana Digital Humanities fellowships and archival databases expanded the College’s research infrastructure."
     ]
   },
