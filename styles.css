@@ -865,6 +865,20 @@ body.present-mode .three-year-transition .button,body.present-mode .priority-sou
   body.present-mode #faculty-publications .publication-directory strong{font-size:14px;line-height:1.15}
 }
 
+@media(min-width:1101px) and (min-height:900px){
+  body.present-mode #faculty-publications .publication-directory ol{padding:7px 0}
+  body.present-mode #faculty-publications .publication-directory li{
+    padding:10px 15px 11px;
+    font-size:clamp(17px,.96vw,19px);
+    line-height:1.28;
+  }
+  body.present-mode #faculty-publications .publication-directory strong{
+    margin-bottom:4px;
+    font-size:clamp(18px,1vw,20px);
+    line-height:1.2;
+  }
+}
+
 @media(max-width:720px){
   .publication-directory-readable.publication-directory-complete{grid-template-columns:1fr}
   body.present-mode #research-infrastructure .scene-lead,
