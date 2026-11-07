@@ -5,9 +5,9 @@ const priorities = {
     summary: "Across three academic years, internships, scholarships, national conferences and professional experiences helped students turn preparation into momentum.",
     metric: "29",
     metricLabel: "public-policy internships from Summer 2023 through Spring 2025",
-    image: "students-campus.webp",
-    alt: "Jackson State students gathered on campus",
-    caption: "Student learning and opportunity · Jackson State University",
+    image: "student-whitley-smith.png",
+    alt: "Jackson State student Whitley Smith during a professional experience",
+    caption: "Student opportunity · Whitley Smith’s national NFL Experienceship",
     highlights: [
       "Whitley Smith was one of 32 students selected nationally for the 2024 NFL Experienceship.",
       "Thirty theatre and speech students represented JSU at a national conference, earning awards and national officer positions.",
@@ -20,9 +20,9 @@ const priorities = {
     summary: "Convenings, performances, publications and public programs strengthened Jackson State’s standing as a destination for Black intellectual and creative life.",
     metric: "250+",
     metricLabel: "participants at the 84th College Language Association Convention",
-    image: "doctoral-hooding.webp",
-    alt: "Jackson State faculty participating in a doctoral hooding ceremony",
-    caption: "Faculty leadership and distinction · Jackson State University",
+    image: "official-cla-01.jpg",
+    alt: "College Language Association participants gathered at Jackson State University",
+    caption: "National scholarship and convening · College Language Association",
     highlights: [
       "The Sonic Boom performed at Super Bowl LVIII, the Rose Parade and the National Folk Festival.",
       "Three vocal students advanced to the National NATS Student Auditions.",
@@ -301,12 +301,33 @@ const presenterControls = document.querySelector(".presenter-controls");
 const presenterCounter = document.querySelector("[data-present-counter]");
 const presenterLabel = document.querySelector("[data-present-label]");
 const presenterStatus = document.querySelector("#presenter-status");
+const presenterScrollCue = document.querySelector("[data-present-scroll]");
 const presenterPrevious = document.querySelector("[data-present-prev]");
 const presenterNext = document.querySelector("[data-present-next]");
 const presenterExit = document.querySelector("[data-present-exit]");
 const presentationTrigger = document.querySelector("#start-presentation");
 let presentationIndex = 0;
 let presentationActive = false;
+let presentationScroller = null;
+
+function updatePresentationScrollCue() {
+  if (!presenterScrollCue) return;
+  if (!presentationScroller) {
+    presenterScrollCue.hidden = true;
+    return;
+  }
+  const hasMore = presentationScroller.scrollHeight > presentationScroller.clientHeight + 8
+    && presentationScroller.scrollTop + presentationScroller.clientHeight < presentationScroller.scrollHeight - 8;
+  presenterScrollCue.hidden = !hasMore;
+}
+
+function syncPresentationScroller() {
+  if (presentationScroller) presentationScroller.removeEventListener("scroll", updatePresentationScrollCue);
+  const step = presentationSteps[presentationIndex];
+  presentationScroller = step?.matches("#priorities, #dashboard") ? step : step?.querySelector(".scene-body");
+  if (presentationScroller) presentationScroller.addEventListener("scroll", updatePresentationScrollCue, { passive: true });
+  requestAnimationFrame(updatePresentationScrollCue);
+}
 
 function presentationUrl(enabled, hash = location.hash) {
   const url = new URL(location.href);
@@ -325,11 +346,14 @@ function updatePresentationControls(announce = false) {
   presenterPrevious.disabled = presentationIndex === 0;
   presenterNext.disabled = presentationIndex === presentationSteps.length - 1;
   if (announce) presenterStatus.textContent = `Chapter ${presentationIndex + 1} of ${presentationSteps.length}: ${title}`;
+  syncPresentationScroller();
 }
 
 function goToPresentationStep(index, announce = true) {
   presentationIndex = Math.max(0, Math.min(index, presentationSteps.length - 1));
   const step = presentationSteps[presentationIndex];
+  const stepScroller = step.matches("#priorities, #dashboard") ? step : step.querySelector(".scene-body");
+  if (stepScroller) stepScroller.scrollTop = 0;
   step.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
   history.replaceState(null, "", presentationUrl(true, `#${step.id}`));
   updatePresentationControls(announce);
@@ -377,13 +401,15 @@ presenterExit.addEventListener("click", exitPresentation);
 
 document.addEventListener("keydown", (event) => {
   if (!presentationActive) return;
-  const interactive = event.target.closest("button, a, input, select, textarea, [role='tab']");
+  const typingTarget = event.target.closest("input, select, textarea, [contenteditable='true']");
+  const activeTab = event.target.closest("[role='tab']");
   if (event.key === "Escape") {
     event.preventDefault();
     exitPresentation();
     return;
   }
-  if (interactive) return;
+  if (typingTarget) return;
+  if (activeTab && ["ArrowRight", "ArrowLeft", "ArrowDown", "ArrowUp", "Home", "End"].includes(event.key)) return;
   if (["ArrowRight", "PageDown"].includes(event.key)) {
     event.preventDefault();
     goToPresentationStep(presentationIndex + 1);
@@ -396,7 +422,17 @@ document.addEventListener("keydown", (event) => {
   } else if (event.key === "End") {
     event.preventDefault();
     goToPresentationStep(presentationSteps.length - 1);
+  } else if (event.key === "ArrowDown" && presentationScroller) {
+    event.preventDefault();
+    presentationScroller.scrollBy({ top: Math.max(220, presentationScroller.clientHeight * 0.72), behavior: "smooth" });
+  } else if (event.key === "ArrowUp" && presentationScroller) {
+    event.preventDefault();
+    presentationScroller.scrollBy({ top: -Math.max(220, presentationScroller.clientHeight * 0.72), behavior: "smooth" });
   }
+});
+
+window.addEventListener("resize", () => {
+  if (presentationActive) syncPresentationScroller();
 });
 
 if ("IntersectionObserver" in window) {
