@@ -2,7 +2,7 @@ const priorities = {
   "student-success": {
     label: "Student Success",
     title: "Talent becomes opportunity.",
-    summary: "Across three academic years, internships, scholarships, national conferences and professional experiences helped students turn preparation into momentum.",
+    summary: "Across three academic years, we helped students turn preparation into momentum through internships, scholarships, national conferences and professional experiences.",
     metric: "29",
     metricLabel: "public-policy internships from Summer 2023 through Spring 2025",
     image: "student-whitley-smith.png",
@@ -17,7 +17,7 @@ const priorities = {
   "academic-prominence": {
     label: "Academic Prominence",
     title: "Scholarship reached national stages.",
-    summary: "Convenings, performances, publications and public programs strengthened Jackson State’s standing as a destination for Black intellectual and creative life.",
+    summary: "Our convenings, performances, publications and public programs strengthened Jackson State’s standing as a destination for Black intellectual and creative life.",
     metric: "250+",
     metricLabel: "participants at the 84th College Language Association Convention",
     image: "official-cla-01.jpg",
@@ -32,7 +32,7 @@ const priorities = {
   "research-excellence": {
     label: "Research Excellence",
     title: "Research spans disciplines and audiences.",
-    summary: "Funded inquiry connected health equity, racial trauma, public safety and community engagement with urgent questions in Mississippi and beyond.",
+    summary: "Our funded research connected health equity, racial trauma, public safety and community engagement with urgent questions in Mississippi and beyond.",
     metric: "$1.5M",
     metricLabel: "health-equity research and community engagement project",
     image: "byron-orey.png",
@@ -47,7 +47,7 @@ const priorities = {
   "campus-culture": {
     label: "Improvement of Campus Culture and Enhancement of JSU Brand",
     title: "JSU’s story reached wider audiences.",
-    summary: "Archives, performances, historic spaces and national partnerships extended Jackson State’s cultural presence from campus to museums and public audiences.",
+    summary: "Through archives, performances, historic spaces and national partnerships, we extended Jackson State’s cultural presence from campus to museums and public audiences.",
     metric: "100+",
     metricLabel: "years of JSU history presented through the Getty Images collaboration",
     image: "sonic-boom-report.png",
@@ -62,7 +62,7 @@ const priorities = {
   "staff-excellence": {
     label: "Staff Excellence",
     title: "Staff-led systems sustain public impact.",
-    summary: "Staff-led centers converted grants, partnerships, archives and outreach programs into sustained public service.",
+    summary: "Our staff-led centers converted grants, partnerships, archives and outreach programs into sustained public service.",
     metric: "41,000+",
     metricLabel: "students reached through prevention and driver-education outreach",
     image: "community-public-service.png",
@@ -84,7 +84,7 @@ const impactViews = {
       ["8", "centers and affiliated special units"],
       ["3", "academic years from Fall 2023 through Spring 2026"]
     ],
-    note: "This overview reflects the College’s three schools, academic departments, centers and affiliated units."
+    note: "Together, these figures represent one College working across three schools, eleven academic departments and eight centers and affiliated units."
   },
   students: {
     stats: [
@@ -93,7 +93,7 @@ const impactViews = {
       ["30", "theatre and speech students who represented JSU at a national conference"],
       ["10", "creative writing students awarded James Patterson Foundation scholarships"]
     ],
-    note: "Each figure highlights a distinct way JSU students expanded their academic and professional experience."
+    note: "Each figure represents a distinct way our students expanded their academic and professional experience."
   },
   creativity: {
     stats: [
@@ -102,7 +102,7 @@ const impactViews = {
       ["7", "HBCUs participating in the Denyce Graves Foundation Shared Voices program"],
       ["100+", "years of JSU history presented through the Getty Images collaboration"]
     ],
-    note: "Together, these measures show the reach of JSU’s literary, musical, visual and cultural programs."
+    note: "Together, these measures show the reach of our literary, musical, visual and cultural programs."
   },
   research: {
     stats: [
@@ -111,7 +111,7 @@ const impactViews = {
       ["$509K", "National Science Foundation support for racial-trauma research"],
       ["$493K+", "secured in 2025 for prevention and driver-education initiatives"]
     ],
-    note: "These initiatives bring research, education and public service together to strengthen communities."
+    note: "These initiatives show how we bring research, education and public service together to strengthen communities."
   },
   funding: {
     stats: [
@@ -120,7 +120,7 @@ const impactViews = {
       ["$300K", "AccessLex support for the Bob Owens Pre-Law Center Pipeline Program"],
       ["$170K", "triple Home Depot Retool Your School grant package"]
     ],
-    note: "Each award supports a distinct initiative and time period, so the investments are presented separately."
+    note: "Each award supports a distinct initiative and time period; together, they show the breadth of investment in our mission."
   },
   recognition: {
     stats: [
@@ -129,7 +129,7 @@ const impactViews = {
       ["2", "national officer positions earned by JSU theatre and speech students"],
       ["1st", "HBCU student to win Mississippi’s senior MTNA strings division"]
     ],
-    note: "These honors recognize the achievements of JSU students and faculty across the three-year reporting period."
+    note: "These honors recognize the achievements of our students and faculty across the three-year reporting period."
   }
 };
 
