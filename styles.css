@@ -193,6 +193,8 @@ h1,h2,h3{text-wrap:balance}p,li{text-wrap:pretty}
 .production-stories p{margin:0;color:#dce8ef;font-size:15px;line-height:1.5}
 .planet-feature{background:#eef6f9}
 .planet-feature .scene-visual img{object-position:52% center}
+.planet-poster-visual{background:#06172e}
+.planet-poster-visual img{object-fit:contain;object-position:center}
 
 .initiative-scene{background:var(--paper)}
 .initiative-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:35px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
@@ -615,7 +617,7 @@ body.present-mode [data-present-step]{min-height:100svh;scroll-margin-top:0}
 .publication-directory{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));width:100%;margin:0;border:1px solid var(--line);background:rgba(255,255,255,.9)}
 .publication-directory ol{margin:0;padding:8px 0;list-style:none;border-right:1px solid var(--line)}
 .publication-directory ol:last-child{border-right:0}
-.publication-directory ol:nth-child(1){counter-reset:faculty-directory 0}.publication-directory ol:nth-child(2){counter-reset:faculty-directory 3}.publication-directory ol:nth-child(3){counter-reset:faculty-directory 5}.publication-directory ol:nth-child(4){counter-reset:faculty-directory 7}.publication-directory ol:nth-child(5){counter-reset:faculty-directory 11}
+.publication-directory ol:nth-child(1){counter-reset:faculty-directory 0}.publication-directory ol:nth-child(2){counter-reset:faculty-directory 2}.publication-directory ol:nth-child(3){counter-reset:faculty-directory 4}.publication-directory ol:nth-child(4){counter-reset:faculty-directory 7}.publication-directory ol:nth-child(5){counter-reset:faculty-directory 10}
 .publication-directory li{counter-increment:faculty-directory;position:relative;box-sizing:border-box;width:100%;padding:7px 14px 8px 42px;border-bottom:1px solid #dce6eb;color:#40596c;font-size:13.5px;line-height:1.24}
 .publication-directory li:before{content:counter(faculty-directory,decimal-leading-zero);position:absolute;top:9px;left:14px;color:#247fa7;font-size:10px;font-weight:700;letter-spacing:.04em}
 .publication-directory strong,.publication-directory span{display:block}
