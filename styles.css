@@ -606,7 +606,6 @@ body.present-mode [data-present-step]{min-height:100svh;scroll-margin-top:0}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
 
 /* 2026 presentation refinement */
-.present-only{display:none}
 
 .publication-record{max-width:520px;margin:0;color:#e3edf3;font-size:17px;font-weight:600;line-height:1.45}
 .publication-showcase>.scene-body{display:flex;align-items:stretch}
@@ -662,40 +661,14 @@ body.present-mode [data-present-step]{min-height:100svh;scroll-margin-top:0}
 .initiative-photo-scene .initiative-grid h3{margin:14px 0 8px;font-size:21px}
 .initiative-photo-scene .initiative-grid p{font-size:15px;line-height:1.45}
 
-.priority-present-scene .priority-present-metric{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;margin-top:22px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.priority-present-scene .priority-present-metric strong{color:var(--navy);font-size:52px;line-height:.9;letter-spacing:-.05em}
-.priority-present-scene .priority-present-metric span{max-width:380px;font-size:14px;font-weight:700;line-height:1.4;text-transform:uppercase}
-.priority-present-scene.scene-navy .priority-present-metric{border-color:rgba(255,255,255,.25)}
-.priority-present-scene.scene-navy .priority-present-metric strong{color:var(--blue)}
-
-.dashboard-present-scene{background:linear-gradient(135deg,#fff 0%,#fff 70%,#eaf6fb 100%)}
-.dashboard-present-scene .scene-body{max-width:1500px}
-.dashboard-present-scene.scene-navy{background:var(--navy);color:#fff}
-.dashboard-present-scene.scene-navy h2,.dashboard-present-scene.scene-navy .presentation-bar-chart span{color:#fff}
-.dashboard-present-scene.scene-navy .scene-lead{color:#dce8ef}
-.presentation-stat-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:32px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
-.presentation-stat-grid article{min-height:250px;padding:28px 24px;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.78)}
-.presentation-stat-grid article:nth-child(odd){background:#eef7fb}
-.presentation-stat-grid strong{color:var(--navy);font-size:clamp(44px,5vw,76px);line-height:.9;letter-spacing:-.055em}
-.presentation-stat-grid span{font-size:15px;font-weight:700;line-height:1.45;text-transform:uppercase}
-.presentation-bar-chart{display:grid;gap:11px;margin-top:28px}
-.presentation-bar-chart>div{display:grid;grid-template-columns:minmax(190px,.85fr) minmax(260px,2.3fr) 100px;gap:18px;align-items:center}
-.presentation-bar-chart span,.presentation-bar-chart strong{font-size:17px;font-weight:700;line-height:1.25}
-.presentation-bar-chart strong{text-align:right;color:var(--blue);font-size:21px}
-.presentation-bar-chart i{height:13px;overflow:hidden;background:rgba(255,255,255,.15)}
-.presentation-bar-chart i b{display:block;width:var(--bar);height:100%;background:var(--blue)}
-.presentation-bar-chart.light i{background:#dce7ec}.presentation-bar-chart.light strong{color:var(--navy)}
-.presentation-note{margin:18px 0 0;color:#536b7b;font-size:14px}
-
 /* Presenter navigation is a quiet, full-width rail rather than a floating card. */
 .presenter-controls{left:0;right:0;bottom:0;transform:none;width:100%;min-width:0;height:72px;padding:8px 4vw;grid-template-columns:auto minmax(260px,1fr) auto auto;background:rgba(3,27,52,.985);border:0;border-top:1px solid rgba(255,255,255,.28);box-shadow:0 -8px 28px rgba(0,0,0,.16)}
 .presenter-controls button{min-height:46px;padding:9px 16px}
 .presenter-controls p span{font-size:14px}
 
 @media(min-width:721px){
-  body.present-mode .present-only.priority-present-scene{display:grid}
-  body.present-mode .present-only.dashboard-present-scene{display:flex}
   body.present-mode [data-present-step]{height:100svh;min-height:100svh;overflow:hidden}
+  body.present-mode #priorities,body.present-mode #dashboard{overflow-y:auto;overscroll-behavior:contain}
   body.present-mode .hero{grid-template-rows:1fr}
   body.present-mode .hero-principles{display:none}
   body.present-mode .hero-copy{width:min(1180px,82vw);height:100svh;padding:96px 6.5vw 104px;justify-content:center}
@@ -753,13 +726,6 @@ body.present-mode [data-present-step]{min-height:100svh;scroll-margin-top:0}
   body.present-mode .initiative-photo-scene .initiative-grid h3{margin:7px 0 5px;font-size:17px}
   body.present-mode .initiative-photo-scene .initiative-grid p{font-size:13.5px;line-height:1.32}
 
-  body.present-mode .priority-present-scene .priority-present-metric{margin-top:15px;padding:13px 0}
-  body.present-mode .priority-present-scene .priority-present-metric strong{font-size:44px}
-  body.present-mode .dashboard-present-scene{padding:42px 6vw 96px;align-items:center}
-  body.present-mode .presentation-stat-grid{margin-top:24px}
-  body.present-mode .presentation-stat-grid article{min-height:225px;padding:24px 20px}
-  body.present-mode .presentation-stat-grid span{font-size:14px}
-  body.present-mode .presentation-bar-chart{margin-top:22px;gap:9px}
 }
 
 @media(min-width:721px) and (min-height:900px){
@@ -781,7 +747,6 @@ body.present-mode [data-present-step]{min-height:100svh;scroll-margin-top:0}
 }
 
 @media(max-width:720px){
-  body.present-mode .present-only.priority-present-scene,body.present-mode .present-only.dashboard-present-scene{display:grid}
   .creative-program .numbered-accomplishments{grid-template-columns:1fr}
   .professional-ledger p{font-size:16px}
   .student-speaking-grid{grid-template-columns:1fr}
@@ -794,7 +759,5 @@ body.present-mode [data-present-step]{min-height:100svh;scroll-margin-top:0}
   .scene-collage img:not(.collage-poster){display:none}
   .visual-diptych{height:500px!important;grid-template-rows:1fr 1fr}
   .initiative-photo-scene{display:block}.initiative-visual{height:390px;min-height:390px}.initiative-photo-scene .scene-body{padding:58px 22px}.initiative-photo-scene .initiative-grid{grid-template-columns:1fr}
-  .presentation-stat-grid{grid-template-columns:1fr 1fr}.presentation-stat-grid article{min-height:190px;padding:20px}
-  .presentation-bar-chart>div{grid-template-columns:1fr 65px;gap:8px}.presentation-bar-chart i{grid-column:1/-1;grid-row:2}.presentation-bar-chart strong{grid-column:2;grid-row:1}
   .presenter-controls{height:auto;min-height:64px;grid-template-columns:auto 1fr auto;padding:7px 10px}.presenter-controls .presenter-exit{grid-column:auto;min-height:42px}.presenter-controls p span{display:none}
 }
