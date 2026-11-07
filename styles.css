@@ -789,7 +789,23 @@ body.present-mode .three-year-transition .button,body.present-mode .priority-sou
 }
 
 /* Final podium overrides. Keep all publications in one balanced presentation scene. */
-.publication-directory-readable.publication-directory-complete{grid-template-columns:repeat(4,minmax(0,1fr))}
+.publication-directory-readable.publication-directory-complete{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  align-items:start;
+  gap:12px;
+  border:0;
+  background:transparent;
+}
+.publication-directory-complete ol{
+  align-self:start;
+  padding:5px 0;
+  border:1px solid #d4e0e6;
+  border-top:4px solid var(--blue);
+  background:rgba(255,255,255,.97);
+  box-shadow:0 10px 26px rgba(4,34,59,.07);
+}
+.publication-directory-complete ol:last-child{border-right:1px solid #d4e0e6}
+.publication-directory-complete li:last-child{border-bottom:0}
 .publication-directory-complete ol:nth-child(1){counter-reset:faculty-directory 0}
 .publication-directory-complete ol:nth-child(2){counter-reset:faculty-directory 3}
 .publication-directory-complete ol:nth-child(3){counter-reset:faculty-directory 6}
@@ -801,8 +817,13 @@ body.present-mode .three-year-transition .button,body.present-mode .priority-sou
   body.present-mode #faculty-publications .publication-visual figcaption{padding:8px 3vw;grid-template-columns:1fr 1fr}
   body.present-mode #faculty-publications .publication-visual h2{font-size:clamp(26px,2.35vw,32px)}
   body.present-mode #faculty-publications .publication-record{max-width:720px;font-size:clamp(14.5px,1vw,17px);line-height:1.3}
-  body.present-mode #faculty-publications>.scene-body{padding:4px 3vw 72px;overflow:hidden}
-  body.present-mode #faculty-publications .publication-directory{height:100%;align-items:stretch}
+  body.present-mode #faculty-publications>.scene-body{
+    display:flex;
+    align-items:center;
+    padding:4px 3vw 72px;
+    overflow:hidden;
+  }
+  body.present-mode #faculty-publications .publication-directory{height:auto;align-items:start}
   body.present-mode #faculty-publications .publication-directory ol{padding:4px 0}
   body.present-mode #faculty-publications .publication-directory li{padding:5px 11px 6px 38px;font-size:clamp(14px,.84vw,16px);line-height:1.19}
   body.present-mode #faculty-publications .publication-directory strong{font-size:clamp(14.5px,.9vw,16.5px);line-height:1.18}
@@ -825,6 +846,16 @@ body.present-mode .three-year-transition .button,body.present-mode .priority-sou
 @media(max-width:1100px) and (min-width:721px){
   body.present-mode #faculty-publications .publication-directory li{font-size:12.5px;line-height:1.18}
   body.present-mode #faculty-publications .publication-directory strong{font-size:13px}
+}
+
+@media(max-height:820px) and (min-width:1101px){
+  body.present-mode #faculty-publications .publication-directory li{
+    padding:4px 10px 5px 36px;
+    font-size:13.5px;
+    line-height:1.16;
+  }
+  body.present-mode #faculty-publications .publication-directory strong{font-size:14px;line-height:1.15}
+  body.present-mode #faculty-publications .publication-directory li:before{top:6px;left:10px}
 }
 
 @media(max-width:720px){
