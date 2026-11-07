@@ -602,3 +602,171 @@ body.present-mode [data-present-step]{min-height:100svh;scroll-margin-top:0}
 }
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+
+/* 2026 presentation refinement */
+.present-only{display:none}
+
+.publication-record{max-width:520px;margin:0;color:#e3edf3;font-size:17px;font-weight:600;line-height:1.45}
+.publication-showcase>.scene-body{display:flex;align-items:stretch}
+.publication-groups{width:100%}
+.publication-groups>section{display:flex;flex-direction:column}
+.publication-groups .publication-by-faculty{flex:1}
+
+.creative-scene{background:#fff}
+.creative-scene .scene-visual img{object-position:center}
+.creative-program{margin-top:18px}
+.creative-program .speaking-label{margin-top:0}
+.creative-program .numbered-accomplishments{margin-top:8px;gap:6px 24px}
+.creative-program .numbered-accomplishments li{padding-top:8px;padding-bottom:8px;font-size:15px;line-height:1.4}
+
+.professional-ledger{margin-top:24px;border-top:1px solid rgba(255,255,255,.26)}
+.professional-ledger article{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.2)}
+.professional-ledger span{display:block;margin-bottom:6px;color:var(--blue);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.professional-ledger h3{margin:0 0 6px;font-size:23px;line-height:1.1}
+.professional-ledger p{margin:0;color:#dce8ef;font-size:16px;line-height:1.45}
+
+.student-speaking-grid{display:grid;grid-template-columns:.8fr .9fr 1.55fr;margin-top:16px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.student-speaking-grid article{padding:16px 18px;border-right:1px solid var(--line)}
+.student-speaking-grid article:first-child{padding-left:0}.student-speaking-grid article:last-child{padding-right:0;border-right:0}
+.student-speaking-grid h3{margin:0 0 7px;font-size:17px;line-height:1.2}
+.student-speaking-grid p{margin:0;color:#40596c;font-size:14px;line-height:1.42}
+
+.visual-diptych{display:grid;grid-template-rows:1fr 1fr;gap:3px;background:var(--navy)}
+.visual-diptych>div{min-height:0;position:relative;overflow:hidden}
+.visual-diptych img{width:100%;height:100%;object-fit:cover}
+.visual-diptych figcaption{position:absolute;left:14px;bottom:14px;padding:7px 10px;background:rgba(3,27,52,.88);color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+
+.initiative-photo-scene{padding:0;display:grid;grid-template-columns:31% 69%;background:var(--paper)}
+.initiative-visual{height:100%;min-height:100vh;margin:0;overflow:hidden;background:var(--deep)}
+.initiative-visual img{width:100%;height:100%;object-fit:cover}
+.initiative-photo-scene .scene-body{max-width:none;padding:clamp(48px,6vh,76px) clamp(36px,4vw,70px)}
+.initiative-photo-scene .initiative-grid{grid-template-columns:1fr 1fr;margin-top:24px}
+.initiative-photo-scene .initiative-grid article{min-height:0;padding:20px 22px}
+.initiative-photo-scene .initiative-grid h3{margin:14px 0 8px;font-size:21px}
+.initiative-photo-scene .initiative-grid p{font-size:15px;line-height:1.45}
+
+.priority-present-scene .priority-present-metric{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;margin-top:22px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.priority-present-scene .priority-present-metric strong{color:var(--navy);font-size:52px;line-height:.9;letter-spacing:-.05em}
+.priority-present-scene .priority-present-metric span{max-width:380px;font-size:14px;font-weight:700;line-height:1.4;text-transform:uppercase}
+.priority-present-scene.scene-navy .priority-present-metric{border-color:rgba(255,255,255,.25)}
+.priority-present-scene.scene-navy .priority-present-metric strong{color:var(--blue)}
+
+.dashboard-present-scene{background:linear-gradient(135deg,#fff 0%,#fff 70%,#eaf6fb 100%)}
+.dashboard-present-scene .scene-body{max-width:1500px}
+.dashboard-present-scene.scene-navy{background:var(--navy);color:#fff}
+.dashboard-present-scene.scene-navy h2,.dashboard-present-scene.scene-navy .presentation-bar-chart span{color:#fff}
+.dashboard-present-scene.scene-navy .scene-lead{color:#dce8ef}
+.presentation-stat-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:32px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.presentation-stat-grid article{min-height:250px;padding:28px 24px;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.78)}
+.presentation-stat-grid article:nth-child(odd){background:#eef7fb}
+.presentation-stat-grid strong{color:var(--navy);font-size:clamp(44px,5vw,76px);line-height:.9;letter-spacing:-.055em}
+.presentation-stat-grid span{font-size:15px;font-weight:700;line-height:1.45;text-transform:uppercase}
+.presentation-bar-chart{display:grid;gap:11px;margin-top:28px}
+.presentation-bar-chart>div{display:grid;grid-template-columns:minmax(190px,.85fr) minmax(260px,2.3fr) 100px;gap:18px;align-items:center}
+.presentation-bar-chart span,.presentation-bar-chart strong{font-size:17px;font-weight:700;line-height:1.25}
+.presentation-bar-chart strong{text-align:right;color:var(--blue);font-size:21px}
+.presentation-bar-chart i{height:13px;overflow:hidden;background:rgba(255,255,255,.15)}
+.presentation-bar-chart i b{display:block;width:var(--bar);height:100%;background:var(--blue)}
+.presentation-bar-chart.light i{background:#dce7ec}.presentation-bar-chart.light strong{color:var(--navy)}
+.presentation-note{margin:18px 0 0;color:#536b7b;font-size:14px}
+
+/* Presenter navigation is a quiet, full-width rail rather than a floating card. */
+.presenter-controls{left:0;right:0;bottom:0;transform:none;width:100%;min-width:0;height:72px;padding:8px 4vw;grid-template-columns:auto minmax(260px,1fr) auto auto;background:rgba(3,27,52,.985);border:0;border-top:1px solid rgba(255,255,255,.28);box-shadow:0 -8px 28px rgba(0,0,0,.16)}
+.presenter-controls button{min-height:46px;padding:9px 16px}
+.presenter-controls p span{font-size:14px}
+
+@media(min-width:721px){
+  body.present-mode .present-only.priority-present-scene{display:grid}
+  body.present-mode .present-only.dashboard-present-scene{display:flex}
+  body.present-mode [data-present-step]{height:100svh;min-height:100svh;overflow:hidden}
+  body.present-mode .hero{grid-template-rows:1fr}
+  body.present-mode .hero-principles{display:none}
+  body.present-mode .hero-copy{width:min(1180px,82vw);height:100svh;padding:96px 6.5vw 104px;justify-content:center}
+  body.present-mode .hero h1{max-width:1100px;font-size:clamp(48px,5.4vw,78px);line-height:.92}
+  body.present-mode .hero-dek{max-width:720px;margin-top:20px;font-size:18px}
+  body.present-mode .hero-actions{margin-top:24px}
+
+  body.present-mode .scene-photo,body.present-mode .scene-photo-right{grid-template-columns:32% 68%}
+  body.present-mode .scene-photo-right{grid-template-columns:68% 32%}
+  body.present-mode .scene-photo .scene-body,body.present-mode .scene-photo-right .scene-body{padding:28px 3.2vw 88px;overflow:hidden}
+  body.present-mode .scene-body .section-label{margin-bottom:10px;font-size:12px}
+  body.present-mode .scene-body h2{font-size:clamp(35px,3.4vw,50px)}
+  body.present-mode .scene-lead{margin-top:10px;font-size:17px;line-height:1.4}
+  body.present-mode .scene-figures{margin-top:12px}
+  body.present-mode .scene-figures span{min-height:62px;padding:9px 10px;font-size:12px}
+  body.present-mode .scene-figures strong{font-size:24px}
+  body.present-mode .accomplishment-list{margin-top:12px;gap:6px}
+  body.present-mode .accomplishment-list li{font-size:16px;line-height:1.34}
+
+  body.present-mode .publication-showcase{grid-template-rows:132px minmax(0,1fr);padding:0}
+  body.present-mode .publication-visual{height:132px}
+  body.present-mode .publication-visual figcaption{padding:16px 3vw;grid-template-columns:1.5fr .7fr;align-items:center}
+  body.present-mode .publication-visual .section-label{margin-bottom:6px;font-size:11px}
+  body.present-mode .publication-visual h2{font-size:clamp(32px,3.15vw,45px)}
+  body.present-mode .publication-record{font-size:15px;line-height:1.35}
+  body.present-mode .publication-showcase>.scene-body{padding:4px 3vw 78px;overflow:hidden}
+  body.present-mode .publication-groups{height:100%;grid-template-columns:1.08fr 2.18fr .9fr}
+  body.present-mode .publication-groups>section{padding:9px 13px 8px}
+  body.present-mode .publication-groups h3{margin-bottom:3px;padding-bottom:5px;font-size:15px}
+  body.present-mode .publication-groups li{padding:4px 0;font-size:13.5px;line-height:1.18}
+  body.present-mode .publication-groups strong{font-size:13.5px}
+
+  body.present-mode .creative-scene{grid-template-columns:31% 69%;padding:0}
+  body.present-mode .creative-scene .scene-body{padding-top:24px}
+  body.present-mode .creative-program{margin-top:10px}
+  body.present-mode .creative-program .numbered-accomplishments{gap:3px 22px}
+  body.present-mode .creative-program .numbered-accomplishments li{padding-top:6px;padding-bottom:6px;font-size:15px;line-height:1.32}
+  body.present-mode .professional-ledger{margin-top:14px}
+  body.present-mode .professional-ledger article{padding:11px 0}
+  body.present-mode .professional-ledger h3{font-size:19px}
+  body.present-mode .professional-ledger p{font-size:15px;line-height:1.35}
+
+  body.present-mode .student-speaking-grid{margin-top:12px}
+  body.present-mode .student-speaking-grid article{padding:12px 14px}
+  body.present-mode .student-speaking-grid h3{font-size:15px}
+  body.present-mode .student-speaking-grid p{font-size:13.5px;line-height:1.32}
+
+  body.present-mode .initiative-photo-scene{display:grid;grid-template-columns:29% 71%;padding:0}
+  body.present-mode .initiative-visual{height:100svh;min-height:100svh}
+  body.present-mode .initiative-photo-scene .scene-body{height:100svh;padding:28px 3vw 88px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+  body.present-mode .initiative-photo-scene .initiative-grid{margin-top:12px}
+  body.present-mode .initiative-photo-scene .initiative-grid article{padding:13px 15px}
+  body.present-mode .initiative-photo-scene .initiative-grid h3{margin:7px 0 5px;font-size:17px}
+  body.present-mode .initiative-photo-scene .initiative-grid p{font-size:13.5px;line-height:1.32}
+
+  body.present-mode .priority-present-scene .priority-present-metric{margin-top:15px;padding:13px 0}
+  body.present-mode .priority-present-scene .priority-present-metric strong{font-size:44px}
+  body.present-mode .dashboard-present-scene{padding:42px 6vw 96px;align-items:center}
+  body.present-mode .presentation-stat-grid{margin-top:24px}
+  body.present-mode .presentation-stat-grid article{min-height:225px;padding:24px 20px}
+  body.present-mode .presentation-stat-grid span{font-size:14px}
+  body.present-mode .presentation-bar-chart{margin-top:22px;gap:9px}
+}
+
+@media(min-width:721px) and (min-height:900px){
+  body.present-mode .publication-showcase{grid-template-rows:180px minmax(0,1fr)}
+  body.present-mode .publication-visual{height:180px}
+  body.present-mode .publication-showcase>.scene-body{padding:12px 3vw 88px;align-items:center}
+  body.present-mode .publication-groups{height:auto;min-height:620px}
+  body.present-mode .publication-groups>section{padding:16px 18px}
+  body.present-mode .publication-groups h3{font-size:19px;margin-bottom:8px;padding-bottom:8px}
+  body.present-mode .publication-groups li{padding:7px 0;font-size:15px;line-height:1.3}
+  body.present-mode .publication-groups strong{font-size:15px}
+  body.present-mode .creative-program .numbered-accomplishments li{font-size:17px;line-height:1.42;padding-top:10px;padding-bottom:10px}
+  body.present-mode .professional-ledger article{padding:18px 0}
+  body.present-mode .professional-ledger h3{font-size:24px}
+  body.present-mode .professional-ledger p{font-size:17px;line-height:1.45}
+}
+
+@media(max-width:720px){
+  body.present-mode .present-only.priority-present-scene,body.present-mode .present-only.dashboard-present-scene{display:grid}
+  .creative-program .numbered-accomplishments{grid-template-columns:1fr}
+  .professional-ledger p{font-size:16px}
+  .student-speaking-grid{grid-template-columns:1fr}
+  .student-speaking-grid article,.student-speaking-grid article:first-child,.student-speaking-grid article:last-child{padding:16px 0;border-right:0;border-bottom:1px solid var(--line)}
+  .visual-diptych{height:500px!important;grid-template-rows:1fr 1fr}
+  .initiative-photo-scene{display:block}.initiative-visual{height:390px;min-height:390px}.initiative-photo-scene .scene-body{padding:58px 22px}.initiative-photo-scene .initiative-grid{grid-template-columns:1fr}
+  .presentation-stat-grid{grid-template-columns:1fr 1fr}.presentation-stat-grid article{min-height:190px;padding:20px}
+  .presentation-bar-chart>div{grid-template-columns:1fr 65px;gap:8px}.presentation-bar-chart i{grid-column:1/-1;grid-row:2}.presentation-bar-chart strong{grid-column:2;grid-row:1}
+  .presenter-controls{height:auto;min-height:64px;grid-template-columns:auto 1fr auto;padding:7px 10px}.presenter-controls .presenter-exit{grid-column:auto;min-height:42px}.presenter-controls p span{display:none}
+}
