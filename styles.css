@@ -226,9 +226,9 @@ body.present-mode .year-note{margin-top:12px;font-size:13px}
 body.present-mode .mission-chapter{height:calc(100svh - 76px);min-height:620px;padding:40px 5vw 90px;grid-template-columns:minmax(170px,.35fr) 1.65fr;gap:4vw}
 body.present-mode .mission-number{font-size:clamp(150px,18vw,270px)}
 body.present-mode .mission-copy h2{font-size:clamp(52px,6vw,88px)}
-body.present-mode .mission-copy>p:not(.section-label){margin-top:20px;font-size:19px;line-height:1.48}
+body.present-mode .mission-copy>p:not(.section-label){max-width:960px;margin-top:20px;font-size:clamp(23px,2vw,30px);line-height:1.45}
 body.present-mode .mission-research .mission-copy>p:not(.section-label){max-width:900px;font-size:clamp(24px,2.25vw,32px);line-height:1.42}
-body.present-mode .mission-metrics{margin-top:22px}.mission-metrics span{min-height:92px;padding:14px 16px}.mission-metrics strong{font-size:32px}
+body.present-mode .mission-metrics{margin-top:22px}.mission-metrics span{min-height:96px;padding:15px 17px;font-size:16px}.mission-metrics strong{font-size:34px}
 body.present-mode .year-chapter{height:calc(100svh - 76px);min-height:620px;grid-template-columns:40% 60%;overflow:hidden}
 body.present-mode .year-chapter.chapter-reverse{grid-template-columns:60% 40%}
 body.present-mode .year-chapter .chapter-visual{min-height:100%;height:100%}
@@ -238,7 +238,7 @@ body.present-mode .chapter-lead{margin-top:14px;font-size:18px;line-height:1.48}
 body.present-mode .chapter-figures{display:grid;gap:12px;margin-top:14px;padding:12px 0}
 body.present-mode .chapter-figures strong{font-size:28px}
 body.present-mode .chapter-figures span{font-size:13px;line-height:1.35}
-body.present-mode .speaking-label{margin-top:12px;font-size:13px}
+body.present-mode .speaking-label{margin-top:12px;font-size:15px}
 body.present-mode .chapter-highlights{margin-top:8px;gap:8px}
 body.present-mode .chapter-highlights li{font-size:18px;line-height:1.42}
 body.present-mode .accomplishment-scene{height:calc(100svh - 76px);min-height:620px;padding:26px 4vw 88px;overflow:hidden}
@@ -247,12 +247,12 @@ body.present-mode .scene-photo-right{grid-template-columns:65% 35%}
 body.present-mode .scene-photo .scene-visual{min-height:100%;height:100%}
 body.present-mode .scene-photo .scene-body{height:100%;padding:26px 3.5vw 22px;overflow-y:auto}
 body.present-mode .scene-body h2{font-size:clamp(34px,3.5vw,50px)}
-body.present-mode .scene-lead{margin-top:12px;font-size:18px;line-height:1.45}
+body.present-mode .scene-lead{margin-top:12px;font-size:clamp(19px,1.5vw,23px);line-height:1.45}
 body.present-mode .scene-figures{margin-top:13px}
 body.present-mode .scene-figures span{min-height:68px;padding:11px 12px;font-size:14px}
 body.present-mode .scene-figures strong{font-size:25px;margin-bottom:5px}
 body.present-mode .accomplishment-list{margin-top:13px;gap:7px}
-body.present-mode .accomplishment-list li{font-size:17px;line-height:1.38}
+body.present-mode .accomplishment-list li{font-size:clamp(17px,1.25vw,19px);line-height:1.42}
 body.present-mode .publication-scene .scene-body,body.present-mode .creative-scene .scene-body,body.present-mode .production-scene .scene-body,body.present-mode .initiative-scene .scene-body{height:100%;overflow-y:auto}
 body.present-mode .publication-grid{margin-top:14px}
 body.present-mode .publication-grid article{min-height:0;padding:12px 15px}
@@ -270,9 +270,9 @@ body.present-mode .publication-groups li{padding:5px 0 5px 27px;font-size:14px;l
 body.present-mode .publication-groups li:before{top:6px;font-size:11px}
 body.present-mode .publication-groups strong{margin-bottom:1px;font-size:14px}
 body.present-mode .creative-columns{margin-top:12px;gap:25px}
-body.present-mode .numbered-accomplishments li{padding-top:7px;padding-bottom:7px;font-size:15px;line-height:1.38}
-body.present-mode .source-distinction{padding:15px 18px}.source-distinction p:not(.speaking-label){font-size:14px}
-body.present-mode .production-grid{margin-top:14px}.production-grid article{padding:17px 20px}.production-grid h3{font-size:20px}.production-grid p,.production-grid li{font-size:14px;line-height:1.4}
+body.present-mode .numbered-accomplishments li{padding-top:8px;padding-bottom:8px;font-size:17px;line-height:1.42}
+body.present-mode .source-distinction{padding:16px 19px}.source-distinction p:not(.speaking-label){font-size:16px}
+body.present-mode .production-grid{margin-top:14px}.production-grid article{padding:18px 21px}.production-grid h3{font-size:22px}.production-grid p,.production-grid li{font-size:17px;line-height:1.44}
 body.present-mode .production-grid .production-wide{gap:18px}
 body.present-mode .initiative-grid{margin-top:20px}.initiative-grid article{min-height:200px;padding:20px}.initiative-grid h3{margin:22px 0 10px;font-size:21px}.initiative-grid p{font-size:16px;line-height:1.45}
 body.present-mode .priority-section{min-height:calc(100svh - 76px);padding:28px 4vw 92px}
@@ -281,7 +281,7 @@ body.present-mode .priority-heading .section-label{margin-bottom:-4px}
 body.present-mode .priority-heading h2{font-size:clamp(38px,4vw,58px)}
 body.present-mode .priority-heading>p:last-child{font-size:18px;line-height:1.5}
 body.present-mode .priority-list button{min-height:70px;padding:12px 15px;gap:8px}
-body.present-mode .priority-list button b{font-size:14px}
+body.present-mode .priority-list button b{font-size:16px}
 body.present-mode .priority-panel{grid-template-columns:39% 61%}
 body.present-mode .priority-panel figure img{min-height:386px}
 body.present-mode .priority-content{padding:32px 3.5vw}
@@ -299,21 +299,21 @@ body.present-mode .dashboard-heading{margin-bottom:18px;grid-template-columns:1f
 body.present-mode .dashboard-heading h2{font-size:clamp(38px,4vw,58px)}
 body.present-mode .dashboard-heading>p{font-size:18px;line-height:1.45}
 body.present-mode .dashboard-controls{gap:5px;padding-bottom:12px;flex-wrap:nowrap}
-body.present-mode .dashboard-controls button{min-height:38px;padding:8px 12px;font-size:13px}
+body.present-mode .dashboard-controls button{min-height:42px;padding:9px 13px;font-size:14px}
 body.present-mode .dashboard-stats article{min-height:112px;padding:18px 20px}
 body.present-mode .dashboard-stats strong{font-size:clamp(38px,4vw,54px)}
-body.present-mode .dashboard-stats span{font-size:13px;line-height:1.35}
-body.present-mode .dashboard-note{margin-top:10px;font-size:13px}
+body.present-mode .dashboard-stats span{font-size:15px;line-height:1.4}
+body.present-mode .dashboard-note{margin-top:10px;font-size:15px}
 body.present-mode .dashboard-source{display:none}
 body.present-mode .dashboard-charts{margin-top:18px;gap:14px}
 body.present-mode .chart-panel{padding:14px 18px}
 body.present-mode .chart-panel header{margin-bottom:10px;gap:14px}
 body.present-mode .chart-panel h3{font-size:25px}
-body.present-mode .chart-panel header>p{font-size:13px;line-height:1.4}
+body.present-mode .chart-panel header>p{font-size:15px;line-height:1.42}
 body.present-mode .bar-chart{gap:4px}
 body.present-mode .bar-row{grid-template-columns:minmax(100px,1fr) minmax(90px,1.4fr) 60px;gap:8px}
-body.present-mode .bar-row>span,body.present-mode .bar-row strong{font-size:14px}
-body.present-mode .chart-note{margin-top:8px;padding-top:8px;font-size:14px;line-height:1.35}
+body.present-mode .bar-row>span,body.present-mode .bar-row strong{font-size:16px}
+body.present-mode .chart-note{margin-top:8px;padding-top:8px;font-size:15px;line-height:1.4}
 
 .impact-dashboard{padding:105px 6.5vw 95px;background:#fff}
 .dashboard-heading{max-width:1400px;margin:0 auto 50px;display:grid;grid-template-columns:1fr .55fr;gap:50px;align-items:end}
@@ -615,7 +615,7 @@ body.present-mode [data-present-step]{min-height:100svh;scroll-margin-top:0}
 .publication-directory{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));width:100%;margin:0;border:1px solid var(--line);background:rgba(255,255,255,.9)}
 .publication-directory ol{margin:0;padding:8px 0;list-style:none;border-right:1px solid var(--line)}
 .publication-directory ol:last-child{border-right:0}
-.publication-directory ol:nth-child(1){counter-reset:faculty-directory 0}.publication-directory ol:nth-child(2){counter-reset:faculty-directory 3}.publication-directory ol:nth-child(3){counter-reset:faculty-directory 5}.publication-directory ol:nth-child(4){counter-reset:faculty-directory 7}.publication-directory ol:nth-child(5){counter-reset:faculty-directory 10}
+.publication-directory ol:nth-child(1){counter-reset:faculty-directory 0}.publication-directory ol:nth-child(2){counter-reset:faculty-directory 3}.publication-directory ol:nth-child(3){counter-reset:faculty-directory 5}.publication-directory ol:nth-child(4){counter-reset:faculty-directory 7}.publication-directory ol:nth-child(5){counter-reset:faculty-directory 11}
 .publication-directory li{counter-increment:faculty-directory;position:relative;box-sizing:border-box;width:100%;padding:7px 14px 8px 42px;border-bottom:1px solid #dce6eb;color:#40596c;font-size:13.5px;line-height:1.24}
 .publication-directory li:before{content:counter(faculty-directory,decimal-leading-zero);position:absolute;top:9px;left:14px;color:#247fa7;font-size:10px;font-weight:700;letter-spacing:.04em}
 .publication-directory strong,.publication-directory span{display:block}
@@ -678,53 +678,53 @@ body.present-mode [data-present-step]{min-height:100svh;scroll-margin-top:0}
 
   body.present-mode .scene-photo,body.present-mode .scene-photo-right{grid-template-columns:32% 68%}
   body.present-mode .scene-photo-right{grid-template-columns:68% 32%}
-  body.present-mode .scene-photo .scene-body,body.present-mode .scene-photo-right .scene-body{padding:28px 3.2vw 88px;overflow:hidden}
-  body.present-mode .scene-body .section-label{margin-bottom:10px;font-size:12px}
+  body.present-mode .scene-photo .scene-body,body.present-mode .scene-photo-right .scene-body{padding:28px 3.2vw 88px;overflow-y:auto}
+  body.present-mode .scene-body .section-label{margin-bottom:10px;font-size:14px}
   body.present-mode .scene-body h2{font-size:clamp(35px,3.4vw,50px)}
-  body.present-mode .scene-lead{margin-top:10px;font-size:17px;line-height:1.4}
+  body.present-mode .scene-lead{margin-top:10px;font-size:clamp(19px,1.5vw,23px);line-height:1.42}
   body.present-mode .scene-figures{margin-top:12px}
-  body.present-mode .scene-figures span{min-height:62px;padding:9px 10px;font-size:12px}
-  body.present-mode .scene-figures strong{font-size:24px}
+  body.present-mode .scene-figures span{min-height:70px;padding:11px 12px;font-size:15px}
+  body.present-mode .scene-figures strong{font-size:27px}
   body.present-mode .accomplishment-list{margin-top:12px;gap:6px}
-  body.present-mode .accomplishment-list li{font-size:16px;line-height:1.34}
+  body.present-mode .accomplishment-list li{font-size:clamp(17px,1.25vw,19px);line-height:1.42}
 
   body.present-mode .publication-showcase{grid-template-rows:116px minmax(0,1fr);padding:0}
   body.present-mode .publication-visual{height:116px}
   body.present-mode .publication-visual figcaption{padding:12px 3vw;grid-template-columns:1.5fr .7fr;align-items:center}
   body.present-mode .publication-visual .section-label{margin-bottom:6px;font-size:11px}
   body.present-mode .publication-visual h2{font-size:clamp(32px,3.15vw,45px)}
-  body.present-mode .publication-record{font-size:15px;line-height:1.35}
-  body.present-mode .publication-showcase>.scene-body{padding:4px 3vw 78px;overflow:hidden}
+  body.present-mode .publication-record{font-size:17px;line-height:1.4}
+  body.present-mode .publication-showcase>.scene-body{padding:4px 3vw 78px;overflow-y:auto}
   body.present-mode .publication-groups{height:100%;grid-template-columns:1.08fr 2.18fr .9fr}
   body.present-mode .publication-groups>section{padding:9px 13px 8px}
   body.present-mode .publication-groups h3{margin-bottom:3px;padding-bottom:5px;font-size:15px}
   body.present-mode .publication-groups li{padding:4px 0;font-size:13.5px;line-height:1.18}
   body.present-mode .publication-groups strong{font-size:13.5px}
-  body.present-mode .publication-directory li{font-size:13.25px;line-height:1.2}
-  body.present-mode .publication-directory strong{font-size:13.25px}
+  body.present-mode .publication-directory li{font-size:15px;line-height:1.3}
+  body.present-mode .publication-directory strong{font-size:15px}
 
   body.present-mode .creative-scene{grid-template-columns:31% 69%;padding:0}
   body.present-mode .creative-scene .scene-body{padding-top:24px}
   body.present-mode .creative-program{margin-top:10px}
   body.present-mode .creative-program .numbered-accomplishments{gap:3px 22px}
-  body.present-mode .creative-program .numbered-accomplishments li{padding-top:6px;padding-bottom:6px;font-size:15px;line-height:1.32}
+  body.present-mode .creative-program .numbered-accomplishments li{padding-top:7px;padding-bottom:7px;font-size:17px;line-height:1.4}
   body.present-mode .professional-ledger{margin-top:14px}
   body.present-mode .professional-ledger article{padding:11px 0}
   body.present-mode .professional-ledger h3{font-size:19px}
-  body.present-mode .professional-ledger p{font-size:15px;line-height:1.35}
+  body.present-mode .professional-ledger p{font-size:17px;line-height:1.42}
 
   body.present-mode .student-speaking-grid{margin-top:12px}
   body.present-mode .student-speaking-grid article{padding:12px 14px}
-  body.present-mode .student-speaking-grid h3{font-size:15px}
-  body.present-mode .student-speaking-grid p{font-size:13.5px;line-height:1.32}
+  body.present-mode .student-speaking-grid h3{font-size:17px}
+  body.present-mode .student-speaking-grid p{font-size:16px;line-height:1.4}
 
   body.present-mode .initiative-photo-scene{display:grid;grid-template-columns:29% 71%;padding:0}
   body.present-mode .initiative-visual{height:100svh;min-height:100svh}
-  body.present-mode .initiative-photo-scene .scene-body{height:100svh;padding:28px 3vw 88px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+  body.present-mode .initiative-photo-scene .scene-body{height:100svh;padding:28px 3vw 88px;display:flex;flex-direction:column;justify-content:flex-start;overflow-y:auto}
   body.present-mode .initiative-photo-scene .initiative-grid{margin-top:12px}
   body.present-mode .initiative-photo-scene .initiative-grid article{padding:13px 15px}
-  body.present-mode .initiative-photo-scene .initiative-grid h3{margin:7px 0 5px;font-size:17px}
-  body.present-mode .initiative-photo-scene .initiative-grid p{font-size:13.5px;line-height:1.32}
+  body.present-mode .initiative-photo-scene .initiative-grid h3{margin:7px 0 5px;font-size:19px}
+  body.present-mode .initiative-photo-scene .initiative-grid p{font-size:16px;line-height:1.4}
 
 }
 
