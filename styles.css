@@ -814,21 +814,21 @@ body.present-mode .three-year-transition .button,body.present-mode .priority-sou
 .publication-directory-complete ol:nth-child(4){counter-reset:faculty-directory 10}
 
 @media(min-width:721px){
-  body.present-mode #faculty-publications{grid-template-rows:132px minmax(0,1fr)}
-  body.present-mode #faculty-publications .publication-visual{height:132px}
+  body.present-mode #faculty-publications{grid-template-rows:176px minmax(0,1fr)}
+  body.present-mode #faculty-publications .publication-visual{height:176px}
   body.present-mode #faculty-publications .publication-visual figcaption{
-    padding:16px 3.5vw;
+    padding:18px 3.5vw;
     grid-template-columns:1fr 1.12fr;
     gap:48px;
     align-items:center;
   }
-  body.present-mode #faculty-publications .publication-visual .section-label{margin-bottom:7px;font-size:12px}
-  body.present-mode #faculty-publications .publication-visual h2{font-size:clamp(34px,2.8vw,46px);line-height:.98}
-  body.present-mode #faculty-publications .publication-record{max-width:760px;font-size:clamp(16.5px,1.12vw,19px);line-height:1.38}
+  body.present-mode #faculty-publications .publication-visual .section-label{margin-bottom:8px;font-size:13px}
+  body.present-mode #faculty-publications .publication-visual h2{font-size:clamp(42px,3.4vw,58px);line-height:.96}
+  body.present-mode #faculty-publications .publication-record{max-width:780px;font-size:clamp(18px,1.22vw,21px);line-height:1.42}
   body.present-mode #faculty-publications>.scene-body{
     display:flex;
     align-items:center;
-    padding:4px 3vw 72px;
+    padding:0 3vw 72px;
     overflow:hidden;
   }
   body.present-mode #faculty-publications .publication-directory{height:auto;align-items:start}
