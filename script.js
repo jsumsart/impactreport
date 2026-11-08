@@ -255,9 +255,14 @@ function updatePresentationControls(announce = false) {
   syncPresentationScroller();
 }
 
+function revealPresentationStep(step) {
+  step?.querySelectorAll(".reveal").forEach((element) => element.classList.add("is-visible"));
+}
+
 function goToPresentationStep(index, announce = true) {
   presentationIndex = Math.max(0, Math.min(index, presentationSteps.length - 1));
   const step = presentationSteps[presentationIndex];
+  revealPresentationStep(step);
   const stepScroller = step.matches("#priorities, #dashboard") ? step : step.querySelector(".scene-body");
   if (stepScroller) stepScroller.scrollTop = 0;
   step.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
@@ -275,6 +280,7 @@ async function activatePresentation(requestFullscreen = false) {
   history.replaceState(null, "", presentationUrl(true, location.hash || "#opening"));
   updatePresentationControls(true);
   const initialStep = presentationSteps[presentationIndex];
+  revealPresentationStep(initialStep);
   const alignCurrentStep = () => initialStep?.scrollIntoView({ behavior: "auto", block: "start" });
   requestAnimationFrame(alignCurrentStep);
   if (document.readyState !== "complete") window.addEventListener("load", alignCurrentStep, { once: true });

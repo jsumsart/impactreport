@@ -192,9 +192,14 @@ h1,h2,h3{text-wrap:balance}p,li{text-wrap:pretty}
 .production-stories h3{margin:0 0 9px;font-size:20px;line-height:1.2}
 .production-stories p{margin:0;color:#dce8ef;font-size:15px;line-height:1.5}
 .planet-feature{background:#eef6f9}
-.planet-feature .scene-visual img{object-position:52% center}
-.planet-poster-visual{background:#06172e}
-.planet-poster-visual img{object-fit:contain;object-position:center}
+.planet-collage{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:minmax(0,56fr) minmax(0,44fr);gap:3px;padding:0;background:#06172e}
+.scene-photo .planet-collage .collage-poster{grid-column:1/-1;min-height:0;object-fit:contain;object-position:center}
+.planet-collage .planet-event-photo{min-width:0;min-height:0;object-fit:cover}
+.planet-collage .planet-event-photo-one{object-position:56% center}
+.planet-collage .planet-event-photo-two{object-position:64% center}
+.applied-learning-collage{display:grid;grid-template-rows:1fr 1fr;gap:3px;background:var(--deep)}
+.applied-learning-collage img{min-height:0;object-position:center}
+.applied-learning-collage img:last-child{object-position:54% center}
 
 .initiative-scene{background:var(--paper)}
 .initiative-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:35px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
