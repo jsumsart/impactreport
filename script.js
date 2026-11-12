@@ -364,3 +364,21 @@ if ("IntersectionObserver" in window) {
 if (new URLSearchParams(location.search).get("present") === "1") activatePresentation(false);
 
 syncPriorityLayout();
+
+const backToTop = document.querySelector("[data-back-to-top]");
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+function updateBackToTop() {
+  if (!backToTop) return;
+  const revealPoint = Math.max(520, window.innerHeight * 0.7);
+  const shouldShow = window.scrollY > revealPoint && !document.body.classList.contains("present-mode");
+  backToTop.classList.toggle("is-visible", shouldShow);
+}
+
+backToTop?.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: reducedMotion.matches ? "auto" : "smooth" });
+});
+
+window.addEventListener("scroll", updateBackToTop, { passive: true });
+window.addEventListener("resize", updateBackToTop);
+updateBackToTop();
